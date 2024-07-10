@@ -21,7 +21,6 @@
   font-family: 'Poppins', sans-serif; /* Fuente Poppins */
 }
 
-
 .contact-button {
   background-color: rgb(123, 45, 116); /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
@@ -51,6 +50,60 @@
   white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
   display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
   align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilos del Nuestro Equipo */
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-caption {
+  position: static;
+  text-align: center;
+  padding: 10px;
+  color: #000; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.team-member {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.team-member h5 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.team-member p {
+  margin: -40px 0;
+  font-size: 14px;
+}
+
+.team-member .btn {
+  margin-top: 10px;
+  background-color: rgb(123, 45, 116); /* Color de fondo personalizado para el botón de LinkedIn */
+  border-color: rgb(123, 45, 116); /* Color del borde personalizado para el botón de LinkedIn */
+  border-radius: 50px;
+  color: #fff; /* Color del texto en el botón */
+}
+
+.team-member .btn:hover {
+  background-color: rgb(151, 91, 146); /* Color de fondo al pasar el mouse */
+  border-color: rgb(151, 91, 146) ; /* Color del borde al pasar el mouse */
 }
 
 /* Estilos del footer */
