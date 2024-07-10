@@ -1,7 +1,61 @@
+/* Estilos del navar */
+.navbar {
+  background-color: rgb(244, 246, 239); /* Color de fondo del navbar */
+}
+.navbar-nav {
+  margin-right: 10rem; /* Desplaza el menú hacia la izquierda */
+ 
+}
+.navbar-brand img {
+  width: 30%; /* Tamaño del logo */
+}
+
+.navbar-nav .nav-link {
+  margin-left: 10%; /* Espacio entre el logo y los enlaces */
+  margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgb(75, 105, 84); /* Color de las letras */
+  font-weight: bold; /* Texto en negrita */
+  font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+}
+
+
+.contact-button {
+  background-color: rgb(123, 45, 116); /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Radio de borde */
+  padding: 10px 20px; /* Padding interior */
+}
+
+.contact-button:hover {
+  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(123, 45, 116); /* Cambio de color al pasar el cursor */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: rgb(123, 45, 116); /* Color de subrayado activo */
+}
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier texto que sobrepase el espacio disponible */
+  text-overflow: ellipsis; /* Añade puntos suspensivos al final si el texto es demasiado largo */
+}
+
+.navbar-nav .nav-item {
+  white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+  display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
 
 /* Estilos del footer */
 .footer {
-    background-color: #77216f;
+    background-color: rgb(123, 45, 116);
     padding: 20px 0;
     border: 2px solid black; 
 }
@@ -35,8 +89,8 @@
     top: 95px; /* Ajustar para bajar el círculo */
     left: 50%;
     transform: translateX(-50%);
-    width: 100px; /* Agrandar el círculo */
-    height: 100px; /* Agrandar el círculo */
+    width: 150px; /* Agrandar el círculo */
+    height: 150px; /* Agrandar el círculo */
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -47,8 +101,8 @@
 
 .circle-image {
     border-radius: 50%;
-    width: 300px; /* Ajustar tamaño de la imagen dentro del círculo */
-    height: 300px; /* Ajustar tamaño de la imagen dentro del círculo */
+    width: 350px; /* Ajustar tamaño de la imagen dentro del círculo */
+    height: 350px; /* Ajustar tamaño de la imagen dentro del círculo */
 }
 
 .footer-links-container {
@@ -126,57 +180,52 @@
     padding: 0 5px; 
 }
 
-.navbar {
-  background-color: rgb(244, 246, 239); /* Color de fondo del navbar */
-}
-.navbar-nav {
-  margin-right: 10rem; /* Desplaza el menú hacia la izquierda */
- 
-}
-.navbar-brand img {
-  width: 30%; /* Tamaño del logo */
+/* Aplicar bordes a todas las secciones */
+
+.container
+{
+    border: 2px solid black;
 }
 
-.navbar-nav .nav-link {
-  margin-left: 10%; /* Espacio entre el logo y los enlaces */
-  margin-left: 20px; /* Espacio entre los elementos del menú */
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
 }
 
-.navbar-nav .nav-item .nav-link {
-  color: rgb(75, 105, 84); /* Color de las letras */
-  font-weight: bold; /* Texto en negrita */
-  font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+/* Estilos de las tarjetas */
+.card {
+  background-color: rgb(123, 45, 116);
+  color: #fff;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color y transform */
+  width: 250px;  
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra contenido verticalmente */
+  align-items: center; /* Centra contenido horizontalmente */
+  text-align: center; /* Alinea texto al centro */
 }
 
-
-.contact-button {
-  background-color: rgb(123, 45, 116); /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
-  border: none; /* Sin borde */
-  border-radius: 20px; /* Radio de borde */
-  padding: 10px 20px; /* Padding interior */
+.card-body {
+  margin-top: 60px; /* Empuja el contenido hacia abajo */
 }
 
-.contact-button:hover {
-  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+.card-text {
+  font-size: 14px; /* Tamaño del texto */
+  margin-top: auto; /* Elimina el margen superior predeterminado */
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: rgb(123, 45, 116); /* Cambio de color al pasar el cursor */
+.card:hover {
+  background-color: rgb(75, 105, 84); /* Color al hacer hover (verde) */
+  transform: translateY(-5px);
 }
 
-.navbar-nav .nav-item.active .nav-link {
-  color: rgb(123, 45, 116); /* Color de subrayado activo */
-}
-.navbar-nav .nav-item:nth-child(1) .nav-link {
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-  overflow: hidden; /* Oculta cualquier texto que sobrepase el espacio disponible */
-  text-overflow: ellipsis; /* Añade puntos suspensivos al final si el texto es demasiado largo */
-}
-
-.navbar-nav .nav-item {
-  white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
-  display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
-  align-items: center; /* Alinea verticalmente los elementos */
-}
-
+    
