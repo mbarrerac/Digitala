@@ -1,0 +1,126 @@
+/* Estilos del footer */
+.footer {
+    background-color: #77216f;
+    padding: 20px 0;
+    border: 2px solid black; 
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-middle {
+    border: 2px solid black; 
+    padding: 20px;
+    flex: 2;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-left {
+    position: relative;
+}
+
+.circle-logo {
+    position: absolute;
+    top: 95px; /* Ajustar para bajar el círculo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Agrandar el círculo */
+    height: 100px; /* Agrandar el círculo */
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Añadir borde negro al círculo */
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 300px; /* Ajustar tamaño de la imagen dentro del círculo */
+    height: 300px; /* Ajustar tamaño de la imagen dentro del círculo */
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid black; 
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-paragraph {
+    margin-top: 20px;
+    color: #fff;
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-left: 20px; /* Establecer un margen izquierdo */
+    
+}
+
+.footer-right {
+    border: 2px solid black; 
+    padding: 20px;
+    flex: 1; /* Menor espacio para la tercera sección */
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    position: relative; /* Para permitir el uso de position:absolute en los hijos */
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 170px; /* Ajusta la distancia desde el fondo del .footer-right */
+    right: 45px;
+    width: 100%; /* Asegura que se centre correctamente */
+}
+
+.social-icon {
+    margin: 0 5px; /* Espacio horizontal entre íconos */
+    width: 50px;
+    height: 50px;
+    border: 2px solid black; 
+}
+
+.footer-right p {
+    color: #fff;
+    margin: 0;
+    border: 2px solid black; /* Bordes negros para el pie de copyright */
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde el fondo del .footer-right */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Asegura que el texto se muestre en una sola línea */
+    padding: 0 5px; 
+}
