@@ -127,58 +127,56 @@
 }
 
 .navbar {
-    background-color: rgb(244, 246, 239); /* Color de fondo del navbar */
-  }
-.navbar-nav
-   
-  }
+  background-color: rgb(244, 246, 239); /* Color de fondo del navbar */
+}
+.navbar-nav {
+  margin-right: 10rem; /* Desplaza el menú hacia la izquierda */
+ 
+}
 .navbar-brand img {
-    width: 30%; /* Tamaño del logo */
-  }
-  
-  .navbar-nav .nav-link {
-    margin-left: 10%; /* Espacio entre el logo y los enlaces */
-    margin-left: 20px; /* Espacio entre los elementos del menú */
-  }
-  
-  .navbar-nav .nav-item .nav-link {
-    color: rgb(75, 105, 84); /* Color de las letras */
-    font-weight: bold; /* Texto en negrita */
-    font-family: 'Poppins', sans-serif; /* Fuente Poppins */
-  }
-  
-  
-  .contact-button {
-    background-color: rgb(123, 45, 116); /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 20px; /* Radio de borde */
-    padding: 10px 20px; /* Padding interior */
-  }
-  
-  .contact-button:hover {
-    background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
-  }
-  
-  .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(123, 45, 116); /* Cambio de color al pasar el cursor */
-  }
-  
-  .navbar-nav .nav-item.active .nav-link {
-    color: rgb(123, 45, 116); /* Color de subrayado activo */
-  }
-  .navbar-nav .nav-item:nth-child(1) .nav-link {
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta cualquier texto que sobrepase el espacio disponible */
-    text-overflow: ellipsis; /* Añade puntos suspensivos al final si el texto es demasiado largo */
-  }
-  
-  .navbar-nav .nav-item {
-    white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
-    display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
-    align-items: center; /* Alinea verticalmente los elementos */
-  }
-  
- 
- 
+  width: 30%; /* Tamaño del logo */
+}
+
+.navbar-nav .nav-link {
+  margin-left: 10%; /* Espacio entre el logo y los enlaces */
+  margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgb(75, 105, 84); /* Color de las letras */
+  font-weight: bold; /* Texto en negrita */
+  font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+}
+
+
+.contact-button {
+  background-color: rgb(123, 45, 116); /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Radio de borde */
+  padding: 10px 20px; /* Padding interior */
+}
+
+.contact-button:hover {
+  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(123, 45, 116); /* Cambio de color al pasar el cursor */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: rgb(123, 45, 116); /* Color de subrayado activo */
+}
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier texto que sobrepase el espacio disponible */
+  text-overflow: ellipsis; /* Añade puntos suspensivos al final si el texto es demasiado largo */
+}
+
+.navbar-nav .nav-item {
+  white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+  display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
 
