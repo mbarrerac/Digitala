@@ -329,10 +329,11 @@ body {
   position: absolute;
   top: 40%;
   right: 10%;
-  left: 42%;
+  left: 38%;
   max-width: 40%;
   height: auto;
 }
+
 
 .hero .text-block {
   position: absolute;
@@ -374,3 +375,18 @@ body {
   color :rgb(244, 246, 239);
 }
 
+.TextosSubTitulos{
+  color : rgb(75, 105, 84);
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+}
+.TextosSubTitulosSmall{
+  color : rgb(75, 105, 84);
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+.textosSmall{
+  color : rgb(75, 105, 84);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
