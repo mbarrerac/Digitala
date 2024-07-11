@@ -180,3 +180,94 @@
   align-items: center; /* Alinea verticalmente los elementos */
 }
 
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('/assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 5%; /* Adjust the padding as needed */
+
+}
+
+.circleHero {
+  background-color: #E0EAE2;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-right: 5%; /* Adjust the margin as needed */
+  margin-top: 18%;
+}
+
+.circleHero img {
+ 
+  max-width: 100%;
+  height: auto;
+}
+
+.circleHero p {
+  color: rgb(121, 161, 130);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding-top: 0;
+  padding-bottom:  80px;
+}
+
+.circleHero .slogan {
+  margin: 10px 0;
+}
+
+.vectors {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  left: 42%;
+  max-width: 40%;
+  height: auto;
+}
+
+.hero .text-block {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+  color: rgb(244, 246, 239);
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .text-block h1 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero .text-block p {
+  font-size: 40px;
+  margin: 0;
+}
+
+.hero .button {
+  position: absolute;
+  bottom: 10%;
+  margin-bottom: 150px;
+  right: 10%;
+  padding: 15px 30px;
+  background-color: rgb(244, 246, 239);
+  color:  rgb(123, 45, 116);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+}
+.hero .button:hover {
+  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+  color :rgb(244, 246, 239);
+}
