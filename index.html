@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digítala</title>
+  <!-- Enlaza Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- Enlaza Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
@@ -37,8 +45,9 @@
           <img src="./assets/img/patronVector.svg" alt="Patron" class="vectors">
         </div>
        
-        <div class="circleHero">
+        <div class="circleHero ">
             <img src="./assets/img/logoSinFondo.png" alt="Logo">
+            <div class="cut-bottom"></div> <!-- Contenedor para cortar la parte inferior -->           
             <p class="slogan">Transformando ideas en realidad<br>desde el corazón del sur.</p>
         </div>
         
@@ -49,22 +58,31 @@
         <button class="button">Contacto</button>
       </div>
    </section>
+<!-- ¿Te agobia tener la información dispersa...? -->
+ 
+    <section class="text-center m-5 p-5 section-centered">
+      
+      <h2 class="textSubTitles">¿Te agobia tener la información dispersa en múltiples carpetas?</h2>
+      <h3 class="textSubTitlesSmall p-5">Esa es nuestra especialidad en digital</h3>
+    </section>
 
-
+    
   <!-- Iconos con textos -->
   <section class="container text-center">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="icon" style="width: 50px; height: 50px; background: lightgray; margin: auto;"></div>
-        <p>Desarrollamos software 100% adaptado a los procesos de tu empresa </p>
+    <div class="icon-row">
+      <div class="icon-container">
+         <img src="./assets/img/icono1.png" alt="Icon 1" class="icon" > 
+        
+        <p class="icon-text">Desarrollamos software 100% adaptado a los procesos de tu empresa.</p>
       </div>
-      <div class="col-md-4">
-        <div class="icon" style="width: 50px; height: 50px; background: lightgray; margin: auto;"></div>
-        <p>Como resultado, multiplicarás el tiempo y los recursos que hoy te faltan.</p>
+      <div class="icon-container">
+         <img src="./assets/img/icono2.png" alt="Icon 2" class="icon"> 
+        
+        <p class="icon-text">Como resultado, multiplicarás el tiempo y los recursos que hoy te faltan.</p>
       </div>
-      <div class="col-md-4">
-        <div class="icon" style="width: 50px; height: 50px; background: lightgray; margin: auto;"></div>
-        <p>Nuestro equipo conoce en profundidad los desafíos que enfrentas.</p>
+      <div class="icon-container">
+        <img src="./assets/img/icono3.png" alt="Icon 3" class="icon">
+        <p class="icon-text">Nuestro equipo conoce en profundidad los desafíos que enfrentas.</p>
       </div>
     </div>
   </section>

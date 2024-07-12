@@ -51,18 +51,30 @@
   display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
   align-items: center; /* Alinea verticalmente los elementos */
 }
-/* Hero Section*/
+/* Hero Section */
+/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
   background: url('/assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
-  padding-left: 5%; /* Adjust the padding as needed */
+  padding-left: 5%; /* Ajusta el padding según sea necesario */
+  display: none;
+}
 
+/* Estilos generales para la hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('/assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 5%; /* Ajusta el padding según sea necesario */
 }
 
 .circleHero {
+  position: relative;
   background-color: #E0EAE2;
   border-radius: 50%;
   width: 600px;
@@ -74,11 +86,11 @@
   padding: 20px;
   margin-right: 5%; /* Adjust the margin as needed */
   margin-top: 18%;
+  z-index: 2; /* Ensure this is above the pattern vector */
 }
 
 .circleHero img {
- 
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -88,7 +100,7 @@
   font-weight: 700;
   margin: 10px 0 0 0;
   padding-top: 0;
-  padding-bottom:  80px;
+  padding-bottom: 80px;
 }
 
 .circleHero .slogan {
@@ -97,13 +109,13 @@
 
 .vectors {
   position: absolute;
-  top: 40%;
+  top: 60%;
   right: 10%;
   left: 38%;
   max-width: 40%;
   height: auto;
+  z-index: 1; /* Ensure this is below the circle */
 }
-
 
 .hero .text-block {
   position: absolute;
@@ -115,50 +127,104 @@
 }
 
 .hero .text-block h1 {
-  font-size: 40px;
+  font-size: 40px; /* Ajusta el tamaño del título */
   margin: 0;
   font-weight: bold;
 }
 
 .hero .text-block p {
-  font-size: 40px;
+  font-size: 30px; /* Ajusta el tamaño del texto */
   margin: 0;
 }
 
 .hero .button {
   position: absolute;
   bottom: 10%;
-  margin-bottom: 150px;
+  margin-bottom: 50px; /* Ajusta el margen según sea necesario */
   right: 10%;
   padding: 15px 30px;
   background-color: rgb(244, 246, 239);
-  color:  rgb(123, 45, 116);
+  color: rgb(123, 45, 116);
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   border: none;
   border-radius: 40px;
   cursor: pointer;
-
 }
+
 .hero .button:hover {
-  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
-  color :rgb(244, 246, 239);
+  background-color: rgb(75, 105, 84);
+  color: rgb(244, 246, 239);
 }
 
-.TextosSubTitulos{
-  color : rgb(75, 105, 84);
+.hero .slogan {
+  color: rgb(121, 161, 130);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.cut-bottom {
+  position: absolute;
+  bottom: -5%; /* Ajusta este valor para bajar más el contenedor */
+  width: 100%;
+  height: 100px; /* Ajusta esta altura según necesites */
+  background-color: #f0f0f0; /* Color de fondo de la página o del hero */
+}
+
+
+
+
+
+.section-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textSubTitles {
+  color: rgb(75, 105, 84);
   font-size: 36px;
   font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
 }
-.TextosSubTitulosSmall{
-  color : rgb(75, 105, 84);
-  font-size: 24px;
+
+.textSubTitlesSmall {
+  color: rgb(75, 105, 84);
+  font-size: 24px; /* Ajusta el tamaño según sea necesario */
   font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  text-align: center;
+  padding: 5px;
 }
-.textosSmall{
-  color : rgb(75, 105, 84);
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+/*Sección iconos*/
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* Espacio entre los iconos */
+  width: 100%; /* Ajusta el ancho del contenedor */
+}
+
+.icon-container {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.icon {
+  width: 80px; /* Ajusta el ancho del icono */
+  height: 80px; /* Ajusta la altura del icono */
+ /* filter: invert(35%) sepia(20%) saturate(800%) hue-rotate(250deg) brightness(100%) contrast(90%); /* Ajusta el color del icono */
+}
+
+.icon-text {
+  max-width: 200px; /* Ajusta el ancho del texto */
+  margin: 0 auto;
+  color: rgb(75, 105, 84); /* Color del texto */
+  font-size: 14px; /* Tamaño del texto */
 }
 
 /* Metodología de Trabajo */
@@ -468,5 +534,86 @@ body {
   background-color: rgb(75, 105, 84); /* Color al hacer hover (verde) */
   transform: translateY(-5px);
 }
+@media (max-width: 1440px) {
+     .cut-bottom{ 
+      display: none;
+    }
+}
 
-    
+    /* Media query para tablets */
+@media (max-width: 1024px) {
+  .circleHero {
+    display: none; /* Oculta completamente el círculo en tablets */
+  }
+
+  .vectors {
+    display: none; /* Oculta el patrón vector en tablets */
+  }
+
+  .hero .text-block {
+    top: 30%;
+    right: 5%;
+    text-align: right;
+  }
+
+  .hero .text-block h1,
+  .hero .text-block p {
+    font-size: 24px; /* Ajusta el tamaño del texto para tablets */
+  }
+
+  .hero .button {
+    bottom: 5%;
+    margin-bottom: 30px;
+    right: 5%;
+  }
+
+  .hero .slogan {
+    font-size: 18px; /* Ajusta el tamaño del slogan para tablets */
+  }
+}
+
+/* Media query para celulares */
+@media (max-width: 768px) {
+  .circleHero {
+    display: none; /* Oculta completamente el círculo en celulares */
+  }
+
+  .vectors {
+    display: none; /* Oculta el patrón vector en celulares */
+  }
+
+  .hero .text-block {
+    top: 20%;
+    right: 5%;
+    text-align: right;
+  }
+
+  .hero .text-block h1,
+  .hero .text-block p {
+    font-size: 20px; /* Ajusta el tamaño del texto para celulares */
+  }
+
+  .hero .button {
+    bottom: 5%;
+    margin-bottom: 30px;
+    right: 5%;
+  }
+
+  .hero .slogan {
+    font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
+  }
+
+  .icon-row {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra los iconos en la columna */
+    gap: 40px; /* Ajusta el espacio entre los iconos */
+  }
+
+  .icon-container {
+    padding-bottom: 40px; /* Ajusta el espacio inferior para cada icono */
+  }
+
+  .icon-text {
+    font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+}
