@@ -362,6 +362,149 @@
   background-color: rgb(151, 91, 146); /* Color de fondo al pasar el mouse */
   border-color: rgb(151, 91, 146) ; /* Color del borde al pasar el mouse */
 }
+/*Formulario*/
+.form-container {
+  background-color: rgb(121, 161, 130);
+  border-radius: 60px;
+  padding: 80px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.form-h2{
+  color: rgb(75, 105, 84);
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  padding-bottom: 60px;
+}
+.form-container input,
+.form-container textarea {
+  border-radius: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+}
+.form-container label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.form-container button {
+  background-color: rgb(123, 45, 116);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+}
+.form-container button:hover {
+  background-color: white;
+  color:  rgb(123, 45, 116);
+}
+.contact-info {
+  /* background-color: white;
+  
+  border-radius: 20px; */
+  padding: 0px;
+  margin-left: 0px;
+  text-align: center;
+}
+.contact-info h2 {
+  color: rgb(121, 161, 130);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+.contact-info img {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.contact-info p {
+  font-size: 16px;
+  color: rgb(121, 161, 130);
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left; /* Alinea el texto a la izquierda */
+  display: flex; /* Usa flexbox para alinear ícono y texto */
+  height: 30px;
+  padding-left: 80px;
+ 
+}
+
+.contact-info .icon {
+  color: rgb(0,0,0);
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+  
+}
+
+
+
+
+/* Aplicar bordes a todas las secciones */
+
+/*.container
+{
+    border: 2px solid black;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Estilos de las tarjetas */
+.card {
+  background-color: rgb(123, 45, 116);
+  color: #fff;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color y transform */
+  width: 250px;  
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra contenido verticalmente */
+  align-items: center; /* Centra contenido horizontalmente */
+  text-align: center; /* Alinea texto al centro */
+}
+
+.card-body {
+  margin-top: 60px; /* Empuja el contenido hacia abajo */
+}
+
+.card-text {
+  font-size: 14px; /* Tamaño del texto */
+  margin-top: auto; /* Elimina el margen superior predeterminado */
+}
+
+.card:hover {
+  background-color: rgb(75, 105, 84); /* Color al hacer hover (verde) */
+  transform: translateY(-5px);
+}
+
+
 
 /* Estilos del footer */
 .footer {
@@ -487,53 +630,7 @@
 
 
 
-/* Aplicar bordes a todas las secciones */
 
-.container
-{
-    border: 2px solid black;
-}
-
-/* Estilos generales del cuerpo */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-}
-
-/* Estilos de las tarjetas */
-.card {
-  background-color: rgb(123, 45, 116);
-  color: #fff;
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color y transform */
-  width: 250px;  
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra contenido verticalmente */
-  align-items: center; /* Centra contenido horizontalmente */
-  text-align: center; /* Alinea texto al centro */
-}
-
-.card-body {
-  margin-top: 60px; /* Empuja el contenido hacia abajo */
-}
-
-.card-text {
-  font-size: 14px; /* Tamaño del texto */
-  margin-top: auto; /* Elimina el margen superior predeterminado */
-}
-
-.card:hover {
-  background-color: rgb(75, 105, 84); /* Color al hacer hover (verde) */
-  transform: translateY(-5px);
-}
 @media (max-width: 1440px) {
      .cut-bottom{ 
       display: none;
