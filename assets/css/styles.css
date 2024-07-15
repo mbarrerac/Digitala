@@ -1,7 +1,7 @@
 /* BORDES */
 .container
 {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 /* Body */
@@ -244,6 +244,7 @@ body {
   justify-content: center; /* Centra contenido verticalmente */
   align-items: center; /* Centra contenido horizontalmente */
   text-align: center; /* Alinea texto al centro */
+  margin: 0 auto;
 }
 
 .card-body {
@@ -265,9 +266,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 180px;
   gap: 50px;
-  background-color: #F4F6EF;
+  background-color: rgb(244, 246, 239);
 }
 
 .metodologia h2 {
@@ -275,6 +275,7 @@ body {
   color: rgb(75, 105, 84);
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  margin-top: 40px;
 }
 
 .metodologia-imagen {
@@ -291,19 +292,14 @@ body {
 
 .metodologia p {
   font-size: 16px;
-  color: rgb(75, 105, 84);
   font-family: 'Poppins', sans-serif;
   text-align: justify;
 }
 
-.metodologia ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
+
 
 .metodologia ul li {
   font-size: 16px;
-  color: rgb(75, 105, 84);
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
 }
@@ -313,39 +309,58 @@ body {
   justify-content: space-around;
   width: 100%;
   margin-top: 40px;
+  border: 5px solid green;
 }
 
-.role {
-  flex: 1;
-  max-width: 45%;
-  text-align: left;
-}
-
-.role h2 {
+.rol h2 {
   font-size: 24px;
-  color: rgb(75, 105, 84);
   font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.role ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.role ul li {
-  font-size: 16px;
-  color: rgb(75, 105, 84);
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 10px;
+.rol {
+  flex: 1;
+  text-align: left; 
+  color:red;
+  border: 2px solid red;
 }
 
 /* Nosotros */
+#nosotros .img-container {
+  padding: 0px;
+  margin: 0px;
+  border: 5px solid red;
+}
+
+#nosotros img {
+  max-width: 100%; /* Ancho máximo del 100% del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+#nosotros h2 {
+  text-align: center; /* Alineación del título al centro */
+  margin-top: 20px; /* Espacio inferior entre el título y el párrafo */
+}
+
+#nosotros p {
+  text-align: center; /* Alineación del párrafo al centro */
+  margin: 20px 0; /* Espacio inferior para separar del botón */
+  white-space: pre-line; /* Para mantener los saltos de línea */
+}
+
+#nosotros .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  padding: 0;
+}
 
 /* Nuestro Equipo */
 .carousel-item {
   text-align: center;
+  background-color: red;
 }
 
 .carousel-caption {
@@ -579,7 +594,7 @@ body {
 .footer-paragraph {
   color: #fff;
   text-align: justify;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .social-icons-container {
