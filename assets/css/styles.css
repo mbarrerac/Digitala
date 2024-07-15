@@ -1,4 +1,17 @@
-/* Estilos del navar */
+/* BORDES */
+.container
+{
+    border: 2px solid black;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+/* Navar */
 .navbar {
   background-color: rgb(244, 246, 239); /* Color de fondo del navbar */
 }
@@ -51,19 +64,8 @@
   display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
   align-items: center; /* Alinea verticalmente los elementos */
 }
-/* Hero Section */
-/* Hero Section */
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url('/assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  padding-left: 5%; /* Ajusta el padding según sea necesario */
-  display: none;
-}
 
-/* Estilos generales para la hero section */
+/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -171,10 +173,6 @@
   background-color: #f0f0f0; /* Color de fondo de la página o del hero */
 }
 
-
-
-
-
 .section-centered {
   display: flex;
   flex-direction: column;
@@ -200,6 +198,7 @@
   text-align: center;
   padding: 5px;
 }
+
 /*Sección iconos*/
 .icon-row {
   display: flex;
@@ -225,6 +224,40 @@
   margin: 0 auto;
   color: rgb(75, 105, 84); /* Color del texto */
   font-size: 14px; /* Tamaño del texto */
+}
+
+/* Que ofrecemos */
+.card {
+  background-color: rgb(123, 45, 116);
+  color: #fff;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color y transform */
+  width: 250px;  
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra contenido verticalmente */
+  align-items: center; /* Centra contenido horizontalmente */
+  text-align: center; /* Alinea texto al centro */
+}
+
+.card-body {
+  margin-top: 60px; /* Empuja el contenido hacia abajo */
+}
+
+.card-text {
+  font-size: 14px; /* Tamaño del texto */
+  margin-top: auto; /* Elimina el margen superior predeterminado */
+}
+
+.card:hover {
+  background-color: rgb(171, 188, 7); /* Color al hacer hover (verde) */
+  transform: translateY(-5px);
 }
 
 /* Metodología de Trabajo */
@@ -255,7 +288,6 @@
   height: auto;
   margin: 40px 0;
 }
-
 
 .metodologia p {
   font-size: 16px;
@@ -309,7 +341,9 @@
   margin-bottom: 10px;
 }
 
-/* Estilos del Nuestro Equipo */
+/* Nosotros */
+
+/* Nuestro Equipo */
 .carousel-item {
   text-align: center;
 }
@@ -362,6 +396,7 @@
   background-color: rgb(151, 91, 146); /* Color de fondo al pasar el mouse */
   border-color: rgb(151, 91, 146) ; /* Color del borde al pasar el mouse */
 }
+
 /*Formulario*/
 .form-container {
   background-color: rgb(121, 161, 130);
@@ -406,12 +441,12 @@
 }
 .contact-info {
   /* background-color: white;
-  
   border-radius: 20px; */
   padding: 0px;
   margin-left: 0px;
   text-align: center;
 }
+
 .contact-info h2 {
   color: rgb(121, 161, 130);
   font-size: 16px;
@@ -424,6 +459,7 @@
   padding-bottom: 40px;
   padding-left: 20px;
 }
+
 .contact-info img {
   max-width: 100%;
   width: 200px;
@@ -432,6 +468,7 @@
   margin: 0 auto;
   padding-bottom: 40px;
 }
+
 .contact-info p {
   font-size: 16px;
   color: rgb(121, 161, 130);
@@ -441,7 +478,6 @@
   display: flex; /* Usa flexbox para alinear ícono y texto */
   height: 30px;
   padding-left: 80px;
- 
 }
 
 .contact-info .icon {
@@ -450,63 +486,9 @@
   height: 30px;
   vertical-align: middle;
   margin-right: 5px;
-  
 }
 
-
-
-
-/* Aplicar bordes a todas las secciones */
-
-/*.container
-{
-    border: 2px solid black;
-}
-
-/* Estilos generales del cuerpo */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-}
-
-/* Estilos de las tarjetas */
-.card {
-  background-color: rgb(123, 45, 116);
-  color: #fff;
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color y transform */
-  width: 250px;  
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra contenido verticalmente */
-  align-items: center; /* Centra contenido horizontalmente */
-  text-align: center; /* Alinea texto al centro */
-}
-
-.card-body {
-  margin-top: 60px; /* Empuja el contenido hacia abajo */
-}
-
-.card-text {
-  font-size: 14px; /* Tamaño del texto */
-  margin-top: auto; /* Elimina el margen superior predeterminado */
-}
-
-.card:hover {
-  background-color: rgb(75, 105, 84); /* Color al hacer hover (verde) */
-  transform: translateY(-5px);
-}
-
-
-
-/* Estilos del footer */
+/* Footer */
 .footer {
   background-color: rgb(123, 45, 116);
   padding: 20px 0;
@@ -518,7 +500,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
- 
 }
 
 .footer-row {
@@ -526,11 +507,10 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
 .footer-left{
-    flex: 2; /* La primera sección ocupa más espacio */
+    flex: 2;
     text-align: center;
     box-sizing: border-box;
     display: flex;
@@ -539,35 +519,31 @@ body {
   }
 
 .footer-middle{
-  flex: 2; /* La primera sección ocupa más espacio */
+  flex: 2; 
   text-align: center;
   box-sizing: border-box;
-  border: 5px solid black; 
-  
 }
 
 .footer-right {
-  flex: 1; /* La tercera sección ocupa menos espacio */
+  flex: 1; 
   text-align: center;
   box-sizing: border-box;
 }
 
 .circle-logo {
-  max-width: 300px; /* Tamaño máximo del círculo */
+  max-width: 300px; 
   position: relative;
   background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .circle-image {
   border-radius: 50%;
-  width: 300px; /* Ajustar tamaño de la imagen dentro del círculo */
+  width: 300px; 
   height: 300px;
-  border: 5px solid black; 
 }
 
 .footer-links-container {
@@ -577,7 +553,8 @@ body {
 
 .footer-links-column {
   flex: 1;
-  margin: 0 5%; /* Margen relativo */
+  margin-top: 30px; 
+  white-space: nowrap;
 }
 
 .footer-links {
@@ -587,7 +564,7 @@ body {
 
 .footer-links li {
   margin-bottom: 10px;
-  border: 2px solid black; 
+  text-align: justify;
 }
 
 .footer-links a {
@@ -601,9 +578,8 @@ body {
 
 .footer-paragraph {
   color: #fff;
-  text-align: center;
+  text-align: justify;
   margin-top: 20px;
-  border: 2px solid black; 
 }
 
 .social-icons-container {
@@ -611,13 +587,13 @@ body {
   justify-content: center;
   position: relative;
   width: 100%;
-  border: 2px solid red; 
+  margin-top: 175px;
 }
 
 .social-icon {
-  margin: 0 2%; /* Espaciado relativo */
-  width: 5%; /* Tamaño relativo */
-  max-width: 50px; /* Tamaño máximo para pantallas grandes */
+  margin: 0 2%; 
+  width: 100%; 
+  max-width: 50px; 
 }
 
 .footer-right p {
@@ -625,11 +601,8 @@ body {
   margin: 0;
   position: relative;
   white-space: nowrap;
-  border: 2px solid red; 
+  margin-top: 60px;
 }
-
-
-
 
 @media (max-width: 1440px) {
      .cut-bottom{ 
@@ -712,5 +685,34 @@ body {
 
   .icon-text {
     font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+
+  .footer-links-column {
+    flex: 1;
+    margin: 0; 
+    white-space: normal; /* Permitir el salto de línea si es necesario en pantallas pequeñas */
+  }
+  
+  .footer-paragraph,
+  .footer-links {
+    text-align: left; 
+    padding: 10px; 
+  }
+
+  .social-icons-container {
+  margin-top: 0px; 
+  }
+
+  .footer-right p {
+  margin-top: 0px; 
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+    text-align: left; 
+  }
+
+  .footer-links a {
+    display: inline; 
   }
 }
