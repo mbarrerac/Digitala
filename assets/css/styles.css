@@ -1,16 +1,29 @@
 /* BORDES */
-/* .container
+ .container
 {
   border: 2px solid black;
-} */
-
+}
 
 /* Body */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   /* background-color: #f0f0f0; */
-
   margin: 0;
+}
+
+.banner{
+  background-color: rgb(121, 161, 130);
+  color: rgb(255, 255, 255);
+  font-weight: bold; /* Texto en negrita */
+  font-family: 'Poppins', sans-serif;
+  padding: 60px;
+  border: 2px solid black;
+  margin-top:-50px;
+}
+
+#banner h2 {
+  display: inline-block; 
+  margin: 0 auto; 
 }
 
 /* Navar */
@@ -208,7 +221,6 @@ body {
   align-items: center;
   gap: 80px; /* Espacio entre los iconos */
   width: 100%; /* Ajusta el ancho del contenedor */
-  
 }
 
 .icon-container {
@@ -219,7 +231,6 @@ body {
 .icon {
   width: 80px; /* Ajusta el ancho del icono */
   height: 80px; /* Ajusta la altura del icono */
-  
  /* filter: invert(35%) sepia(20%) saturate(800%) hue-rotate(250deg) brightness(100%) contrast(90%); /* Ajusta el color del icono */
 }
 
@@ -256,6 +267,13 @@ body {
   margin-top: 60px; /* Empuja el contenido hacia abajo */
 }
 
+#que-ofrecemos h2.text-center{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  color: rgb(75, 105, 84); 
+  margin-bottom: 60px;
+}
+
 .card-text {
   font-size: 14px; /* Tamaño del texto */
   margin-top: auto; /* Elimina el margen superior predeterminado */
@@ -276,11 +294,11 @@ body {
 }
 
 .metodologia h2 {
-  font-size: 36px;
-  color: rgb(75, 105, 84);
   font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
   text-align: center;
-  margin-top: 40px;
+  color: rgb(75, 105, 84);
+
 }
 
 .metodologia-imagen {
@@ -300,8 +318,6 @@ body {
   font-family: 'Poppins', sans-serif;
   text-align: justify;
 }
-
-
 
 .metodologia ul li {
   font-size: 16px;
@@ -331,6 +347,27 @@ body {
   border: 2px solid red;
 }
 
+/* Nuestras certificaciones*/
+.textTitles{
+  color: rgb(75, 105, 84);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  padding-bottom: 100px;
+} 
+
+.textTitlesSmall {
+  color: rgb(75, 105, 84);
+  font-size: 20px; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  padding: 20px;
+}
+
+.img-fluid{
+  width: 150px;
+  height: 150px;
+}
+
 /* Nosotros */
 #nosotros .img-container {
   padding: 0px;
@@ -344,8 +381,11 @@ body {
 }
 
 #nosotros h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  color: rgb(75, 105, 84); 
   text-align: center; /* Alineación del título al centro */
-  margin-top: 20px; /* Espacio inferior entre el título y el párrafo */
+  margin-bottom: 20px;
 }
 
 #nosotros p {
@@ -363,9 +403,19 @@ body {
 }
 
 /* Nuestro Equipo */
+#nuestro-equipo {
+  background-color: rgb(244, 246, 239);
+}
+
+#nuestro-equipo h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  color: rgb(75, 105, 84); 
+  margin-bottom: 20px;
+}
+
 .carousel-item {
   text-align: center;
-  background-color: red;
 }
 
 .carousel-caption {
@@ -426,13 +476,14 @@ body {
   height: 100%;
   color: white;
 }
+
 .form-h2{
   color: rgb(75, 105, 84);
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
   padding-bottom: 60px;
 }
+
 .form-container input,
 .form-container textarea {
   border-radius: 20px;
@@ -440,10 +491,12 @@ body {
   width: 100%;
   border: none;
 }
+
 .form-container label {
   font-weight: bold;
   font-size: 20px;
 }
+
 .form-container button {
   background-color: rgb(123, 45, 116);
   color: white;
@@ -455,10 +508,12 @@ body {
   margin: 20px;
   padding: 10px 20px;
 }
+
 .form-container button:hover {
   background-color: white;
   color:  rgb(123, 45, 116);
 }
+
 .contact-info {
   /* background-color: white;
   border-radius: 20px; */
@@ -472,7 +527,6 @@ body {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
-
   max-width: 70%;
   margin: 0 auto;
   padding-top: 20px;
@@ -738,22 +792,3 @@ body {
 }
 
 
-/* Nuestras certificaciones*/
-.textTitles{
-  font-size: 36px;
-  padding-bottom: 100px;
-  color: rgb(75, 105, 84);
-  font-family: 'Poppins', sans-serif;
-} 
-.textTitlesSmall {
-  color: rgb(75, 105, 84);
-  font-size: 20px; 
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold; 
-  padding: 20px;
-}
-
-.img-fluid{
-  width: 150px;
-  height: 150px;
-}
