@@ -1,8 +1,8 @@
 /* BORDES */
-.container
+/* .container
 {
   border: 2px solid black;
-}
+} */
 
 /* Body */
 body {
@@ -206,6 +206,7 @@ body {
   align-items: center;
   gap: 80px; /* Espacio entre los iconos */
   width: 100%; /* Ajusta el ancho del contenedor */
+  
 }
 
 .icon-container {
@@ -216,10 +217,12 @@ body {
 .icon {
   width: 80px; /* Ajusta el ancho del icono */
   height: 80px; /* Ajusta la altura del icono */
+  
  /* filter: invert(35%) sepia(20%) saturate(800%) hue-rotate(250deg) brightness(100%) contrast(90%); /* Ajusta el color del icono */
 }
 
 .icon-text {
+  padding-top: 50px;
   max-width: 200px; /* Ajusta el ancho del texto */
   margin: 0 auto;
   color: rgb(75, 105, 84); /* Color del texto */
