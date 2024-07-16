@@ -8,7 +8,8 @@
 /* Body */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+
   margin: 0;
 }
 
@@ -734,4 +735,25 @@ body {
   .footer-links a {
     display: inline; 
   }
+}
+
+
+/* Nuestras certificaciones*/
+.textTitles{
+  font-size: 36px;
+  padding-bottom: 100px;
+  color: rgb(75, 105, 84);
+  font-family: 'Poppins', sans-serif;
+} 
+.textTitlesSmall {
+  color: rgb(75, 105, 84);
+  font-size: 20px; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  padding: 20px;
+}
+
+.img-fluid{
+  width: 150px;
+  height: 150px;
 }
