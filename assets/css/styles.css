@@ -308,7 +308,7 @@ body {
 .metodologia-imagen img {
   display: inline-block; /* Asegura que la imagen se comporte como bloque inline */
   vertical-align: middle; /* Centra verticalmente */
-  max-width: 100%;
+  width: 80%;
   height: auto;
   margin: 40px 0;
 }
@@ -372,7 +372,6 @@ body {
 #nosotros .img-container {
   padding: 0px;
   margin: 0px;
-  border: 5px solid red;
 }
 
 #nosotros img {
