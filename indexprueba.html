@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #3F4942;
+        }
+        .project-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .project-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 15px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-overlay {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container project-section">
+        <h2 class="project-title">Algunos Proyectos</h2>
+        <div class="row">
+            <div class="col-md-4 project-card">
+                <div class="project-image" style="background-image: url('assets/img/nosotros.png');">
+                    <div class="project-overlay">Industria Salmonera</div>
+                </div>
+                <p>Plataforma de precios para clientes.</p>
+            </div>
+            <div class="col-md-4 project-card">
+                <div class="project-image" style="background-image: url('assets/img/nosotros.png');">
+                    <div class="project-overlay">Industria Acústica</div>
+                </div>
+                <p>Plataforma de transcripción de audio a texto.</p>
+            </div>
+            <div class="col-md-4 project-card">
+                <div class="project-image" style="background-image: url('assets/img/nosotros.png');">
+                    <div class="project-overlay">Industria Salmonera</div>
+                </div>
+                <p>Plataforma cálculo costo materias primas y proyección por semestre y quarter.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
