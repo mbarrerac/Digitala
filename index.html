@@ -471,7 +471,7 @@
                           <ul class="list-unstyled">
                               <li><a href="#testimonios" class="text-a-footer">Testimonios</a></li>
                               <li><a href="#nosotros" class="text-a-footer">Nosotros</a></li>
-                              <li><a href="#contacto" class="text-a-footer">Preguntas Frecuentes</a></li>
+                              <li><a href="#" class="text-a-footer" data-toggle="modal" data-target="#faqModal">Preguntas Frecuentes</a></li>
                           </ul>
                       </div>
                   </div>
@@ -492,6 +492,70 @@
           </div>
       </div>
   </footer>
+
+  <!-- Preguntas Frecuentes Modal -->
+<div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="faqModalLabel">Preguntas Frecuentes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="faqAccordion">
+          <div>
+            <div id="faqHeading1">
+              <h5>
+                <button type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  Pregunta 1: Lorem ipsum 
+                </button>
+              </h5>
+            </div>
+            <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+              <div>
+                Dolor sit amet consectetur adipisicing elit. Ipsum tempore doloribus unde velit qui. Qui autem exercitationem reprehenderit hic itaque at ex laudantium necessitatibus molestiae maiores. Velit maxime odit dicta.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="faqHeading2">
+              <h5>
+                <button class="collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  Pregunta 2: Lorem ipsum 
+                </button>
+              </h5>
+            </div>
+            <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+              <div>
+                Dolor sit amet consectetur adipisicing elit. Ipsum tempore doloribus unde velit qui. Qui autem exercitationem reprehenderit hic itaque at ex laudantium necessitatibus molestiae maiores. Velit maxime odit dicta.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="faqHeading3">
+              <h5>
+                <button class="collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  Pregunta 3: Lorem ipsum
+                </button>
+              </h5>
+            </div>
+            <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+              <div>
+                Dolor sit amet consectetur adipisicing elit. Ipsum tempore doloribus unde velit qui. Qui autem exercitationem reprehenderit hic itaque at ex laudantium necessitatibus molestiae maiores. Velit maxime odit dicta.
+              </div>
+            </div>
+          </div>
+          <!-- Más preguntas frecuentes -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
