@@ -84,7 +84,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('/assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;
+  background: url('/assets/img/archipielagoChiloe1.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   padding-left: 5%; /* Ajusta el padding según sea necesario */
@@ -107,22 +107,28 @@ body {
 }
 
 .circleHero img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 
 .circleHero p {
   color: rgb(121, 161, 130);
   font-size: 24px;
   font-weight: 700;
-  margin: 10px 0 0 0;
-  padding-top: 0;
-  padding-bottom: 80px;
+  text-align: center;
+ 
+
+}
+.hero .slogan {
+  color: rgb(121, 161, 130);
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 90px;
+
 }
 
-.circleHero .slogan {
-  margin: 10px 0;
-}
 
 .vectors {
   position: absolute;
@@ -151,7 +157,7 @@ body {
 
 .hero .text-block p {
   font-size: 30px; /* Ajusta el tamaño del texto */
-  margin: 0;
+
 }
 
 .hero .button {
@@ -174,15 +180,10 @@ body {
   color: rgb(244, 246, 239);
 }
 
-.hero .slogan {
-  color: rgb(121, 161, 130);
-  font-size: 24px;
-  font-weight: 700;
-  margin: 10px 0;
-}
+
 .cut-bottom {
   position: absolute;
-  bottom: -1.5%; /* Ajusta este valor para bajar más el contenedor */
+  bottom: -2.5%; /* Ajusta este valor para bajar más el contenedor */
   width: 100%;
   height: 80px; /* Ajusta esta altura según necesites */
   background-color: #fff; /* Color de fondo de la página o del hero */
@@ -442,6 +443,13 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
 }
+#testimonios .carousel-control-prev{
+  margin-left: -8%;
+}
+#testimonios .carousel-control-next{
+
+  margin-right: -8%;
+}
 
 
 /* Nosotros */
@@ -516,13 +524,27 @@ body {
 }
 
 
+#equipo .carousel-control-prev{
+
+  margin-left: -8%;
+
+}
+#equipo .carousel-control-next{
+
+  margin-right: -8%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 8 8%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M4.5 0L0 4l4.5 4L6 6.5 2.5 4 6 1.5z%22/%3E%3C/svg%3E');
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 8 8%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M3.5 0L8 4 3.5 8 2 6.5 5.5 4 2 1.5z%22/%3E%3C/svg%3E');
+}
 
 
 
 
-
-
-/* Nuestro Equipo */
 #nuestro-equipo {
   background-color: rgb(244, 246, 239);
 }
@@ -535,6 +557,7 @@ body {
 }
 
 .carousel-item {
+
   text-align: center;
 }
 
@@ -781,15 +804,56 @@ body {
 /* Dispositivos pequeños (teléfonos en modo vertical) */
 @media (max-width: 576px) {
   /* Estilos para teléfonos */
+  .custom-toggler {
+    margin-left: auto;
+    margin-top: -80px /* Ajusta el valor según sea necesario */
+  }
   .circleHero {
-    display: none; /* Oculta completamente el círculo en celulares */
+    top: 15%; 
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    right: -10%;
+      
   }
   .vectors {
-    display: none; /* Oculta el patrón vector en celulares */
+    display: none;
+  
   }
-  .circle-logo {
-    width: 150px;
-    height: 150px;
+
+  .cut-bottom {
+    display: none;
+    
+  }
+
+  .hero .text-block {
+    top: 20%;
+    right: 20%;
+    text-align: center;
+  }
+
+  .hero .text-block h1,
+  .hero .text-block p {
+    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+  }
+
+
+  .hero .button {
+   
+    margin-bottom: 100%;
+    right: 40%;
+  }
+  .hero .slogan {
+    font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
+    position: absolute;
+    margin-top: 60%;
+    text-align: center;
+  }
+  .circleHero img {
+
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 60%;
   }
 
   .social-icons-container img {
@@ -800,7 +864,7 @@ body {
       font-size: 14px;
   }
   .textFooter{
-   padding-left: 40px;
+   padding-left: 60px;
   }
   .card{
     margin-left: 50px;
@@ -823,37 +887,61 @@ body {
 }
 
 /* Dispositivos medianos (teléfonos grandes en modo vertical, tablets en modo vertical y horizontal) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   /* Estilos para teléfonos grandes y tablets */
-  .circleHero {
-    display: none; /* Oculta completamente el círculo en celulares */
+
+  .custom-toggler {
+    margin-left: auto;
+    margin-top: -80px /* Ajusta el valor según sea necesario */
   }
 
+  .circleHero {
+    top: 15%; 
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    right: -10%;
+   
+  }
   .vectors {
-    display: none; /* Oculta el patrón vector en celulares */
+    display: none;
+  
+  }
+
+  .cut-bottom {
+    display: none;
+    
   }
 
   .hero .text-block {
     top: 20%;
-    right: 5%;
-    text-align: right;
+    right: 20%;
+    text-align: center;
   }
 
   .hero .text-block h1,
   .hero .text-block p {
-    font-size: 20px; /* Ajusta el tamaño del texto para celulares */
+    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
   }
 
   .hero .button {
-    bottom: 5%;
-    margin-bottom: 30px;
-    right: 5%;
+   
+    margin-bottom: 100%;
+    right: 40%;
   }
 
   .hero .slogan {
     font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
+    position: absolute;
+    margin-top: 80%;
+    text-align: center;
   }
+  .circleHero img {
 
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30%;
+  }
   .icon-row {
     flex-direction: column; /* Cambia la dirección a columna */
     align-items: center; /* Centra los iconos en la columna */
@@ -871,47 +959,92 @@ body {
   #carousel-caption {
     justify-content: flex-start;
     height: auto;
-    color: brown;
-  }
+   }
  /*Nuestro equipo*/ 
 
   #equipo .carousel-caption{
     justify-content:flex-start ;
   }
+  .textFooter{
+    padding-left: 100px;
+   }
 }
 
 
 /* Dispositivos grandes (tablets en modo horizontal, pequeños dispositivos de escritorio) */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   /* Estilos para tablets en horizontal y pequeños dispositivos de escritorio */
+  .custom-toggler {
+    margin-left: auto;
+    margin-top: 20px /* Ajusta el valor según sea necesario */
+  }
+  .circleHero {
+    top: 20%; 
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    margin-left: 15%;
+   
+  }
+  .vectors {
+    display:none
+  
+  }
+  .cut-bottom{
+    display: none;
+  }
+  .hero .button {
+   
+    margin-bottom: 70%;
+    margin-right: 30%;
+  }
+  .hero .text-block {
+    top: 20%;
+    right: 5%;
+    text-align: right;
+  }
+
+  #pFooter{
+    font-size: 10px;
+  }
 }
 
 
 /* Escritorios y laptops (pantallas de tamaño mediano a grande) */
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   /* Estilos para escritorios y laptops */
   .circleHero {
-    display: none; /* Oculta completamente el círculo en tablets */
+    top: 5%; 
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+   
   }
   .vectors {
-    display: none; /* Oculta el patrón vector en tablets */
+     display:none
+  
+  }
+
+  .cut-bottom {
+    display: none;
+    
   }
 
   .hero .text-block {
-    top: 30%;
+    top: 40%;
     right: 5%;
     text-align: right;
   }
 
   .hero .text-block h1,
   .hero .text-block p {
-    font-size: 24px; /* Ajusta el tamaño del texto para tablets */
+    font-size: 30px; /* Ajusta el tamaño del texto para tablets */
   }
 
   .hero .button {
-    bottom: 5%;
+    bottom: 35%;
     margin-bottom: 30px;
-    right: 5%;
+    right: 10%;
   }
 
   .hero .slogan {
@@ -920,20 +1053,37 @@ body {
  
 }
 /* Dispositivos extra grandes (pantallas grandes como monitores de escritorio) */
-@media (min-width: 1201px) and (max-width: 1441px) {
+@media (min-width: 1200px) and (max-width: 1441px) {
   /* Estilos para pantallas grandes */
+  .navbar-brand img {
+    width: 100%; /* Tamaño del logo */
+  }
+
+  .circleHero {
+    top: 5%; 
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
   
-  .circle-logo {
-    width: 150px;
-    height: 150px;
- }
+  }
+  .vectors {
+    top: 60%;
+    right: 10%;
+    left: 38%;
+    max-width: 40%;
+  
+  }
+.cut-bottom{
+  display: none;
+}
+  
 
 .textFooter{
-  padding-left: 90px;
-  }
-  .card{
+  padding-left: 200px;
+ }
+ .card{
     margin-left: 75px;
-  }
+ }
 
   .cut-bottom {
     position: absolute;
@@ -944,33 +1094,3 @@ body {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
