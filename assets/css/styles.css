@@ -1,8 +1,4 @@
-/* BORDES */
- /* .container
-{
-  border: 2px solid black;
-} */
+
 
 /* Body */
 body {
@@ -17,7 +13,6 @@ body {
   font-weight: bold; /* Texto en negrita */
   font-family: 'Poppins', sans-serif;
   padding: 60px;
-  border: 2px solid black;
   margin-top:-50px;
 }
 
@@ -58,7 +53,7 @@ body {
 }
 
 .contact-button:hover {
-  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+  background-color: rgb(171, 188, 7); /* Cambio de color al pasar el cursor */
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -176,7 +171,7 @@ body {
 }
 
 .hero .button:hover {
-  background-color: rgb(75, 105, 84);
+  background-color: rgb(171, 188, 7);
   color: rgb(244, 246, 239);
 }
 
@@ -653,8 +648,8 @@ body {
 }
 
 .form-container button:hover {
-  background-color: white;
-  color:  rgb(123, 45, 116);
+  background-color: rgb(171, 188, 7);
+  color:#fff  ;
 }
 
 .contact-info {
@@ -789,17 +784,43 @@ body {
 
 .text-a-footer:hover {
   color:rgb(171, 188, 7);
+  text-decoration: none;
 }
 
 .text-p-footer {
   font-family: 'Poppins', sans-serif;
-  
   font-size: 14px;
   color: #fff; 
   text-align: left;
-
 } 
 
+.faq-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color:#fff;
+  padding: 10px;
+  background-color:rgb(123, 45, 116); 
+  border:solid rgb(123, 45, 116) 2px; 
+  border-radius: 10px;
+}
+.faq-button:hover {
+  background-color: rgb(171, 188, 7) !important; 
+  color:#fff;
+  border:solid rgb(171, 188, 7) 2px;
+}
+
+.cerrar-button {
+  background-color: rgb(123, 45, 116); 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px; 
+}
+
+.cerrar-button:hover {
+  background-color:rgb(171, 188, 7); 
+}
 
 /* Dispositivos pequeños (teléfonos en modo vertical) */
 @media (max-width: 576px) {
@@ -1092,5 +1113,4 @@ body {
     height: 80px; /* Ajusta esta altura según necesites */
     background-color: fff; /* Color de fondo de la página o del hero */
   }
-
 }
