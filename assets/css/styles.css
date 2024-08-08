@@ -468,6 +468,17 @@ body {
 
   margin-right: -8%;
 }
+/*testimonio modal*/
+.custom-color {
+  color: rgb(123, 45, 116);
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.custom-color:hover {
+  color: rgb(171, 188, 7);
+}
 
 
 /* Nosotros */
@@ -893,7 +904,7 @@ body {
  #carousel-caption {
     justify-content: flex-start;
     height: auto;
-    color: brown;
+    /* color: brown; */
   }
  /*Nuestro equipo*/ 
 
