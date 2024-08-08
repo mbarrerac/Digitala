@@ -105,7 +105,7 @@ body {
   background: url('./assets/img/archipielagoChiloe1.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
-  padding-left: 5%; /* Ajusta el padding según sea necesario */
+  padding-left: 5%; 
 }
 
 .circleHero {
@@ -119,9 +119,9 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  margin-right: 5%; /* Adjust the margin as needed */
+  margin-right: 5%; 
   margin-top: 18%;
-  z-index: 2; /* Ensure this is above the pattern vector */
+  z-index: 2; 
 }
 
 .circleHero img {
@@ -155,7 +155,7 @@ body {
   left: 38%;
   max-width: 40%;
   height: auto;
-  z-index: 1; /* Ensure this is below the circle */
+  z-index: 1; 
 }
 
 .hero .text-block {
@@ -168,20 +168,20 @@ body {
 }
 
 .hero .text-block h1 {
-  font-size: 40px; /* Ajusta el tamaño del título */
+  font-size: 40px; 
   margin: 0;
   font-weight: bold;
 }
 
 .hero .text-block p {
-  font-size: 30px; /* Ajusta el tamaño del texto */
+  font-size: 30px; 
 
 }
 
 .hero .button {
   position: absolute;
   bottom: 10%;
-  margin-bottom: 50px; /* Ajusta el margen según sea necesario */
+  margin-bottom: 50px; 
   right: 10%;
   padding: 15px 30px;
   background-color: rgb(244, 246, 239);
@@ -201,10 +201,10 @@ body {
 
 .cut-bottom {
   position: absolute;
-  bottom: -2.5%; /* Ajusta este valor para bajar más el contenedor */
+  bottom: -2.5%; 
   width: 100%;
-  height: 80px; /* Ajusta esta altura según necesites */
-  background-color: #fff; /* Color de fondo de la página o del hero */
+  height: 80px; 
+  background-color: #fff; 
 }
 
 .section-centered {
