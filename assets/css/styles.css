@@ -33,7 +33,7 @@ body {
 .faq-button:hover {
   background-color: rgb(171, 188, 7) !important; 
   color:#fff;
-  border:solid rgb(171, 188, 7) 2px;
+  border:solid rgb(171, 188, 7) 2px  !important; 
   color: #000;
 }
 
