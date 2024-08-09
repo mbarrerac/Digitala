@@ -82,7 +82,8 @@ body {
  
 }
 .navbar-brand img {
-  width: 30%; /* Tamaño del logo */
+  width: auto; /* Tamaño del logo */
+  height: auto;
 }
 
 .navbar-nav .nav-link {
@@ -156,7 +157,7 @@ body {
 .circleHero img {
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .circleHero p {
@@ -172,7 +173,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin-top: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 
 }
 
@@ -861,7 +862,8 @@ body {
 @media (min-width: 1200px) {
   /* Estilos para pantallas de 1200px o más */
     .navbar-brand img {
-      width: 30%; /* Tamaño del logo */
+      width: 50%; /* Tamaño del logo */
+      height: 50%;
     }
   
     .circleHero {
