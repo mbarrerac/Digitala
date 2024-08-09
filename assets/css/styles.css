@@ -102,7 +102,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('../assets/img/archipielagoChiloe1.jpg') no-repeat center center/cover;
+  background: url('/assets/img/archipielagoChiloe1.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   padding-left: 5%; 
@@ -828,97 +828,179 @@ body {
   text-align: left;
 
 } 
-
-
-/* Dispositivos pequeños (teléfonos en modo vertical) */
-@media (max-width: 576px) {
-  /* Estilos para teléfonos */
-  .custom-toggler {
-    margin-left: auto;
-    margin-top: -80px /* Ajusta el valor según sea necesario */
-  }
-  .circleHero {
-    top: 15%; 
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    right: -10%;
-      
-  }
-  .vectors {
-    display: none;
+/*Pantallas Grandes*/
+@media (min-width: 1200px) {
+  /* Estilos para pantallas de 1200px o más */
+    .navbar-brand img {
+      width: 100%; /* Tamaño del logo */
+    }
   
-  }
-
-  .cut-bottom {
-    display: none;
+    .circleHero {
+      top: 5%; 
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
     
+    }
+    .vectors {
+      top: 60%;
+      right: 10%;
+      left: 38%;
+      max-width: 40%;
+    
+    }
+  .cut-bottom{
+    display: none;
   }
-
-  .hero .text-block {
-    top: 20%;
-    right: 20%;
-    text-align: center;
-  }
-
-  .hero .text-block h1,
-  .hero .text-block p {
-    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
-  }
-
-
-  .hero .button {
-   
-    margin-bottom: 100%;
-    right: 40%;
-  }
-  .hero .slogan {
-    font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
-    position: absolute;
-    margin-top: 60%;
-    text-align: center;
-  }
-  .circleHero img {
-
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 60%;
-  }
-
-  .social-icons-container img {
-      max-width: 30px;
-  }
-
-  p {
-      font-size: 14px;
-  }
-  .textFooter{
-   padding-left: 60px;
-  }
-  .card{
-    margin-left: 50px;
-  }
-  /*Testimonio*/ 
-
- 
- #carousel-caption {
-    justify-content: flex-start;
-    height: auto;
-    /* color: brown; */
-  }
- /*Nuestro equipo*/ 
-
-  #equipo .carousel-caption{
-    justify-content:flex-start ;
-  }
-
+    
   
+  .textFooter{
+    padding-left: 200px;
+   }
+   .card{
+      margin-left: 75px;
+   }
+  
+    .cut-bottom {
+      position: absolute;
+      bottom: -9.5%; /* Ajusta este valor para bajar más el contenedor */
+      width: 100%;
+      height: 80px; /* Ajusta esta altura según necesites */
+      background-color: fff; /* Color de fondo de la página o del hero */
+    }
 }
 
-/* Dispositivos medianos (teléfonos grandes en modo vertical, tablets en modo vertical y horizontal) */
-@media (min-width: 576px) and (max-width: 768px) {
-  /* Estilos para teléfonos grandes y tablets */
+/*pantallas medianas*/
+@media (min-width: 992px) {
+    /* Estilos para pantallas de 992px o más */
+     /* Estilos para escritorios y laptops */
+     .circleHero {
+      top: 5%; 
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+     
+    }
+    .vectors {
+       display:none
+    
+    }
+  
+    .cut-bottom {
+      display: none;
+      
+    }
+  
+    .hero .text-block {
+      top: 40%;
+      right: 5%;
+      text-align: right;
+    }
+  
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 30px; /* Ajusta el tamaño del texto para tablets */
+    }
+  
+    .hero .button {
+      bottom: 35%;
+      margin-bottom: 30px;
+      right: 10%;
+    }
+  
+    .hero .slogan {
+      font-size: 18px; /* Ajusta el tamaño del slogan para tablets */
+    }
+}
+/*Tablets grandes (iPad Pro, Surface Pro)*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Estilos para tablets grandes */
+     /* Estilos para pantallas grandes */
+     .navbar-brand img {
+      width: 100%; /* Tamaño del logo */
+    }
+  
+    .circleHero {
+      top: 5%; 
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+    
+    }
+    .vectors {
+      top: 60%;
+      right: 10%;
+      left: 38%;
+      max-width: 40%;
+    
+    }
+  .cut-bottom{
+    display: none;
+  }
+    
+  
+  .textFooter{
+    padding-left: 200px;
+   }
+   .card{
+      margin-left: 75px;
+   }
+  
+    .cut-bottom {
+      position: absolute;
+      bottom: -9.5%; /* Ajusta este valor para bajar más el contenedor */
+      width: 100%;
+      height: 80px; /* Ajusta esta altura según necesites */
+      background-color: fff; /* Color de fondo de la página o del hero */
+    }
+}
+/*Tablets estándar (iPad, Samsung Galaxy Tab)*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets estándar */
+    /* Estilos para escritorios y laptops */
+    .circleHero {
+      top: 5%; 
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+     
+    }
+    .vectors {
+       display:none
+    
+    }
+  
+    .cut-bottom {
+      display: none;
+      
+    }
+  
+    .hero .text-block {
+      top: 40%;
+      right: 5%;
+      text-align: right;
+    }
+  
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 30px; /* Ajusta el tamaño del texto para tablets */
+    }
+  
+    .hero .button {
+      bottom: 35%;
+      margin-bottom: 30px;
+      right: 10%;
+    }
+  
+    .hero .slogan {
+      font-size: 18px; /* Ajusta el tamaño del slogan para tablets */
+    }
+   
+}
 
+/*Teléfonos grandes (iPhone 14 Pro Max, Samsung Galaxy S23 Ultra)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Estilos para teléfonos grandes */
   .custom-toggler {
     margin-left: auto;
     margin-top: -80px /* Ajusta el valor según sea necesario */
@@ -999,58 +1081,27 @@ body {
    }
 }
 
+/*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
+@media (max-width: 575px) {
+  /* Estilos para teléfonos estándar */
 
-/* Dispositivos grandes (tablets en modo horizontal, pequeños dispositivos de escritorio) */
-@media (min-width: 768px) and (max-width: 992px) {
-  /* Estilos para tablets en horizontal y pequeños dispositivos de escritorio */
+  /*NavBar*/
   .custom-toggler {
     margin-left: auto;
-    margin-top: 20px /* Ajusta el valor según sea necesario */
+    margin-top: -80px 
   }
+
+  /*Hero section*/
   .circleHero {
-    top: 20%; 
+    top: 15%; 
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
-    margin-left: 15%;
-   
+    width: 300px;
+    height: 300px;
+    right: -10%;
+      
   }
   .vectors {
-    display:none
-  
-  }
-  .cut-bottom{
     display: none;
-  }
-  .hero .button {
-   
-    margin-bottom: 70%;
-    margin-right: 30%;
-  }
-  .hero .text-block {
-    top: 20%;
-    right: 5%;
-    text-align: right;
-  }
-
-  #pFooter{
-    font-size: 10px;
-  }
-}
-
-
-/* Escritorios y laptops (pantallas de tamaño mediano a grande) */
-@media (min-width: 992px) and (max-width: 1200px) {
-  /* Estilos para escritorios y laptops */
-  .circleHero {
-    top: 5%; 
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-   
-  }
-  .vectors {
-     display:none
   
   }
 
@@ -1060,66 +1111,67 @@ body {
   }
 
   .hero .text-block {
-    top: 40%;
-    right: 5%;
-    text-align: right;
+    /* top: 20%;
+    right: 20%; */
+    margin-top: -90px;
+    margin-left: 20px;
+    text-align: center;
   }
 
   .hero .text-block h1,
   .hero .text-block p {
-    font-size: 30px; /* Ajusta el tamaño del texto para tablets */
+    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
   }
+
 
   .hero .button {
-    bottom: 35%;
-    margin-bottom: 30px;
-    right: 10%;
+   
+    margin-bottom: 100%;
+   margin-right: 20%;
   }
-
   .hero .slogan {
-    font-size: 18px; /* Ajusta el tamaño del slogan para tablets */
-  }
- 
-}
-/* Dispositivos extra grandes (pantallas grandes como monitores de escritorio) */
-@media (min-width: 1200px) and (max-width: 1441px) {
-  /* Estilos para pantallas grandes */
-  .navbar-brand img {
-    width: 100%; /* Tamaño del logo */
-  }
-
-  .circleHero {
-    top: 5%; 
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-  
-  }
-  .vectors {
-    top: 60%;
-    right: 10%;
-    left: 38%;
-    max-width: 40%;
-  
-  }
-.cut-bottom{
-  display: none;
-}
-  
-
-.textFooter{
-  padding-left: 200px;
- }
- .card{
-    margin-left: 75px;
- }
-
-  .cut-bottom {
+    font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
     position: absolute;
-    bottom: -9.5%; /* Ajusta este valor para bajar más el contenedor */
-    width: 100%;
-    height: 80px; /* Ajusta esta altura según necesites */
-    background-color: fff; /* Color de fondo de la página o del hero */
+    margin-top: 70%;
+    text-align: center;
+  }
+  .circleHero img {
+
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40%;
   }
 
+  .social-icons-container img {
+      max-width: 30px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+  .textFooter{
+   padding-left: 60px;
+  }
+  .card{
+    margin-left: 50px;
+  }
+  /*Testimonio*/ 
+
+ 
+ #carousel-caption {
+    justify-content: flex-start;
+    height: auto;
+    /* color: brown; */
+  }
+ /*Nuestro equipo*/ 
+
+  #equipo .carousel-caption{
+    justify-content:flex-start ;
+  }
+  
+  /*Nosotros*/
+  #nosotros h2 {
+       margin-top: 50px;
+       margin-bottom: 50px;
+  }
 }

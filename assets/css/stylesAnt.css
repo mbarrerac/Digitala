@@ -1,0 +1,1215 @@
+/* BORDES */
+ /* .container
+{
+  border: 2px solid black;
+} */
+
+/* Body */
+body {
+    font-family: 'Nunito', sans-serif;
+    /* background-color: #f0f0f0; */
+    margin: 0;
+  }
+  
+  .faq-button{
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(123, 45, 116); 
+    width: 455px;
+    border-radius: 15px; /* Radio de borde */
+    text-align: left;
+  }
+  .cerrar-button{
+    background-color: rgb(123, 45, 116); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Radio de borde */
+    padding: 10px 20px; /* Padding interior */
+  }
+  
+  .cerrar-button:hover {
+    background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+  }
+  .banner{
+    background-color: rgb(121, 161, 130);
+    color: rgb(255, 255, 255);
+    font-weight: bold; /* Texto en negrita */
+    font-family: 'Poppins', sans-serif;
+    padding: 60px;
+    margin-top:-50px;
+  }
+  
+  #banner h2 {
+    display: inline-block; 
+    margin: 0 auto; 
+  }
+  
+  /* Navar */
+  .navbar {
+    background-color: rgb(244, 246, 239); /* Color de fondo del navbar */
+  }
+  .navbar-nav {
+    margin-right: 10rem; /* Desplaza el menú hacia la izquierda */
+   
+  }
+  .navbar-brand img {
+    width: 30%; /* Tamaño del logo */
+  }
+  
+  .navbar-nav .nav-link {
+    margin-left: 10%; /* Espacio entre el logo y los enlaces */
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: rgb(75, 105, 84); /* Color de las letras */
+    font-weight: bold; /* Texto en negrita */
+    font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+  }
+  
+  .contact-button {
+    background-color: rgb(123, 45, 116); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Radio de borde */
+    padding: 10px 20px; /* Padding interior */
+  }
+  
+  .contact-button:hover {
+    background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(123, 45, 116); /* Cambio de color al pasar el cursor */
+  }
+  
+  .navbar-nav .nav-item.active .nav-link {
+    color: rgb(123, 45, 116); /* Color de subrayado activo */
+  }
+  .navbar-nav .nav-item:nth-child(1) .nav-link {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta cualquier texto que sobrepase el espacio disponible */
+    text-overflow: ellipsis; /* Añade puntos suspensivos al final si el texto es demasiado largo */
+  }
+  
+  .navbar-nav .nav-item {
+    white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+    display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('/assets/img/archipielagoChiloe1.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 5%; 
+  }
+  
+  .circleHero {
+    position: relative;
+    background-color: #E0EAE2;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 5%; 
+    margin-top: 18%;
+    z-index: 2; 
+  }
+  
+  .circleHero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .circleHero p {
+    color: rgb(121, 161, 130);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+   
+  
+  }
+  .hero .slogan {
+    color: rgb(121, 161, 130);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 90px;
+  
+  }
+  
+  
+  .vectors {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    left: 38%;
+    max-width: 40%;
+    height: auto;
+    z-index: 1; 
+  }
+  
+  .hero .text-block {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    text-align: right;
+    color: rgb(244, 246, 239);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero .text-block h1 {
+    font-size: 40px; 
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .hero .text-block p {
+    font-size: 30px; 
+  
+  }
+  
+  .hero .button {
+    position: absolute;
+    bottom: 10%;
+    margin-bottom: 50px; 
+    right: 10%;
+    padding: 15px 30px;
+    background-color: rgb(244, 246, 239);
+    color: rgb(123, 45, 116);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .hero .button:hover {
+    background-color: rgb(75, 105, 84);
+    color: rgb(244, 246, 239);
+  }
+  
+  
+  .cut-bottom {
+    position: absolute;
+    bottom: -2.5%; 
+    width: 100%;
+    height: 80px; 
+    background-color: #fff; 
+  }
+  
+  .section-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .textSubTitles {
+    color: rgb(75, 105, 84);
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  .textSubTitlesSmall {
+    color: rgb(75, 105, 84);
+    font-size: 24px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    text-align: center;
+    padding: 5px;
+  }
+  
+  /* Sección iconos */
+  .icon-container {
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  
+  .icon {
+    width: 80px; 
+    height: 80px; 
+    
+  }
+  
+  .icon-text {
+    padding-top: 50px;
+    max-width: 200px; /* Ajusta el ancho del texto */
+    margin: 0 auto;
+    color: rgb(75, 105, 84); /* Color del texto */
+    font-size: 14px; /* Tamaño del texto */
+  }
+  
+  
+  
+  
+  
+  /* Que ofrecemos */
+  
+  .card {
+    margin: 0 !important;
+    background-color: rgb(123, 45, 116);
+    color: #fff;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 250px !important; /* Ancho específico */
+    height: 320px !important; /* Altura específica */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra contenido verticalmente */
+    align-items: center; /* Centra contenido horizontalmente */
+    text-align: center; /* Alinea texto al centro */
+  }
+  
+  .card-body {
+    margin-top: 60px !important; /* Empuja el contenido hacia abajo */
+  }
+  
+  #que-ofrecemos h2.text-center {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 36px !important;
+    color: rgb(75, 105, 84) !important;
+    margin-bottom: 60px !important;
+  }
+  
+  .card-text {
+    font-size: 14px !important; /* Tamaño del texto */
+    margin-top: auto !important; /* Elimina el margen superior predeterminado */
+  }
+  
+  .card:hover {
+    background-color: rgb(171, 188, 7) !important; /* Color al hacer hover (verde) */
+    transform: translateY(-5px) !important;
+    color: rgb(0, 0, 0) !important;
+  }
+  
+  
+  
+  
+  
+  /* Metodología de Trabajo */
+  .metodologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 50px; */
+    background-color: rgb(244, 246, 239);
+    color: rgb(75, 105, 84);
+  }
+  
+  .metodologia h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    text-align: center;
+    font-size: 36px;
+    color: rgb(75, 105, 84);
+  
+  }
+  
+  .metodologia-imagen {
+    text-align: center; /* Centra horizontalmente */
+  }
+  
+  .metodologia-imagen img {
+    display: inline-block; /* Asegura que la imagen se comporte como bloque inline */
+    vertical-align: middle; /* Centra verticalmente */
+    width: 80%;
+    height: auto;
+    margin: 40px 0;
+  }
+  
+  .metodologia p {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+  }
+  
+  .text-Metodoligia-ol {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10px;
+  }
+  .text-Metodoligia-h{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; 
+  }
+  
+  .roles-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+    /* border: 5px solid green; */
+  }
+  
+  
+  /*algunos proyectos*/
+  
+  .project-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .project-title {
+     margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold; 
+    text-align: center;
+    color: rgb(75, 105, 84);
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .project-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-overlay {
+    font-family: 'Popins', sans-serif;
+    font-weight: bold; 
+    font-size: 24px;
+    background: rgba(104, 103, 103, 0.5);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
+  
+  .project-description {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(75, 105, 84);
+    max-width: 200px;
+  }
+  
+  
+  
+  /* Nuestras certificaciones*/
+  .textTitles{
+    color: rgb(75, 105, 84);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    font-size: 36px;
+    padding-bottom: 100px;
+  } 
+  
+  .textTitlesSmall {
+    color: rgb(75, 105, 84);
+    font-size: 20px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    padding: 20px;
+  }
+  
+  .img-fluid{
+    width: 150px;
+    height: 150px;
+  }
+  /*carrusel mis testimonios*/
+  #testimonios .carousel-item {
+    padding: 20px 0;
+  }
+  
+  #testimonios .carousel-caption {
+    /* background-color: rgba(0, 0, 0, 0.5); Fondo semitransparente */
+    padding: 30px;
+    /* border-radius: 10px; */
+  
+  }
+  
+  #testimonios .carousel-caption h5{
+    padding-top: 10px;
+    color: rgb(75, 105, 84);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 14px;
+  }
+  #testimonios .carousel-caption p {
+    color: rgb(75, 105, 84);
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  #testimonios .carousel-control-prev{
+    margin-left: -8%;
+  }
+  #testimonios .carousel-control-next{
+  
+    margin-right: -8%;
+  }
+  /*testimonio modal*/
+  .custom-color {
+    color: rgb(123, 45, 116);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  .custom-color:hover {
+    color: rgb(171, 188, 7);
+  }
+  
+  
+  /* Nosotros */
+  #nosotros .img-container {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  #nosotros img {
+    max-width: 100%; /* Ancho máximo del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  #nosotros h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    color: rgb(75, 105, 84); 
+    text-align: center; /* Alineación del título al centro */
+    margin-bottom: 20px;
+  }
+  
+  #nosotros p {
+    text-align: center; /* Alineación del párrafo al centro */
+    margin: 20px 0; /* Espacio inferior para separar del botón */
+    white-space: pre-line; /* Para mantener los saltos de línea */
+  }
+  
+  #nosotros .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    padding: 0;
+  }
+  
+  /*carrusel nuestro equipo*/
+  #equipo{
+    background-color: rgb(244, 246, 239);
+  }
+  #equipo .carousel-item {
+    padding: 20px 0;
+  
+  }
+  
+  #equipo .carousel-caption {
+    /* background-color: rgba(0, 0, 0, 0.5); Fondo semitransparente */
+    padding: 30px;
+    /* border-radius: 10px; */
+  
+  }
+  
+  #equipo .carousel-caption h5{
+    padding-top: 10px;
+    color: rgb(75, 105, 84);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 14px;
+  }
+  #equipo .carousel-caption p {
+    color: rgb(75, 105, 84);
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  #equipo .carousel-caption a{
+    margin-top: 10px;
+    background-color: rgb(123, 45, 116); /* Color de fondo personalizado para el botón de LinkedIn */
+    border-color: rgb(123, 45, 116); /* Color del borde personalizado para el botón de LinkedIn */
+    border-radius: 50px;
+    color: #fff; /* Color del texto en el botón */
+  }
+  
+  
+  #equipo .carousel-control-prev{
+  
+    margin-left: -8%;
+  
+  }
+  #equipo .carousel-control-next{
+  
+    margin-right: -8%;
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 8 8%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M4.5 0L0 4l4.5 4L6 6.5 2.5 4 6 1.5z%22/%3E%3C/svg%3E');
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 8 8%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M3.5 0L8 4 3.5 8 2 6.5 5.5 4 2 1.5z%22/%3E%3C/svg%3E');
+  }
+  
+  
+  
+  
+  #nuestro-equipo {
+    background-color: rgb(244, 246, 239);
+  }
+  
+  #nuestro-equipo h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    color: rgb(75, 105, 84); 
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item {
+  
+    text-align: center;
+  }
+  
+  .carousel-caption {
+    position: static;
+    text-align: center;
+    padding: 10px;
+    color: #000; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .team-member {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .team-member h5 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .team-member p {
+    margin: -40px 0;
+    font-size: 14px;
+  }
+  
+  .team-member .btn {
+    margin-top: 10px;
+    background-color: rgb(123, 45, 116); /* Color de fondo personalizado para el botón de LinkedIn */
+    border-color: rgb(123, 45, 116); /* Color del borde personalizado para el botón de LinkedIn */
+    border-radius: 50px;
+    color: #fff; /* Color del texto en el botón */
+  }
+  
+  .team-member .btn:hover {
+    background-color: rgb(151, 91, 146); /* Color de fondo al pasar el mouse */
+    border-color: rgb(151, 91, 146) ; /* Color del borde al pasar el mouse */
+  }
+  
+  /*Formulario*/
+  .form-container {
+    background-color: rgb(121, 161, 130);
+    border-radius: 60px;
+    padding: 80px;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  
+  .form-h2{
+    color: rgb(75, 105, 84);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 60px;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: none;
+  }
+  
+  .form-container label {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .form-container button {
+    background-color: rgb(123, 45, 116);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+  }
+  
+  .form-container button:hover {
+    background-color: white;
+    color:  rgb(123, 45, 116);
+  }
+  
+  .contact-info {
+    /* background-color: white;
+    border-radius: 20px; */
+    padding: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  
+  .contact-info h2 {
+    color: rgb(121, 161, 130);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+  
+  .contact-info img {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: rgb(121, 161, 130);
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex; /* Usa flexbox para alinear ícono y texto */
+    height: 30px;
+    padding-left: 80px;
+  }
+  
+  .contact-info .icon {
+    color: rgb(0,0,0);
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Footer */
+  .bg-footer {
+    background-color: rgb(123, 45, 116);
+  }
+  
+  .circle-logo {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .circle-image {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .social-icons-container {
+    margin-top: 50px;
+  }
+  
+  .social-icons-container img {
+    max-width: 40px;
+  }
+  .textFooter{
+    padding-left: 200px;
+  }
+  
+  .text-white {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff; 
+    text-align: left;
+  
+  } 
+  .bg-footer {
+    background-color: rgb(123, 45, 116);
+  }
+  
+  .circle-logo {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .circle-image {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .social-icons-container {
+    margin-top: 50px;
+  }
+  
+  .social-icons-container img {
+    max-width: 40px;
+  }
+  .textFooter{
+    padding-left: 200px;
+  }
+  
+  .text-a-footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff; 
+    text-align: left;
+  
+  } 
+  
+  .text-a-footer:hover {
+    color:rgb(171, 188, 7);
+  }
+  
+  .text-p-footer {
+    font-family: 'Poppins', sans-serif;
+    
+    font-size: 14px;
+    color: #fff; 
+    text-align: left;
+  
+  } 
+  
+  @media only screen 
+    and (min-device-width: 390px) 
+    and (max-device-width: 390px) 
+    and (min-device-height: 844px) 
+    and (max-device-height: 844px)
+    and (-webkit-device-pixel-ratio: 3) {
+      /* Estilos específicos para iPhone 13 */
+       /* Estilos para teléfonos */
+    .custom-toggler {
+      margin-left: auto;
+      margin-top: -80px 
+    }
+    .circleHero {
+      top: 15%; 
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      right: -10%;
+        
+    }
+    .vectors {
+      display: none;
+    
+    }
+  
+    .cut-bottom {
+      display: none;
+      
+    }
+  
+    .hero .text-block {
+      top: 20%;
+      right: 20%;
+      text-align: center;
+    }
+  
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+    }
+  
+  
+    .hero .button {
+     
+      margin-bottom: 100%;
+      right: 40%;
+    }
+    .hero .slogan {
+      font-size: 16px; 
+      position: absolute;
+      margin-top: 60%;
+      text-align: center;
+    }
+    .circleHero img {
+  
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10%;
+    }
+  
+    .social-icons-container img {
+        max-width: 30px;
+    }
+  
+    p {
+        font-size: 14px;
+    }
+    .textFooter{
+     padding-left: 60px;
+    }
+    .card{
+      margin-left: 50px;
+    }
+    /*Testimonio*/ 
+  
+   
+   #carousel-caption {
+      justify-content: flex-start;
+      height: auto;
+      /* color: brown; */
+    }
+   /*Nuestro equipo*/ 
+  
+    #equipo .carousel-caption{
+      justify-content:flex-start ;
+    }
+  
+    
+  }
+  
+  
+  /* Dispositivos pequeños (teléfonos en modo vertical) */
+  @media (max-width: 576px) {
+    /* Estilos para teléfonos */
+    .custom-toggler {
+      margin-left: auto;
+      margin-top: -80px 
+    }
+    .circleHero {
+      top: 15%; 
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      right: -10%;
+        
+    }
+    .vectors {
+      display: none;
+    
+    }
+  
+    .cut-bottom {
+      display: none;
+      
+    }
+  
+    .hero .text-block {
+      top: 20%;
+      right: 20%;
+      text-align: center;
+    }
+  
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+    }
+  
+  
+    .hero .button {
+     
+      margin-bottom: 100%;
+      right: 40%;
+    }
+    .hero .slogan {
+      font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
+      position: absolute;
+      margin-top: 60%;
+      text-align: center;
+    }
+    .circleHero img {
+  
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 60%;
+    }
+  
+    .social-icons-container img {
+        max-width: 30px;
+    }
+  
+    p {
+        font-size: 14px;
+    }
+    .textFooter{
+     padding-left: 60px;
+    }
+    .card{
+      margin-left: 50px;
+    }
+    /*Testimonio*/ 
+  
+   
+   #carousel-caption {
+      justify-content: flex-start;
+      height: auto;
+      /* color: brown; */
+    }
+   /*Nuestro equipo*/ 
+  
+    #equipo .carousel-caption{
+      justify-content:flex-start ;
+    }
+  
+    
+  }
+  
+  /* Dispositivos medianos (teléfonos grandes en modo vertical, tablets en modo vertical y horizontal) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    /* Estilos para teléfonos grandes y tablets */
+  
+    .custom-toggler {
+      margin-left: auto;
+      margin-top: -80px /* Ajusta el valor según sea necesario */
+    }
+  
+    .circleHero {
+      top: 15%; 
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      right: -10%;
+     
+    }
+    .vectors {
+      display: none;
+    
+    }
+  
+    .cut-bottom {
+      display: none;
+      
+    }
+  
+    .hero .text-block {
+      top: 20%;
+      right: 20%;
+      text-align: center;
+    }
+  
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+    }
+  
+    .hero .button {
+     
+      margin-bottom: 100%;
+      right: 40%;
+    }
+  
+    .hero .slogan {
+      font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
+      position: absolute;
+      margin-top: 80%;
+      text-align: center;
+    }
+    .circleHero img {
+  
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30%;
+    }
+    .icon-row {
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: center; /* Centra los iconos en la columna */
+      gap: 40px; /* Ajusta el espacio entre los iconos */
+    }
+  
+    .icon-container {
+      padding-bottom: 40px; /* Ajusta el espacio inferior para cada icono */
+    }
+  
+    .icon-text {
+      font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+   /*testimonio*/
+    #carousel-caption {
+      justify-content: flex-start;
+      height: auto;
+     }
+   /*Nuestro equipo*/ 
+  
+    #equipo .carousel-caption{
+      justify-content:flex-start ;
+    }
+    .textFooter{
+      padding-left: 100px;
+     }
+  }
+  
+  
+  /* Dispositivos grandes (tablets en modo horizontal, pequeños dispositivos de escritorio) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* Estilos para tablets en horizontal y pequeños dispositivos de escritorio */
+    .custom-toggler {
+      margin-left: auto;
+      margin-top: 20px /* Ajusta el valor según sea necesario */
+    }
+    .circleHero {
+      top: 20%; 
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+      margin-left: 15%;
+     
+    }
+    .vectors {
+      display:none
+    
+    }
+    .cut-bottom{
+      display: none;
+    }
+    .hero .button {
+     
+      margin-bottom: 70%;
+      margin-right: 30%;
+    }
+    .hero .text-block {
+      top: 20%;
+      right: 5%;
+      text-align: right;
+    }
+  
+    #pFooter{
+      font-size: 10px;
+    }
+  }
+  
+  
+  /* Escritorios y laptops (pantallas de tamaño mediano a grande) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    /* Estilos para escritorios y laptops */
+    .circleHero {
+      top: 5%; 
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+     
+    }
+    .vectors {
+       display:none
+    
+    }
+  
+    .cut-bottom {
+      display: none;
+      
+    }
+  
+    .hero .text-block {
+      top: 40%;
+      right: 5%;
+      text-align: right;
+    }
+  
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 30px; /* Ajusta el tamaño del texto para tablets */
+    }
+  
+    .hero .button {
+      bottom: 35%;
+      margin-bottom: 30px;
+      right: 10%;
+    }
+  
+    .hero .slogan {
+      font-size: 18px; /* Ajusta el tamaño del slogan para tablets */
+    }
+   
+  }
+  /* Dispositivos extra grandes (pantallas grandes como monitores de escritorio) */
+  @media (min-width: 1200px) and (max-width: 1441px) {
+    /* Estilos para pantallas grandes */
+    .navbar-brand img {
+      width: 100%; /* Tamaño del logo */
+    }
+  
+    .circleHero {
+      top: 5%; 
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+    
+    }
+    .vectors {
+      top: 60%;
+      right: 10%;
+      left: 38%;
+      max-width: 40%;
+    
+    }
+  .cut-bottom{
+    display: none;
+  }
+    
+  
+  .textFooter{
+    padding-left: 200px;
+   }
+   .card{
+      margin-left: 75px;
+   }
+  
+    .cut-bottom {
+      position: absolute;
+      bottom: -9.5%; /* Ajusta este valor para bajar más el contenedor */
+      width: 100%;
+      height: 80px; /* Ajusta esta altura según necesites */
+      background-color: fff; /* Color de fondo de la página o del hero */
+    }
+  
+  }
