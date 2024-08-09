@@ -1032,7 +1032,7 @@ body {
 
   .hero .text-block h1,
   .hero .text-block p {
-    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+    font-size: 24px; /
   }
 
   .hero .button {
@@ -1060,11 +1060,11 @@ body {
   }
 
   .icon-container {
-    padding-bottom: 40px; /* Ajusta el espacio inferior para cada icono */
+    padding-bottom: 40px; 
   }
 
   .icon-text {
-    font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    font-size: 12px; 
   }
  /*testimonio*/
   #carousel-caption {
@@ -1120,7 +1120,7 @@ body {
 
   .hero .text-block h1,
   .hero .text-block p {
-    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+    font-size: 24px; 
   }
 
 
@@ -1130,7 +1130,7 @@ body {
    margin-right: 20%;
   }
   .hero .slogan {
-    font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
+    font-size: 16px;
     position: absolute;
     margin-top: 70%;
     text-align: center;
