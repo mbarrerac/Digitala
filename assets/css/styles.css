@@ -832,7 +832,7 @@ body {
 @media (min-width: 1200px) {
   /* Estilos para pantallas de 1200px o más */
     .navbar-brand img {
-      width: 100%; /* Tamaño del logo */
+      width: 30%; /* Tamaño del logo */
     }
   
     .circleHero {
@@ -1174,4 +1174,8 @@ body {
        margin-top: 50px;
        margin-bottom: 50px;
   }
+  /* modal*/
+  .faq-button{
+    width: 330px;
+   }
 }
