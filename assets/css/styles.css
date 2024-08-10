@@ -1064,14 +1064,14 @@ body {
   .hero .slogan {
     font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
     position: absolute;
-    margin-top: 80%;
+    margin-top: 95%;
     text-align: center;
   }
   .circleHero img {
 
     max-width: 100%;
     height: auto;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
     margin-top: 10px;
   }
   .icon-row {
@@ -1138,7 +1138,7 @@ body {
   .hero .text-block {
     /* top: 20%;
     right: 20%; */
-    margin-top: -110px;
+    margin-top: -90px;
     margin-left: 20px;
     text-align: center;
   }
