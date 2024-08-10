@@ -1021,7 +1021,11 @@ body {
     margin-left: auto;
     margin-top: -80px /* Ajusta el valor según sea necesario */
   }
-
+  .navbar-brand img {
+    width: 50%; /* Tamaño del logo */
+    height: 50%;
+  }
+  
   .circleHero {
     top: 15%; 
     border-radius: 50%;
@@ -1106,7 +1110,11 @@ body {
     margin-left: auto;
     margin-top: -80px 
   }
-
+  .navbar-brand img {
+    width: 50%; /* Tamaño del logo */
+    height: 50%;
+  }
+  
   /*Hero section*/
   .circleHero {
     top: 15%; 
