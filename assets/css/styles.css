@@ -1072,6 +1072,7 @@ body {
     max-width: 100%;
     height: auto;
     margin-bottom: 30%;
+    margin-top: 10px;
   }
   .icon-row {
     flex-direction: column; /* Cambia la dirección a columna */
