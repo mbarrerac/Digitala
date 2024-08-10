@@ -1067,12 +1067,13 @@ body {
     margin-top: 95%;
     text-align: center;
   }
+  
+
   .circleHero img {
 
     max-width: 100%;
     height: auto;
-    margin-bottom: 10%;
-    margin-top: 10px;
+    margin-bottom: 50%;
   }
   .icon-row {
     flex-direction: column; /* Cambia la dirección a columna */
@@ -1157,14 +1158,14 @@ body {
   .hero .slogan {
     font-size: 16px;
     position: absolute;
-    margin-top: 70%;
+    margin-top: 95%;
     text-align: center;
   }
   .circleHero img {
 
     max-width: 100%;
     height: auto;
-    margin-bottom: 40%;
+    margin-bottom: 50%;
   }
 
   .social-icons-container img {
