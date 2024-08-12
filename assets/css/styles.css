@@ -7,29 +7,43 @@
 /* Body */
 body {
   font-family: 'Nunito', sans-serif;
-  /* background-color: #f0f0f0; */
   margin: 0;
 }
 
-.faq-button{
-  padding: 10px;
-  color: #fff;
-  background-color: rgb(123, 45, 116); 
-  width: 455px;
-  border-radius: 15px; /* Radio de borde */
+
+
+.faq-button {
+  display: block;
+  width: 100%;
   text-align: left;
+  color:#fff;
+  padding: 10px;
+  background-color:rgb(123, 45, 116); 
+  /* border:solid rgb(123, 45, 116) 2px;  */
+  border:none;
+  border-radius: 20px;
 }
-.cerrar-button{
-  background-color: rgb(123, 45, 116); /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
-  border: none; /* Sin borde */
-  border-radius: 20px; /* Radio de borde */
-  padding: 10px 20px; /* Padding interior */
+.faq-button:hover {
+  background-color: rgb(171, 188, 7) !important; 
+  color:#fff;
+  /* border:solid rgb(171, 188, 7) 2px  !important;  */
+  border:none;
+  color: #000;
+}
+
+.cerrar-button {
+  background-color: rgb(123, 45, 116); 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px; 
 }
 
 .cerrar-button:hover {
-  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+  background-color:rgb(171, 188, 7); 
+  border: none; 
 }
+
 .banner{
   background-color: rgb(121, 161, 130);
   color: rgb(255, 255, 255);
@@ -53,7 +67,8 @@ body {
  
 }
 .navbar-brand img {
-  width: 30%; /* Tamaño del logo */
+  width: auto; /* Tamaño del logo */
+  height: auto;
 }
 
 .navbar-nav .nav-link {
@@ -127,7 +142,7 @@ body {
 .circleHero img {
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .circleHero p {
@@ -143,7 +158,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin-top: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 
 }
 
@@ -832,7 +847,8 @@ body {
 @media (min-width: 1200px) {
   /* Estilos para pantallas de 1200px o más */
     .navbar-brand img {
-      width: 100%; /* Tamaño del logo */
+      width: 50%; /* Tamaño del logo */
+      height: 50%;
     }
   
     .circleHero {
@@ -1005,7 +1021,11 @@ body {
     margin-left: auto;
     margin-top: -80px /* Ajusta el valor según sea necesario */
   }
-
+  .navbar-brand img {
+    width: 50%; /* Tamaño del logo */
+    height: 50%;
+  }
+  
   .circleHero {
     top: 15%; 
     border-radius: 50%;
@@ -1032,7 +1052,7 @@ body {
 
   .hero .text-block h1,
   .hero .text-block p {
-    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+    font-size: 24px; /
   }
 
   .hero .button {
@@ -1044,14 +1064,16 @@ body {
   .hero .slogan {
     font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
     position: absolute;
-    margin-top: 80%;
+    margin-top: 95%;
     text-align: center;
   }
+  
+
   .circleHero img {
 
     max-width: 100%;
     height: auto;
-    margin-bottom: 30%;
+    margin-bottom: 50%;
   }
   .icon-row {
     flex-direction: column; /* Cambia la dirección a columna */
@@ -1060,11 +1082,11 @@ body {
   }
 
   .icon-container {
-    padding-bottom: 40px; /* Ajusta el espacio inferior para cada icono */
+    padding-bottom: 40px; 
   }
 
   .icon-text {
-    font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    font-size: 12px; 
   }
  /*testimonio*/
   #carousel-caption {
@@ -1090,7 +1112,11 @@ body {
     margin-left: auto;
     margin-top: -80px 
   }
-
+  .navbar-brand img {
+    width: 50%; /* Tamaño del logo */
+    height: 50%;
+  }
+  
   /*Hero section*/
   .circleHero {
     top: 15%; 
@@ -1120,7 +1146,7 @@ body {
 
   .hero .text-block h1,
   .hero .text-block p {
-    font-size: 24px; /* Ajusta el tamaño del texto para celulares */
+    font-size: 24px; 
   }
 
 
@@ -1130,16 +1156,16 @@ body {
    margin-right: 20%;
   }
   .hero .slogan {
-    font-size: 16px; /* Ajusta el tamaño del slogan para celulares */
+    font-size: 16px;
     position: absolute;
-    margin-top: 70%;
+    margin-top: 95%;
     text-align: center;
   }
   .circleHero img {
 
     max-width: 100%;
     height: auto;
-    margin-bottom: 40%;
+    margin-bottom: 50%;
   }
 
   .social-icons-container img {
@@ -1174,4 +1200,8 @@ body {
        margin-top: 50px;
        margin-bottom: 50px;
   }
+  /* modal*/
+  .faq-button{
+    width: 330px;
+   }
 }
