@@ -1,8 +1,8 @@
 /* BORDES */
- /* .container
+.container
 {
   border: 2px solid black;
-} */
+} 
 
 /* Body */
 body {
@@ -67,8 +67,8 @@ body {
  
 }
 .navbar-brand img {
-  width: auto; /* Tamaño del logo */
-  height: auto;
+  width: 50%; 
+  height: 50%;
 }
 
 .navbar-nav .nav-link {
@@ -121,6 +121,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 5%; 
+  
 }
 
 .circleHero {
@@ -135,7 +136,7 @@ body {
   flex-direction: column;
   padding: 20px;
   margin-right: 5%; 
-  margin-top: 18%;
+  margin-top: 2%;
   z-index: 2; 
 }
 
@@ -156,8 +157,8 @@ body {
 .hero .slogan {
   color: rgb(121, 161, 130);
   font-size: 24px;
-  font-weight: 700;
-  margin-top: 10px;
+  font-weight: 700; 
+  margin-top: 5px;
   margin-bottom: 120px;
 
 }
@@ -165,9 +166,7 @@ body {
 
 .vectors {
   position: absolute;
-  top: 60%;
-  right: 10%;
-  left: 38%;
+  margin-left: 28%;
   max-width: 40%;
   height: auto;
   z-index: 1; 
@@ -175,28 +174,29 @@ body {
 
 .hero .text-block {
   position: absolute;
-  top: 30%;
+  margin-top: 0%;
   right: 10%;
   text-align: right;
   color: rgb(244, 246, 239);
   font-family: 'Poppins', sans-serif;
+ /* border-radius: 50%;*/
+ /* background: rgba(104, 103, 103, 0.5);*/
+ /* padding: 70px 30px; /* Ajusta este valor para aumentar la altura */
 }
 
 .hero .text-block h1 {
   font-size: 40px; 
-  margin: 0;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
 .hero .text-block p {
   font-size: 30px; 
-
 }
 
 .hero .button {
   position: absolute;
-  bottom: 10%;
-  margin-bottom: 50px; 
+  margin-top: 200px;  
   right: 10%;
   padding: 15px 30px;
   background-color: rgb(244, 246, 239);
@@ -212,8 +212,6 @@ body {
   background-color: rgb(75, 105, 84);
   color: rgb(244, 246, 239);
 }
-
-
 .cut-bottom {
   position: absolute;
   bottom: -2.5%; 
@@ -846,30 +844,30 @@ body {
 /*Pantallas Grandes*/
 @media (min-width: 1200px) {
   /* Estilos para pantallas de 1200px o más */
-    .navbar-brand img {
-      width: 50%; /* Tamaño del logo */
+    /* .navbar-brand img {
+      width: 50%; 
       height: 50%;
-    }
+    } */
   
-    .circleHero {
+    /* .circleHero {
       top: 5%; 
       border-radius: 50%;
       width: 500px;
       height: 500px;
     
-    }
-    .vectors {
+    } */
+    /* .vectors {
       top: 60%;
       right: 10%;
       left: 38%;
       max-width: 40%;
     
-    }
-  .cut-bottom{
+    } */
+  /* .cut-bottom{
     display: none;
-  }
+  } */
     
-  
+/*   
   .textFooter{
     padding-left: 200px;
    }
@@ -879,17 +877,16 @@ body {
   
     .cut-bottom {
       position: absolute;
-      bottom: -9.5%; /* Ajusta este valor para bajar más el contenedor */
+      bottom: -9.5%; 
       width: 100%;
-      height: 80px; /* Ajusta esta altura según necesites */
-      background-color: fff; /* Color de fondo de la página o del hero */
-    }
+      height: 80px; 
+      background-color: fff; 
+    } */
 }
 
-/*pantallas medianas*/
+/* pantallas medianas
 @media (min-width: 992px) {
-    /* Estilos para pantallas de 992px o más */
-     /* Estilos para escritorios y laptops */
+ 
      .circleHero {
       top: 5%; 
       border-radius: 50%;
@@ -915,7 +912,7 @@ body {
   
     .hero .text-block h1,
     .hero .text-block p {
-      font-size: 30px; /* Ajusta el tamaño del texto para tablets */
+      font-size: 30px; 
     }
   
     .hero .button {
@@ -925,9 +922,9 @@ body {
     }
   
     .hero .slogan {
-      font-size: 18px; /* Ajusta el tamaño del slogan para tablets */
+      font-size: 18px; 
     }
-}
+} */
 /*Tablets grandes (iPad Pro, Surface Pro)*/
 @media (min-width: 1024px) and (max-width: 1279px) {
   /* Estilos para tablets grandes */
@@ -1021,10 +1018,10 @@ body {
     margin-left: auto;
     margin-top: -80px /* Ajusta el valor según sea necesario */
   }
-  .navbar-brand img {
-    width: 50%; /* Tamaño del logo */
+  /* .navbar-brand img {
+    width: 50%;
     height: 50%;
-  }
+  } */
   
   .circleHero {
     top: 15%; 
@@ -1108,10 +1105,10 @@ body {
   /* Estilos para teléfonos estándar */
 
   /*NavBar*/
-  .custom-toggler {
+  /* .custom-toggler {
     margin-left: auto;
     margin-top: -80px 
-  }
+  } */
   .navbar-brand img {
     width: 50%; /* Tamaño del logo */
     height: 50%;
