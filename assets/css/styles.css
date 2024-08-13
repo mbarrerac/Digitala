@@ -1,8 +1,8 @@
 /* BORDES */
-.container
+/* .container
 {
   border: 2px solid black;
-} 
+}  */
 
 /* Body */
 body {
@@ -507,6 +507,7 @@ body {
 
 #nosotros h2 {
   font-family: 'Poppins', sans-serif;
+  font-size: 36px;
   font-weight: bold; 
   color: rgb(75, 105, 84); 
   text-align: center; /* Alineación del título al centro */
@@ -525,6 +526,15 @@ body {
   justify-content: center; /* Centrar verticalmente */
   align-items: center; /* Centrar horizontalmente */
   padding: 0;
+}
+
+#nosotros .contact-button {
+  background-color: red; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Radio de borde */
+  padding: 10px 20px; /* Padding interior */
+  margin-left: 100%;
 }
 
 /*carrusel nuestro equipo*/
