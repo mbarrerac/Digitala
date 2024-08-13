@@ -1,14 +1,15 @@
 /* BORDES */
-.container
+ /* .container
 {
   border: 2px solid black;
-} 
+} */
 
 /* Body */
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
 }
+
 
 
 .faq-button {
@@ -20,23 +21,20 @@ body {
   background-color:rgb(123, 45, 116); 
   /* border:solid rgb(123, 45, 116) 2px;  */
   border:none;
-  outline:none;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .faq-button:hover {
   background-color: rgb(171, 188, 7) !important; 
   color:#fff;
   /* border:solid rgb(171, 188, 7) 2px  !important;  */
   border:none;
-  outline:none;
   color: #000;
 }
 
 .cerrar-button {
   background-color: rgb(123, 45, 116); 
-  color: white;
-  border:none; 
-  outline: none; 
+  color: white; 
+  border: none; 
   border-radius: 20px; 
   padding: 10px 20px; 
 }
@@ -44,11 +42,6 @@ body {
 .cerrar-button:hover {
   background-color:rgb(171, 188, 7); 
   border: none; 
-  outline: none; 
-}
-
-.faq-button:focus, .cerrar-button:focus {
-  outline: none; 
 }
 
 .banner{
@@ -95,7 +88,6 @@ body {
   border: none; /* Sin borde */
   border-radius: 20px; /* Radio de borde */
   padding: 10px 20px; /* Padding interior */
-  margin-left: 335px; 
 }
 
 .contact-button:hover {
@@ -170,6 +162,7 @@ body {
 
 }
 
+
 .vectors {
   position: absolute;
   top: 60%;
@@ -220,6 +213,7 @@ body {
   color: rgb(244, 246, 239);
 }
 
+
 .cut-bottom {
   position: absolute;
   bottom: -2.5%; 
@@ -257,6 +251,7 @@ body {
 /* Sección iconos */
 .icon-container {
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .icon {
@@ -272,6 +267,7 @@ body {
   color: rgb(75, 105, 84); /* Color del texto */
   font-size: 14px; /* Tamaño del texto */
 }
+
 
 
 
@@ -320,6 +316,7 @@ body {
   transform: translateY(-5px) !important;
   color: rgb(0, 0, 0) !important;
 }
+
 
 
 
@@ -380,10 +377,12 @@ body {
   /* border: 5px solid green; */
 }
 
+
 /*algunos proyectos*/
 
 .project-section {
   text-align: center;
+  padding: 50px 0;
 }
 .project-title {
    margin-bottom: 60px;
@@ -428,6 +427,7 @@ body {
   color: rgb(75, 105, 84);
   max-width: 200px;
 }
+
 
 
 /* Nuestras certificaciones*/
@@ -495,6 +495,7 @@ body {
   color: rgb(171, 188, 7);
 }
 
+
 /* Nosotros */
 #nosotros .img-container {
   padding: 0px;
@@ -511,7 +512,6 @@ body {
   font-weight: bold; 
   color: rgb(75, 105, 84); 
   text-align: center; /* Alineación del título al centro */
-  margin-top: -20px;
   margin-bottom: 20px;
 }
 
@@ -567,6 +567,7 @@ body {
   color: #fff; /* Color del texto en el botón */
 }
 
+
 #equipo .carousel-control-prev{
 
   margin-left: -8%;
@@ -584,6 +585,7 @@ body {
 .carousel-control-next-icon {
   background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 8 8%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M3.5 0L8 4 3.5 8 2 6.5 5.5 4 2 1.5z%22/%3E%3C/svg%3E');
 }
+
 
 
 
@@ -1147,6 +1149,7 @@ body {
     font-size: 24px; 
   }
 
+
   .hero .button {
    
     margin-bottom: 100%;
@@ -1202,5 +1205,3 @@ body {
     width: 330px;
    }
 }
-
-
