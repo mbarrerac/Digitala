@@ -1094,6 +1094,9 @@ width: 300px;
   #equipo .carousel-caption{
     justify-content:flex-start ;
   }
+  #nosotros .contact-button {
+    margin-left: 100%;
+  }
   .textFooter{
     padding-left: 100px;
    }
@@ -1195,6 +1198,10 @@ width: 300px;
   #nosotros h2 {
        margin-top: 50px;
        margin-bottom: 50px;
+  }
+
+  #nosotros .contact-button {
+    margin-left: 100%;
   }
   /* modal*/
   .faq-button{
