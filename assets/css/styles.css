@@ -800,26 +800,11 @@ width: 300px;
 
 }
 
-
-@media (min-width: 992px){
-    /* horizontales iPad Pro 12.9" Samsung Galaxy Tab S7
-    Laptops de 14 pulgadas MacBook Pro de 14" o MacBook Air de 14".*/
-    .circleHero {
-      margin: 0;
-      margin-top: 18em;
-      margin-left: 5em;
-      border-radius: 50%;
-      width: 500px;
-      height: 500px;
-    }
-    .vectors {
-    position: absolute;
-    margin-left: 55em;
-    margin-top: 25em;
-    max-width: 50%; 
-    /* height: auto; */
+/* pantallas medianas
+@media (min-width: 992px) {
+ 
+   
   
-  }
     .hero .text-block {
       margin-top: -55em;
       margin-left: 30em;
