@@ -835,22 +835,7 @@ width: 300px;
 /* pantallas medianas
 @media (min-width: 992px) {
  
-     .circleHero {
-      top: 5%; 
-      border-radius: 50%;
-      width: 500px;
-      height: 500px;
-     
-    }
-    .vectors {
-       display:none
-    
-    }
-  
-    .cut-bottom {
-      display: none;
-      
-    }
+   
   
     .hero .text-block {
       top: 40%;
