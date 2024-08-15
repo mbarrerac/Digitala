@@ -562,12 +562,16 @@ width: 300px;
 }
 
 #nosotros .contact-button {
-  background-color: red; /* Color de fondo del botón */
+  background-color:rgb(123, 45, 116); /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   border: none; /* Sin borde */
   border-radius: 20px; /* Radio de borde */
   padding: 10px 20px; /* Padding interior */
-  margin-left: 100%;
+  margin-left: 200%;
+}
+#nosotros .contact-button:hover {
+  background-color: rgb(171, 188, 7);
+  color: black
 }
 
 /*carrusel nuestro equipo*/
