@@ -1,0 +1,127 @@
+#equipo{
+    background-color: rgb(244, 246, 239);
+  }
+  #equipo .carousel-item {
+    padding: 20px 0;
+  
+  }
+  
+  #equipo .carousel-caption {
+  
+    padding: 30px;
+  
+  
+  }
+  
+  #equipo .carousel-caption h5{
+    padding-top: 10px;
+    /* color: rgb(75, 105, 84); */
+    color: aqua !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 14px;
+  }
+  #equipo .carousel-caption p {
+    color: aqua !important;
+    /* color: rgb(75, 105, 84); */
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  #equipo .carousel-caption a{
+    margin-top: 10px;
+    background-color: rgb(123, 45, 116); /* Color de fondo personalizado para el botón de LinkedIn */
+    border-color: rgb(123, 45, 116); /* Color del borde personalizado para el botón de LinkedIn */
+    border-radius: 50px;
+    color: #fff; /* Color del texto en el botón */
+  }
+  
+  
+  #equipo .carousel-control-prev{
+  
+    margin-left: -8%;
+  
+  }
+  #equipo .carousel-control-next{
+  
+    margin-right: -8%;
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 8 8%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M4.5 0L0 4l4.5 4L6 6.5 2.5 4 6 1.5z%22/%3E%3C/svg%3E');
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 8 8%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M3.5 0L8 4 3.5 8 2 6.5 5.5 4 2 1.5z%22/%3E%3C/svg%3E');
+  }
+  
+  
+  
+  
+  #nuestro-equipo {
+    background-color: rgb(244, 246, 239);
+  }
+  
+  #nuestro-equipo h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    color: rgb(75, 105, 84); 
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item {
+  
+    text-align: center;
+  }
+  
+  
+  /* .carousel-caption {
+    position: static;
+    text-align: center;
+    padding: 10px;
+    color: #000; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  } */
+  
+  .team-member {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .team-member h5 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .team-member p {
+    margin: -40px 0;
+    font-size: 14px;
+  }
+  
+  .team-member .btn {
+    margin-top: 10px;
+    background-color: rgb(123, 45, 116); /* Color de fondo personalizado para el botón de LinkedIn */
+    border-color: rgb(123, 45, 116); /* Color del borde personalizado para el botón de LinkedIn */
+    border-radius: 50px;
+    color: #fff; /* Color del texto en el botón */
+  }
+  
+  .team-member .btn:hover {
+    background-color: rgb(151, 91, 146); /* Color de fondo al pasar el mouse */
+    border-color: rgb(151, 91, 146) ; /* Color del borde al pasar el mouse */
+  }
+  
