@@ -10,8 +10,6 @@ body {
   margin: 0;
 }
 
-
-
 .faq-button {
   display: block;
   width: 100%;
@@ -26,7 +24,6 @@ body {
 .faq-button:hover {
   background-color: rgb(171, 188, 7) !important; 
   color:#fff;
-  /* border:solid rgb(171, 188, 7) 2px  !important;  */
   border:none;
   color: #000;
 }
@@ -1005,7 +1002,7 @@ width: 300px;
     }
   
     .hero .slogan {
-      font-size: 24px; /* Ajusta el tamaño del slogan para tablets */
+      font-size: 24px;
     }
    
 }
@@ -1015,7 +1012,7 @@ width: 300px;
   /* Estilos para teléfonos grandes */
   .custom-toggler {
     margin-left: auto;
-    margin-top: -80px /* Ajusta el valor según sea necesario */
+    margin-top: -80px 
   }
   /* .navbar-brand img {
     width: 50%;
