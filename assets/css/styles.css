@@ -991,25 +991,24 @@ width: 300px;
   } */
   
   .circleHero {
-    top: 15%; 
+    margin-top: 10rem;
     border-radius: 50%;
     width: 400px;
     height: 400px;
-    right: -10%;
+    margin-left: 4rem;
    
   }
+
+
   .vectors {
     display: none;
   
   }
 
-  .cut-bottom {
-    display: none;
-    
-  }
+
 
   .hero .text-block {
-    margin-bottom: 80%;
+    margin-bottom: 40rem;
     margin-right: 10%;
     text-align: center;
   }
@@ -1019,16 +1018,17 @@ width: 300px;
     font-size: 24px; 
   }
 
+
   .hero .button {
    
-    margin-bottom: 80%;
-    margin-right: 30%;
+    margin-bottom: 40rem;
+    margin-right: 10rem;
   }
 
   .hero .slogan {
     font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
     position: absolute;
-    margin-top: 95%;
+    margin-top: 22rem;
     text-align: center;
   }
   
@@ -1037,7 +1037,7 @@ width: 300px;
 
     max-width: 100%;
     height: auto;
-    margin-bottom: 50%;
+    margin-bottom: 15rem;
   }
   .icon-row {
     flex-direction: column; /* Cambia la dirección a columna */
@@ -1074,11 +1074,7 @@ width: 300px;
 @media (max-width: 575px) {
   /* Estilos para teléfonos estándar */
 
-  /*NavBar*/
-  /* .custom-toggler {
-    margin-left: auto;
-    margin-top: -80px 
-  } */
+  
   .navbar-brand img {
     width: 50%; /* Tamaño del logo */
     height: 50%;
@@ -1086,11 +1082,11 @@ width: 300px;
   
   /*Hero section*/
   .circleHero {
-    top: 15%; 
+    margin-top: 10rem;
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    right: -10%;
+    margin-left: 2rem;
       
   }
   .vectors {
@@ -1098,10 +1094,7 @@ width: 300px;
   
   }
 
-  .cut-bottom {
-    display: none;
-    
-  }
+
 
   .hero .text-block {
     margin-top: 0px;
@@ -1119,20 +1112,20 @@ width: 300px;
 
   .hero .button {
    
-    margin-bottom: 100%;
-   margin-right: 20%;
+    margin-bottom: 30rem;
+    margin-right: 5rem;
   }
   .hero .slogan {
     font-size: 16px;
     position: absolute;
-    margin-top: 95%;
+    margin-top: 20rem;
     text-align: center;
   }
   .circleHero img {
 
     max-width: 100%;
     height: auto;
-    margin-bottom: 50%;
+    margin-bottom: 10rem;
   }
 
   .social-icons-container img {
