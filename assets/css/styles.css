@@ -1173,8 +1173,8 @@ width: 300px;
   .circleHero {
       /* margin: 0; */
       margin:auto;
-      margin-top: 12em;
-      margin-right: 3em; 
+      margin-top: 12rem;
+      margin-right: 3rem; 
       border-radius: 50%;
       width: 300px;
       height: 300px;
@@ -1185,15 +1185,15 @@ width: 300px;
     }
     .hero .text-block {
       padding: 0;
-      margin-top: -78em;
-      margin-left: -1.5em;
+      margin-top: -78rem;
+      margin-left: -1.5rem;
       text-align: center;
       
   
     }
     .text-block h1 {
       margin: 0;
-      width: 15em;
+      width: 15rem;
      }
     .hero .text-block h1,
     .hero .text-block p {
@@ -1203,7 +1203,7 @@ width: 300px;
     
     .hero .button {
       margin: 0;
-      margin-top: 10em;
+      margin-top: 10rem;
     }
   
     .hero .slogan {
@@ -1215,7 +1215,7 @@ width: 300px;
     .circleHero img {
       max-width: 100%;
       height: auto;
-      margin-top: -3em;
+      margin-top: -3rem;
     }
   
 
