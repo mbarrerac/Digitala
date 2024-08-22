@@ -1085,8 +1085,8 @@ width: 300px;
       /*Hero section*/
       .circleHero {
         margin: 0;
-        margin-top: 5em;
-        margin-left: 5em;
+        margin-top: 5rem;
+        margin-left: 5rem;
         border-radius: 50%;
         width: 250px;
         height: 250px;
@@ -1096,14 +1096,14 @@ width: 300px;
       
       }
       .hero .text-block {
-        margin-top: -25em;
-        margin-left: 20em;
+        margin-top: -25rem;
+        margin-left: 20rem;
     
     
       }
       .text-block h1 {
         margin: 0;
-        width: 15em;
+        width: 15rem;
        }
       .hero .text-block h1 {
         font-size: 24px; 
@@ -1113,7 +1113,7 @@ width: 300px;
     
       .hero .button {
         margin: 0;
-        margin-top: 10em;
+        margin-top: 10rem;
     
       }
     
@@ -1126,7 +1126,7 @@ width: 300px;
       .circleHero img {
         max-width: 100%;
         height: auto;
-        margin-top: -3em;
+        margin-top: -3rem;
       }
     
   .icon-row {
@@ -1290,15 +1290,15 @@ width: 300px;
     }
     .hero .text-block {
       padding: 0;
-      margin-top: -18em;
-      margin-left: -2em;
+      margin-top: -18rem;
+      margin-left: -2rem;
       text-align: center;
       
   
     }
     .text-block h1 {
       margin: 0;
-      width: 15em;
+      width: 15rem;
      }
     .hero .text-block h1,
     .hero .text-block p {
@@ -1308,7 +1308,7 @@ width: 300px;
     
     .hero .button {
       margin: 0;
-      margin-top: 10em;
+      margin-top: 10rem;
     }
   
     .hero .slogan {
@@ -1320,7 +1320,7 @@ width: 300px;
     .circleHero img {
       max-width: 100%;
       height: auto;
-      margin-top: -3em;
+      margin-top: -3rem;
     }
   
 
