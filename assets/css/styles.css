@@ -147,9 +147,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
- 
-
-}
+ }
 .hero .slogan {
   color: rgb(121, 161, 130);
   font-size: 24px;
@@ -184,6 +182,7 @@ body {
   font-size: 40px; 
   margin-bottom: 20px;
   font-weight: bold;
+  width: 50rem
 }
 
 .hero .text-block p {
@@ -976,10 +975,10 @@ width: 300px;
 /*Teléfonos grandes (iPhone 14 Pro Max, Samsung Galaxy S23 Ultra)*/
 @media (min-width: 576px) and (max-width: 767px) {
   /* Estilos para teléfonos grandes */
-  .custom-toggler {
+  /* .custom-toggler {
     margin-left: auto;
     margin-top: -80px 
-  }
+  } */
   /* .navbar-brand img {
     width: 50%;
     height: 50%;
@@ -1065,10 +1064,20 @@ width: 300px;
    }
 }
 
-/*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
-@media (max-width: 575px) {
-  /* Estilos para teléfonos estándar */
 
+
+
+
+
+/* funcionando*********************************************************************/
+
+
+
+
+
+/*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
+@media (max-width: 575px)  and (orientation: portrait) {
+  /* Estilos para teléfonos estándar */
   
   .navbar-brand img {
     width: 50%; /* Tamaño del logo */
@@ -1077,11 +1086,11 @@ width: 300px;
   
   /*Hero section*/
   .circleHero {
-    margin-top: 10rem;
+    margin-top: 20rem;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin-left: 2rem;
+    width: 200px;
+    height: 200px;
+    margin-left: 2.5rem;
       
   }
   .vectors {
@@ -1107,13 +1116,126 @@ width: 300px;
 
   .hero .button {
    
-    margin-bottom: 30rem;
-    margin-right: 5rem;
+    margin-bottom: 20rem;
+  
+    margin-right: 3.5rem;
+ 
+
   }
   .hero .slogan {
-    font-size: 16px;
+    font-size: 10px;
     position: absolute;
-    margin-top: 20rem;
+    margin-top: 15rem;
+    text-align: center;
+  }
+  .circleHero img {
+
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10rem;
+  }
+
+  .social-icons-container img {
+      max-width: 30px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+  .textFooter{
+   padding-left: 60px;
+  }
+  .card{
+    margin-left: 50px;
+  }
+  /*Testimonio*/ 
+
+ 
+ #carousel-caption {
+    justify-content: flex-start;
+    height: auto;
+    /* color: brown; */
+  }
+ /*Nuestro equipo*/ 
+
+  #equipo .carousel-caption{
+    justify-content:flex-start ;
+  }
+  
+  /*Nosotros*/
+  #nosotros h2 {
+       margin-top: 50px;
+       margin-bottom: 50px;
+  }
+
+  #nosotros .contact-button {
+    margin-left: 100%;
+  }
+  /* modal*/
+  .faq-button{
+    width: 330px;
+   }
+  
+
+}
+/*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
+@media (max-width: 575px)  and (orientation: landscape) {
+  /* Estilos para teléfonos estándar */
+
+ 
+.navbar-brand img {
+    height: 40px; /* Ajusta el tamaño del logo */
+    width: auto;
+}
+
+ 
+  /*Hero section*/
+  .circleHero {
+    margin-top: -2rem;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -1rem;
+      
+  }
+  .vectors {
+    display: none;
+  
+  }
+
+
+
+  .hero .text-block {
+    margin-top: 0px;
+    margin-bottom: 20%;
+    margin-right:-3rem;
+    text-align: center;
+
+  }
+  .hero .text-block h1{
+    width: 20rem;
+    font-size: 20px; 
+  }
+
+
+  /* .hero .text-block h1,
+  .hero .text-block p {
+    font-size: 20px; 
+   } */
+
+
+  .hero .button {
+   
+    margin-bottom: 10rem;
+  
+    margin-right: 3.5rem;
+ 
+
+  }
+  .hero .slogan {
+    font-size: 10px;
+    position: absolute;
+    margin-top: 15rem;
     text-align: center;
   }
   .circleHero img {

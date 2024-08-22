@@ -1163,7 +1163,6 @@ width: 300px;
 /*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
 @media (max-width: 575px)  and (orientation: portrait) {
   /* Estilos para teléfonos estándar */
- 
   .navbar-brand img {
     width: 50%; /* Tamaño del logo */
     height: 50%;
@@ -1266,7 +1265,10 @@ width: 300px;
 /*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
 @media (max-width: 575px)  and (orientation: landscape) {
   /* Estilos para teléfonos estándar */
-
+  .navbar {
+    min-height: 0; /* Se ajusta al contenido mínimo */
+    max-height: none; /* Sin límite en el alto */
+}
   
   .navbar-brand img {
     width: 10%; /* Tamaño del logo */
