@@ -17,7 +17,6 @@ body {
   color:#fff;
   padding: 10px;
   background-color:rgb(123, 45, 116); 
-  /* border:solid rgb(123, 45, 116) 2px;  */
   border:none;
   border-radius: 20px;
 }
@@ -117,7 +116,8 @@ body {
   background: url('/assets/img/archipielagoChiloe2.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
-  padding-left: 5%; 
+  padding-left: 3em; 
+  z-index: 1
   
 }
 
@@ -127,75 +127,60 @@ body {
   border-radius: 50%;
   width: 600px;
   height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-right: 5%; 
-  margin-top: 2%;
-  z-index: 2; 
+  margin-left: 10em;
+  margin-top: 5em;
+
+  z-index: 3; 
 }
 
 .circleHero img {
   max-width: 100%;
   height: auto;
-  margin-top: 100px;
+  padding-top: 5em;
 }
 
-.circleHero p {
+
+.hero .slogan {
   color: rgb(121, 161, 130);
   font-size: 24px;
   font-weight: 700;
   text-align: center;
- 
-
-}
-.hero .slogan {
-  color: rgb(121, 161, 130);
-  font-size: 24px;
-  font-weight: 700; 
-  margin-top: 5px;
-  margin-bottom: 10rem;
-
 }
 
 
 .vectors {
   position: absolute;
-  margin-left: 28%;
-  max-width: 40%;
+  margin-left: 80em;
+  margin-top: 20em;
+  /* max-width: 35%;  */
   height: auto;
-  z-index: 1; 
+  z-index: 2; 
 }
 
-.hero .text-block {
-  position: absolute;
-  margin-top: 0%;
-  right: 10%;
+.text-block {
+  margin-bottom: 5em; 
   text-align: right;
-  color: rgb(244, 246, 239);
+  color: rgb(244, 246, 239); 
   font-family: 'Poppins', sans-serif;
- /* border-radius: 50%;*/
- /* background: rgba(104, 103, 103, 0.5);*/
- /* padding: 70px 30px; /* Ajusta este valor para aumentar la altura */
+  z-index: 4; 
+
+
 }
 
-.hero .text-block h1 {
+.text-block h1 {
+
   font-size: 40px; 
   margin-bottom: 20px;
   font-weight: bold;
+  width: 50rem;
 }
 
-.hero .text-block p {
-  font-size: 30px; 
-}
 
 .hero .button {
   position: absolute;
-  margin-top: 200px;  
-  right: 10%;
-  padding: 15px 30px;
+  margin-top: 15em;  
+  margin-left: 30em;
+  padding: 15px 30px; 
   background-color: rgb(244, 246, 239);
   color: rgb(123, 45, 116);
   font-size: 16px;
@@ -209,20 +194,7 @@ body {
   background-color: rgb(75, 105, 84);
   color: rgb(244, 246, 239);
 }
-.cut-bottom {
-  position: absolute;
-  bottom: -2.5%; 
-  width: 100%;
-  height: 80px; 
-  background-color: #fff; 
-}
 
-.section-centered {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .textSubTitles {
   color: rgb(75, 105, 84);
@@ -460,9 +432,7 @@ height: 100%;
 text-align: center;
 }
 
-/* .carousel-caption .custom-color {
-margin-top: 10px;
-} */
+
 .text-width{
 width: 300px;
 }
@@ -681,8 +651,6 @@ width: 300px;
 }
 
 .contact-info {
-  /* background-color: white;
-  border-radius: 20px; */
   padding: 0px;
   margin-left: 0px;
   text-align: center;
@@ -714,8 +682,8 @@ width: 300px;
   color: rgb(121, 161, 130);
   max-width: 80%;
   margin: 0 auto;
-  text-align: left; /* Alinea el texto a la izquierda */
-  display: flex; /* Usa flexbox para alinear ícono y texto */
+  text-align: left; 
+  display: flex; 
   height: 30px;
   padding-left: 80px;
 }
@@ -825,95 +793,130 @@ width: 300px;
 /*Pantallas Grandes*/
 @media (max-width: 1200px) {
   
-  .vectors {
+  /* .vectors {
     margin-left: 30%;
-  }
+  } */
   
 
 }
 
-/* pantallas medianas
-@media (min-width: 992px) {
- 
-     .circleHero {
-      top: 5%; 
+
+@media (min-width: 992px){
+    /* horizontales iPad Pro 12.9" Samsung Galaxy Tab S7
+    Laptops de 14 pulgadas MacBook Pro de 14" o MacBook Air de 14".*/
+    .circleHero {
+      margin: 0;
+      margin-top: 18em;
+      margin-left: 5em;
       border-radius: 50%;
       width: 500px;
       height: 500px;
-     
     }
     .vectors {
-       display:none
-    
-    }
+    position: absolute;
+    margin-left: 55em;
+    margin-top: 25em;
+    max-width: 50%; 
+    /* height: auto; */
   
-    .cut-bottom {
-      display: none;
-      
-    }
-  
+  }
     .hero .text-block {
-      top: 40%;
-      right: 5%;
-      text-align: right;
-    }
+      margin-top: -55em;
+      margin-left: 30em;
   
-    .hero .text-block h1,
-    .hero .text-block p {
-      font-size: 30px; 
+  
     }
+    .text-block h1 {
+      margin: 0;
+      width: 15em;
+     }
+    .hero .text-block h1 {
+      font-size: 40px; 
+      text-align: center;
+     }
+    
   
     .hero .button {
-      bottom: 35%;
-      margin-bottom: 30px;
-      right: 10%;
+      margin: 0;
+      margin-top: 15em;
+      margin-left: 20rem;
+  
     }
   
     .hero .slogan {
-      font-size: 18px; 
+      font-size: 24px;
+  
+      margin: 0;
+      text-align: center;
     }
-} */
+    .circleHero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: -3em;
+    }
+  
+  
+  }
 /*Tablets grandes (iPad Pro, Surface Pro)*/
-@media (min-width: 1024px) and (max-width: 1279px) {
-  /* Estilos para tablets grandes */
-     /* Estilos para pantallas grandes */
+@media (min-width: 1024px) and (max-width: 1279px)  {
+    /*tabletas horizontal laptos MacBook Air de 13" o MacBook Pro de 13".*/
+         /*Hero section*/
      .navbar-brand img {
       width: 100%; /* Tamaño del logo */
     }
   
     .circleHero {
-      top: 5%; 
+      margin: 0;
+      margin-bottom: 19em;
+      margin-left: 5em;
       border-radius: 50%;
       width: 500px;
       height: 500px;
-      margin-bottom: 30rem;
-    
     }
     .vectors {
+    position: absolute;
+    margin-left: 55em;
+    margin-top: 25em;
+    max-width: 50%; 
+    /* height: auto; */
   
-      margin-left: 25rem;
-      max-width: 50%;
-      margin-top: -15rem;
-   
-    }
-
-    .hero .text-block {
-     
-      margin-bottom: 80%;
-      /* margin-right: 10%; */
-      margin-left: 30rem;
-     width:1000x;
-      text-align: center;
-    }  
-    .hero .button {
-      margin-bottom: 80%;
-      margin-right: 20%;
-    }
-  
-  .cut-bottom{
-    display: none;
   }
+    .hero .text-block {
+      margin-top: -45em;
+      margin-left: 25em;
+  
+  
+    }
+    .text-block h1 {
+      margin: 0;
+      width: 15em;
+     }
+    .hero .text-block h1 {
+      font-size: 40px; 
+      text-align: center;
+     }
     
+  
+    .hero .button {
+      margin: 0;
+      margin-top: 15em;
+      margin-left: 20rem;
+  
+    }
+  
+    .hero .slogan {
+      font-size: 24px;
+  
+      margin: 0;
+      text-align: center;
+    }
+    .circleHero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: -3em;
+    }
+  
+  
   
   .textFooter{
     padding-left: 200px;
@@ -930,115 +933,216 @@ width: 300px;
       background-color: fff; /* Color de fondo de la página o del hero */
     }
 }
-/*Tablets estándar (iPad, Samsung Galaxy Tab)*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tablets estándar */
-    /* Estilos para escritorios y laptops */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    /*vertical iphone SE*/
     .circleHero {
-      margin-top: 50%; 
+      margin: 0;
+      margin-top: 30em;
+      margin-left: 30em;
       border-radius: 50%;
-      width: 500px;
-      height: 500px;
-      margin-left: 15%;
-     
+      width: 400px;
+      height: 400px;
     }
     .vectors {
-       display:none
+      display: none;
     
     }
-  
-    .cut-bottom {
-      display: none;
-      
-    }
-  
     .hero .text-block {
-     
-      margin-bottom: 80%;
-      margin-right: 10%;
-     
-      text-align: center;
-    }
-
-
+      margin-top: -110em;
+      margin-left: 6em;
   
-    .hero .text-block h1,
-    .hero .text-block p {
-      font-size: 30px; /* Ajusta el tamaño del texto para tablets */
+  
     }
+    .text-block h1 {
+      margin: 0;
+      width: 15em;
+     }
+    .hero .text-block h1 {
+      font-size: 40px; 
+      text-align: center;
+     }
+    
   
     .hero .button {
-      margin-bottom: 80%;
-      margin-right: 30%;
+      margin: 0;
+      margin-top: 20em;
+  
     }
   
     .hero .slogan {
-      font-size: 24px;
-    }
-   
-}
-
-/*Teléfonos grandes (iPhone 14 Pro Max, Samsung Galaxy S23 Ultra)*/
-@media (min-width: 576px) and (max-width: 767px) {
-  /* Estilos para teléfonos grandes */
-  .custom-toggler {
-    margin-left: auto;
-    margin-top: -80px 
-  }
-  /* .navbar-brand img {
-    width: 50%;
-    height: 50%;
-  } */
+      font-size: 12px;
   
-  .circleHero {
-    margin-top: 10rem;
+      margin: 0;
+      text-align: center;
+    }
+    .circleHero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: -3em;
+    }
+  
+}
+/*Tablets estándar (iPad, Samsung Galaxy Tab)*/
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    /*Estilos horizontales dispositivos pequeños iphone SE*/
+    .navbar-brand img {
+      width: 20%; /* Tamaño del logo */
+      height: 20%;
+    }
+   /*Hero section*/
+   .circleHero {
+    margin: 0;
+    margin-top: 3em;
+    margin-left: 5em;
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin-left: 4rem;
-   
+    width: 250px;
+    height: 250px;
   }
-
-
   .vectors {
     display: none;
   
   }
-
-
-
   .hero .text-block {
-    margin-bottom: 40rem;
-    margin-right: 10%;
-    text-align: center;
-  }
+    margin-top: -25em;
+    margin-left: 20em;
 
-  .hero .text-block h1,
-  .hero .text-block p {
+
+  }
+  .text-block h1 {
+    margin: 0;
+    width: 15em;
+   }
+  .hero .text-block h1 {
     font-size: 24px; 
-  }
-
+    text-align: center;
+   }
+  
 
   .hero .button {
-   
-    margin-bottom: 40rem;
-    margin-right: 10rem;
+    margin: 0;
+    margin-top: 10em;
+
   }
 
   .hero .slogan {
-    font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
-    position: absolute;
-    margin-top: 22rem;
+    font-size: 12px;
+
+    margin: 0;
     text-align: center;
   }
-  
-
   .circleHero img {
-
     max-width: 100%;
     height: auto;
-    margin-bottom: 15rem;
+    margin-top: -3em;
   }
+   
+}
+
+@media (min-width: 576px) and (max-width: 767px) and (orientation: portrait){
+  /*vertical iphone SE*/
+  .circleHero {
+  margin: 0;
+  margin-top: 5em;
+  margin-left: 5em;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.vectors {
+  display: none;
+
+}
+.hero .text-block {
+  margin-top: -25em;
+  margin-left: 20em;
+
+
+}
+.text-block h1 {
+  margin: 0;
+  width: 15em;
+ }
+.hero .text-block h1 {
+  font-size: 24px; 
+  text-align: center;
+ }
+
+
+.hero .button {
+  margin: 0;
+  margin-top: 10em;
+
+}
+
+.hero .slogan {
+  font-size: 12px;
+
+  margin: 0;
+  text-align: center;
+}
+.circleHero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -3em;
+}
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape){
+  /* Estilos para teléfonos grandes */
+  .navbar-brand img {
+    width: 20%; /* Tamaño del logo */
+    height: 20%;
+  }
+    /*tabletas en horizontal o Iphome ProMax*/
+      /*Hero section*/
+      .circleHero {
+        margin: 0;
+        margin-top: 5em;
+        margin-left: 5em;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+      }
+      .vectors {
+        display: none;
+      
+      }
+      .hero .text-block {
+        margin-top: -25em;
+        margin-left: 20em;
+    
+    
+      }
+      .text-block h1 {
+        margin: 0;
+        width: 15em;
+       }
+      .hero .text-block h1 {
+        font-size: 24px; 
+        text-align: center;
+       }
+      
+    
+      .hero .button {
+        margin: 0;
+        margin-top: 10em;
+    
+      }
+    
+      .hero .slogan {
+        font-size: 12px;
+    
+        margin: 0;
+        text-align: center;
+      }
+      .circleHero img {
+        max-width: 100%;
+        height: auto;
+        margin-top: -3em;
+      }
+    
   .icon-row {
     flex-direction: column; /* Cambia la dirección a columna */
     align-items: center; /* Centra los iconos en la columna */
@@ -1071,7 +1175,7 @@ width: 300px;
 }
 
 /*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
-@media (max-width: 575px) {
+@media (max-width: 575px)  and (orientation: portrait) {
   /* Estilos para teléfonos estándar */
 
   
@@ -1080,53 +1184,55 @@ width: 300px;
     height: 50%;
   }
   
-  /*Hero section*/
-  .circleHero {
-    margin-top: 10rem;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin-left: 2rem;
+     /*Hero section*/
+
+     .circleHero {
+      margin: 0;
+      margin-top: 12em;
+      margin-right: 3em;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+    }
+    .vectors {
+      display: none;
+    
+    }
+    .hero .text-block {
+      padding: 0;
+      margin-top: -78em;
+      margin-left: -1.5em;
+      text-align: center;
       
-  }
-  .vectors {
-    display: none;
   
-  }
-
-
-
-  .hero .text-block {
-    margin-top: 0px;
-    margin-bottom: 120%;
-    margin-left: 20px;
-    text-align: center;
-
-  }
-
-  .hero .text-block h1,
-  .hero .text-block p {
-    font-size: 24px; 
-  }
-
-
-  .hero .button {
-   
-    margin-bottom: 30rem;
-    margin-right: 5rem;
-  }
-  .hero .slogan {
-    font-size: 16px;
-    position: absolute;
-    margin-top: 20rem;
-    text-align: center;
-  }
-  .circleHero img {
-
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10rem;
-  }
+    }
+    .text-block h1 {
+      margin: 0;
+      width: 15em;
+     }
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 24px; 
+      text-align: center;
+     }
+    
+    .hero .button {
+      margin: 0;
+      margin-top: 10em;
+    }
+  
+    .hero .slogan {
+      font-size: 16px;
+  
+      margin: 0;
+      text-align: center;
+    }
+    .circleHero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: -3em;
+    }
+  
 
   .social-icons-container img {
       max-width: 30px;
@@ -1168,4 +1274,111 @@ width: 300px;
   .faq-button{
     width: 330px;
    }
+  
+
+}
+
+/*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
+@media (max-width: 575px)  and (orientation: landscape) {
+  /* Estilos para teléfonos estándar */
+
+  
+  .navbar-brand img {
+    width: 10%; /* Tamaño del logo */
+    height: 10%;
+  }
+  
+     /*Hero section*/
+
+     .circleHero {
+      display: none;
+      /* margin: 0;
+      margin-top: 12em;
+      margin-right: 3em;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px; */
+    }
+    .vectors {
+      display: none;
+    
+    }
+    .hero .text-block {
+      padding: 0;
+      margin-top: -18em;
+      margin-left: -2em;
+      text-align: center;
+      
+  
+    }
+    .text-block h1 {
+      margin: 0;
+      width: 15em;
+     }
+    .hero .text-block h1,
+    .hero .text-block p {
+      font-size: 24px; 
+      text-align: center;
+     }
+    
+    .hero .button {
+      margin: 0;
+      margin-top: 10em;
+    }
+  
+    .hero .slogan {
+      font-size: 16px;
+  
+      margin: 0;
+      text-align: center;
+    }
+    .circleHero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: -3em;
+    }
+  
+
+  .social-icons-container img {
+      max-width: 30px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+  .textFooter{
+   padding-left: 60px;
+  }
+  .card{
+    margin-left: 50px;
+  }
+  /*Testimonio*/ 
+
+ 
+ #carousel-caption {
+    justify-content: flex-start;
+    height: auto;
+    /* color: brown; */
+  }
+ /*Nuestro equipo*/ 
+
+  #equipo .carousel-caption{
+    justify-content:flex-start ;
+  }
+  
+  /*Nosotros*/
+  #nosotros h2 {
+       margin-top: 50px;
+       margin-bottom: 50px;
+  }
+
+  #nosotros .contact-button {
+    margin-left: 100%;
+  }
+  /* modal*/
+  .faq-button{
+    width: 330px;
+   }
+  
+
 }

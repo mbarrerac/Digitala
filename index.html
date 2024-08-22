@@ -41,24 +41,28 @@
 
 <!-- heroSection -->
 <section class="heroSection">
-  <div class="hero" style="background: url('./assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;">
-    <div>
-      <img src="./assets/img/patronVector.svg" alt="Patron" class="vectors">
-    </div>
-   
-    <div class="circleHero ">
-        <img src="./assets/img/LogoDigitala.png" alt="Logo">
-                
+  <div class="hero row" style="background: url('./assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;">
+    
+    <!-- Center Column: Logo and Slogan -->
+    <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center justify-content-center text-center">
+      <img src="./assets/img/patronVector.svg" alt="Patron" class="vectors img-fluid">
+      <div class="circleHero mb-4">
+        <img src="./assets/img/LogoDigitala.png" alt="Logo" class="img-fluid">
         <p class="slogan">Transformando ideas en realidad<br>desde el corazón del sur.</p>
+      </div>
     </div>
     
-    <div class="text-block">
-        <h1>Desarrollo de software | Cloud</h1>
-        <h1>Ingeniería de datos</h1>
-    </div>
-    <button class="button">Contacto</button>
+   
+    <div class="col-lg-8 col-md-8 col-sm-12 d-flex flex-column align-items-center justify-content-center text-center text-block">
+      <h1>Desarrollo de software | Cloud Ingeniería de datos</h1>
+      <button class="button btn btn-primary">Contacto</button>
+  </div>
+  
+  
   </div>
 </section>
+
+
    
  
 
@@ -282,9 +286,6 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="faqModalLabel">Director Docente de Ingeniería Civil en Informática, ULagos</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
       <div class="modal-body">
           <p> Estamos emocionados por el reciente vínculo entre la carrera de Ingeniería Civil en Informática de la Universidad de Los Lagos y Digitala. Esta alianza permitirá a nuestros estudiantes participar en proyectos reales y  de esta forma potenciar su formación, mientras contribuimos con talento joven a la innovación de la empresa. Esperamos con ansias las nuevas oportunidades y futuros proyectos que esta relación traerá </p>
@@ -440,7 +441,7 @@
               <!-- Left part -->
               <div class="col-md-2 text-center mb-4 mb-md-0">
                   <div class="circle-logo">
-                      <img src="./assets/img/LogoDigitala.png" alt="Circle Image" class="circle-image img-fluid">
+                      <img src="./assets/img/LogoDigitala.png"  class=" img-fluid">
                   </div>
               </div>
               <!-- Middle part -->
@@ -485,9 +486,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="faqModalLabel">Preguntas Frecuentes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+
       </div>
       <div class="modal-body">
         <div id="faqAccordion">
