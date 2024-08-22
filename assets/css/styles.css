@@ -1163,16 +1163,14 @@ width: 300px;
 /*Teléfonos estándar (iPhone 13, Samsung Galaxy S22)*/
 @media (max-width: 575px)  and (orientation: portrait) {
   /* Estilos para teléfonos estándar */
-
-  
+ 
   .navbar-brand img {
     width: 50%; /* Tamaño del logo */
     height: 50%;
   }
-  
-     /*Hero section*/
+  /*Hero section*/
 
-     .circleHero {
+  .circleHero {
       /* margin: 0; */
       margin:auto;
       margin-top: 12em;
