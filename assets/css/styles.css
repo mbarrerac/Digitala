@@ -167,6 +167,7 @@ body {
 }
 
 .hero .text-block {
+  color: #dee909;
   position: absolute;
   margin-top: 0%;
   right: 10%;
@@ -931,6 +932,7 @@ width: 300px;
     display: none;
   }
   .hero .text-block {
+    color: #14160f;
     margin-bottom: 40rem;
     margin-right: 1rem;
     text-align: center;
@@ -1026,6 +1028,7 @@ width: 300px;
       display: none;
     }
     .hero .text-block {
+      color: #480af4;
       margin-bottom: 4rem;
       margin-right: -6rem;
       text-align: center;
@@ -1097,6 +1100,7 @@ width: 300px;
     display: none;
   }
   .hero .text-block {
+    color: #923b05;
     margin-bottom: 40rem;
     margin-right: -3.5rem;
     text-align: center;
@@ -1172,6 +1176,7 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     display: none;
   }
   .hero .text-block {
+    color: #62bbf3;
     margin-top: 0px;
     margin-bottom: 30rem;
     margin-left: 20px;
@@ -1259,6 +1264,7 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     display: none;
   }
   .hero .text-block {
+    color: #dd14a4;
     margin-top: 0rem;
     margin-bottom: 3rem;
     margin-right:-2rem;
