@@ -245,3 +245,171 @@
       padding-left: 100px;
      }
   }
+
+
+
+
+
+
+  /******************************************************************************************/
+  @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
+    /* Estilos para dispositivos en modo vertical dentro de este rango de ancho */
+    .circleHero {
+      margin-top: 10rem;
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      margin-left: 5rem;
+     
+    }
+    .vectors {
+      display: none;
+    }
+    .hero .text-block {
+      margin-bottom: 40rem;
+      margin-right: -3.5rem;
+      text-align: center;
+    }
+    .hero .text-block h1 {
+      font-size: 40px; 
+      width: 40rem;
+    }
+    .hero .button {
+      margin-bottom: 40rem;
+      margin-right: 12rem;
+    }
+  
+    .hero .slogan {
+      font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
+      position: absolute;
+      margin-top: 22rem;
+      text-align: center;
+    }
+    
+  
+    .circleHero img {
+  
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15rem;
+    }
+    .icon-row {
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: center; /* Centra los iconos en la columna */
+      gap: 40px; /* Ajusta el espacio entre los iconos */
+    }
+  
+    .icon-container {
+      padding-bottom: 40px; 
+    }
+  
+    .icon-text {
+      font-size: 12px; 
+    }
+   /*testimonio*/
+    #carousel-caption {
+      justify-content: flex-start;
+      height: auto;
+     }
+   /*Nuestro equipo*/ 
+  
+    #equipo .carousel-caption{
+      justify-content:flex-start ;
+    }
+    #nosotros .contact-button {
+      margin-left: 100%;
+    }
+    .textFooter{
+      padding-left: 100px;
+     }
+  }
+  
+  @media (min-height: 576px) and (max-height: 767px) and (orientation: landscape) {
+    /* Estilos para dispositivos en modo horizontal dentro de este rango de ancho */
+    .circleHero {
+      margin-top: 15rem;
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      margin-left: 10rem;
+    }
+    .vectors {
+      display: none;
+    
+    }
+    .hero .text-block {
+      margin-bottom: 30rem;
+      margin-right: 20%;
+      text-align: center;
+    }
+    .hero .text-block h1 {
+      font-size: 40px; 
+      width: 50rem;
+    }
+    .hero .button {
+     
+      margin-bottom: 30rem;
+      margin-right: 18rem;
+    }
+    .hero .slogan {
+      font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
+      position: absolute;
+      margin-top: 22rem;
+      text-align: center;
+    }
+    .circleHero img {
+  
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15rem;
+    }
+    .icon-row {
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: center; /* Centra los iconos en la columna */
+      gap: 40px; /* Ajusta el espacio entre los iconos */
+    }
+    .icon-container {
+      padding-bottom: 40px; 
+    }
+    .icon-text {
+      font-size: 12px; 
+    }
+   /*testimonio*/
+    #carousel-caption {
+      justify-content: flex-start;
+      height: auto;
+     }
+   /*Nuestro equipo*/ 
+  
+    #equipo .carousel-caption{
+      justify-content:flex-start ;
+    }
+    #nosotros .contact-button {
+      margin-left: 100%;
+    }
+    /*footer*/
+   
+     .social-icons-container img {
+      max-width: 30px;
+      margin-left: 0rem;
+    }
+    p {
+      font-size: 14px;
+    }
+    .textFooter{
+      padding-left: 0rem;
+      margin-top: -20rem;
+      margin-left: 1.5rem
+    }
+    #pFooter{
+      margin-left: 0rem;
+    }
+    .circle_logo{
+      margin-top: 5rem;
+      margin-left: -10rem;
+    }
+    .mover_circle_logo{
+      margin-left: -10rem;
+    }
+  }
+  
