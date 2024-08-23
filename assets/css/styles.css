@@ -819,56 +819,152 @@ width: 300px;
 
 /* realizando pruebas */
 
+@media (min-width: 1024px) and (max-width: 1279px) and (orientation: portrait) {
+  /* Estilos para tablets grandes */
+     /* Estilos para pantallas grandes */
+     .navbar-brand img {
+      width: 100%; /* Tamaño del logo */
+    }
+  
+    .circleHero {
+      margin-top: 40rem;
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+      margin-bottom: 30rem;
+    
+    }
+    .vectors {
+  
+      margin-left: 25rem;
+      max-width: 50%;
+      margin-top: 1rem;
+   
+    }
+
+    .hero .text-block {
+     
+      margin-bottom: 80%;
+      margin-left: 30rem;
+      width:1000x;
+      text-align: center;
+    }  
+    .hero .button {
+      margin-bottom: 80%;
+      margin-right: 10%;
+    }
+  
+     /*footer*/
+  .textFooter{
+    padding-left: 200px;
+   }
+  .card{
+    margin-left: 75px;
+  }
+  /*Nosotros*/
+  #nosotros .contact-button {
+    margin-left: 60%;
+  } 
+    
+}
+
+
+@media (min-height: 1024px) and (max-height: 1279px) and (orientation: landscape) {
+  /* Estilos para tablets grandes */
+     /* Estilos para pantallas grandes */
+     .navbar-brand img {
+      width: 100%; /* Tamaño del logo */
+    }
+  
+    .circleHero {
+      margin-top: 40rem;
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+      margin-bottom: 30rem;
+    
+    }
+    .vectors {
+  
+      margin-left: 25rem;
+      max-width: 50%;
+      margin-top: 1rem;
+   
+    }
+
+    .hero .text-block {
+     
+      margin-bottom: 40%;
+      margin-left: 30rem;
+      margin-right: -10rem;
+      width:1000x;
+      text-align: center;
+    }  
+    .hero .button {
+      margin-bottom: 30%;
+      margin-right: 2%;
+    }
+  
+    
+  
+  .textFooter{
+    padding-left: 200px;
+   }
+   .card{
+      margin-left: 75px;
+   }
+  
+    
+}
+
+
+/* funcionando*********************************************************************/
+
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
   /* Estilos para tablets estándar iPad (7ª, 8ª, 9ª generación) en modo vertical: Resolución de 810 x 1080 px.*/
     /* Estilos para escritorios y laptops */
-    .circleHero {
-      margin-top: 10rem;
-      border-radius: 50%;
-      width: 400px;
-      height: 400px;
-      margin-left: 9rem;
-     
-    }
-    .vectors {
-      display: none;
-    }
-    .hero .text-block {
-      margin-bottom: 40rem;
-      margin-right: 1rem;
-      text-align: center;
-    }
-    .hero .text-block h1 {
-      font-size: 40px; 
-      width: 40rem;
-    }
-    .hero .button {
-      margin-bottom: 40rem;
-      margin-right: 17rem;
-    }
-  
-    .hero .slogan {
-      font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
-      position: absolute;
-      margin-top: 22rem;
-      text-align: center;
-    }
-    
-  
-    .circleHero img {
-  
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 15rem;
-    }
-    /*Nosotros*/
-    #nosotros .contact-button {
-      margin-left: 100%;
-    }
-     /*footer*/
-   .social-icons-container{
+  .circleHero {
+    margin-top: 10rem;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left: 9rem;
+   }
+  .vectors {
+    display: none;
+  }
+  .hero .text-block {
+    margin-bottom: 40rem;
+    margin-right: 1rem;
+    text-align: center;
+   }
+  .hero .text-block h1 {
+    font-size: 40px; 
+    width: 40rem;
+  }
+  .hero .button {
+    margin-bottom: 40rem;
+    margin-right: 17rem;
+  }
+  .hero .slogan {
+    font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
+    position: absolute;
+    margin-top: 22rem;
+    text-align: center;
+  }
+  .circleHero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15rem;
+  }
+  /*Nosotros*/
+  #nosotros .contact-button {
+    margin-left: 100%;
+  }
+  /*footer*/
+  .social-icons-container{
     margin-right: -50rem;
-    }
+  }
   .social-icons-container img {
     max-width: 30px;
     margin-left: 0rem;
@@ -880,53 +976,44 @@ width: 300px;
     padding-left: 8rem;
     margin-top: -17rem;
     margin-left: 15rem;
-
   }
   #pFooter{
     margin-right: -50rem;
   }
-    /*Testimonio*/ 
-     #testimonios .carousel-item h5{
-      font-size: 10px;
-     }
-    #testimonios .carousel-item p{
-      font-size: 10px;
-    }
- 
-    #carousel-caption {
-      justify-content: center;
-      height: auto;
-    }
-    #text-width1 {
-      text-align: center !important;
-      font-size: 10px;
-      width: 15rem;
-      white-space: nowrap;      /* Evita el salto de línea */
-      overflow: hidden;         /* Oculta el texto que se desborda */
-      text-overflow: ellipsis;  /* Añade puntos suspensivos si el texto es muy largo */
-      display: block;           /* Asegura que el elemento sea tratado como un bloque */
+  /*Testimonio*/ 
+  #testimonios .carousel-item h5{
+    font-size: 10px;
   }
+  #testimonios .carousel-item p{
+    font-size: 10px;
+  }
+ 
+  #carousel-caption {
+    justify-content: center;
+    height: auto;
+  }
+  #text-width1 {
+    text-align: center !important;
+    font-size: 10px;
+    width: 15rem;
+    white-space: nowrap;      /* Evita el salto de línea */
+    overflow: hidden;         /* Oculta el texto que se desborda */
+    text-overflow: ellipsis;  /* Añade puntos suspensivos si el texto es muy largo */
+    display: block;           /* Asegura que el elemento sea tratado como un bloque */
+}
  /*Nuestro equipo*/ 
  #equipo .carousel-caption{
-  justify-content:flex-start ;
-
+   justify-content:flex-start ;
 }
-
 #equipo .carousel-item h5{
- 
   font-size: 10px;
   width: 20rem;
-
 }
 #equipo .carousel-item p{
- 
   font-size: 10px;
   width: 20rem;
-
 }
-   
 }
-
 @media (min-height: 768px) and (max-height: 1023px) and (orientation: landscape){
   /* Estilos para tablets estándar iPad (7ª, 8ª, 9ª generación) en modo vertical: Resolución de 810 x 1080 px.*/
     /* Estilos para escritorios y laptops */
@@ -961,8 +1048,7 @@ width: 300px;
       margin-top: 22rem;
       text-align: center;
     }
-    
-  
+      
   .circleHero img {
      max-width: 100%;
      height: auto;
@@ -999,14 +1085,6 @@ width: 300px;
 }
 
 
-
-
-
-
-/* funcionando*********************************************************************/
-
-
-
 @media (min-width: 576px) and (max-width: 767px)  {
   /* Estilos para dispositivos en modo vertical y horizontal dentro de este rango de ancho 
   Samsung Galaxy Fold (cerrado): 653x841 píxeles.*/
@@ -1034,15 +1112,12 @@ width: 300px;
     margin-bottom: 40rem;
     margin-right: 12rem;
   }
-
   .hero .slogan {
     font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
     position: absolute;
     margin-top: 22rem;
     text-align: center;
   }
-  
-
   .circleHero img {
 
     max-width: 100%;
@@ -1166,9 +1241,7 @@ Samsung Galaxy S20: 800x360 píxeles.*/
   .faq-button{
     width: 330px;
    }
-  
-
-}
+ }
 /*iPhone 8: 667x375 píxeles.
 iPhone X, iPhone 11 Pro, iPhone 12 Mini, iPhone 13 Mini: 812x375 píxeles.
 Samsung Galaxy S20: 800x360 píxeles.*/
@@ -1214,7 +1287,6 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     margin-bottom: 10rem;
   }
   /*footer*/
-
   .social-icons-container img {
     max-width: 30px;
     margin-left: 0rem;
@@ -1225,7 +1297,6 @@ Samsung Galaxy S20: 800x360 píxeles.*/
   }
   .social-icon{
     margin: 0rem;
-
   }
   p {
     font-size: 14px;
@@ -1265,27 +1336,18 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     text-overflow: ellipsis;  /* Añade puntos suspensivos si el texto es muy largo */
     display: block;           /* Asegura que el elemento sea tratado como un bloque */
 }
-
-
-
-
  /*Nuestro equipo*/ 
   #equipo .carousel-caption{
     justify-content:flex-start ;
-  
-  }
+   }
 
   #equipo .carousel-item h5{
-   
     font-size: 10px;
     width: 20rem;
-
   }
   #equipo .carousel-item p{
-   
     font-size: 10px;
     width: 20rem;
-
   }
   /*Nosotros*/
   #nosotros h2 {
@@ -1300,6 +1362,4 @@ Samsung Galaxy S20: 800x360 píxeles.*/
   .faq-button{
     width: 330px;
    }
-  
-
-}
+ }
