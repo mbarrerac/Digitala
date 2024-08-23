@@ -1123,16 +1123,14 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     margin-bottom: 10rem;
   }
   /*footer*/
-  /* .social-icons-container{
-    margin-right: 10rem;
-  } */
+
   .social-icons-container img {
     max-width: 30px;
     margin-left: 0rem;
  
   }
   .social-redes{
-margin-left: 40rem;
+    margin-left: 38rem;
   }
   .social-icon{
     margin: 0rem;
@@ -1143,7 +1141,7 @@ margin-left: 40rem;
   }
   .textFooter{
     margin-top: -16rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
     padding-left: 220px;
     width: 55rem;
   }
