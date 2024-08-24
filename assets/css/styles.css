@@ -837,9 +837,9 @@ width: 300px;
   }
 
   .hero .text-block {
-    color: hsl(77, 16%, 31%);
+    color: rgb(254, 149, 231);
     margin-bottom: 10rem;
-    margin-right: -3%;
+    margin-right: -5rem;
     width:1000x;
     text-align: center;
   }  
