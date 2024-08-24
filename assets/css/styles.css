@@ -840,7 +840,7 @@ width: 300px;
   .hero .text-block {
     color: rgb(254, 149, 231);
     margin-bottom: 10rem;
-    margin-right: -15rem;
+    margin-right: -10rem;
     width:1000x;
     text-align: center;
   }  
@@ -1216,6 +1216,7 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     margin-top: 0px;
     margin-bottom: 30rem;
     margin-left: 20px;
+    margin-right: -2rem;
     text-align: center;
   }
   .hero .text-block h1 {
@@ -1283,7 +1284,7 @@ Samsung Galaxy S20: 800x360 píxeles.*/
 /*iPhone 8: 667x375 píxeles.
 iPhone X, iPhone 11 Pro, iPhone 12 Mini, iPhone 13 Mini: 812x375 píxeles.
 Samsung Galaxy S20: 800x360 píxeles.*/
-@media  only screen and(max-height: 575px)  and (orientation: landscape) {
+@media  only screen and (max-height: 575px)  and (orientation: landscape) {
   .navbar-brand img {
     height: 40px; /* Ajusta el tamaño del logo */
     width: auto;
