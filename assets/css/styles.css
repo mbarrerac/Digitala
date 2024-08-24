@@ -169,7 +169,7 @@ body {
 .hero .text-block {
   position: absolute;
   margin-top: 0%;
-  right: 15%;
+  right: 10%;
   text-align: right;
   color: rgb(244, 246, 239);
   font-family: 'Poppins', sans-serif;
@@ -941,9 +941,12 @@ width: 300px;
       margin-bottom: 30%;
       margin-right: 2%;
     }
-  
+  /*nosotros*/
+  /* #nosotros{
+    padding: 0rem !important;
+  } */
     
-  
+  /*footer*/
   .textFooter{
     padding-left: 200px;
    }
@@ -1090,11 +1093,16 @@ width: 300px;
      height: auto;
      margin-bottom: 15rem;
    }
-   /*nosotros*/
+
+   #nosotros h2 {
+    margin-right: 30rem;
+    margin-top: -6rem;
+
+   }
    #nosotros .contact-button {
      margin-left: 100%;
    }
-
+ 
    /*footer*/
    .social-icons-container{
      margin-right: -100rem;
@@ -1363,6 +1371,9 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     margin-left: 50px;
   }
   /*Testimonio*/ 
+  #testimonios{
+    padding: 0rem !important;
+  }
   #carousel-caption {
     justify-content: flex-start;
     height: auto;
@@ -1390,9 +1401,13 @@ Samsung Galaxy S20: 800x360 píxeles.*/
     width: 20rem;
   }
   /*Nosotros*/
+  #nosotros{
+    padding: 0rem !important;
+  }
   #nosotros h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20rem;
   }
 
   #nosotros .contact-button {
