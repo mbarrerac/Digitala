@@ -817,7 +817,7 @@ width: 300px;
 
 /* realizando pruebas */
 
-@media only screen and (min-height: 1800px) and (max-height: 2880px) {
+@media only screen and (min-height: 1800px) and (max-height: 2880px) and (orientation: landscape) {
   /* Estilos para pantallas con resoluciones entre 1800px y 2880px */
   .circleHero {
     margin-top: 2%;
