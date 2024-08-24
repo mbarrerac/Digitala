@@ -817,6 +817,44 @@ width: 300px;
 
 /* realizando pruebas */
 
+@media only screen and (min-width: 1800px) and (max-width: 2880px) {
+  /* Estilos para pantallas con resoluciones entre 1800px y 2880px */
+  .circleHero {
+    margin-top: 2%;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    margin-right: 5%; 
+  
+  }
+
+  .vectors {
+
+    margin-left: 25rem;
+    max-width: 50%;
+    margin-top: 1rem;
+ 
+  }
+
+  .hero .text-block {
+    color: hsl(77, 16%, 31%);
+    margin-bottom: 80%;
+    margin-right: 10%;
+    width:1000x;
+    text-align: center;
+  }  
+
+ 
+  .hero .button {
+    margin-top: 200px;  
+    right: 10%;
+
+  }
+
+}
+
+/* funcionando*********************************************************************/
+
 @media (min-width: 1024px) and (max-width: 1279px) and (orientation: portrait) {
   /* Estilos para tablets grandes */
      /* Estilos para pantallas grandes */
@@ -914,9 +952,6 @@ width: 300px;
   
     
 }
-
-
-/* funcionando*********************************************************************/
 
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
   /* Estilos para tablets estándar iPad (7ª, 8ª, 9ª generación) en modo vertical: Resolución de 810 x 1080 px.*/
