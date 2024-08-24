@@ -167,13 +167,14 @@ body {
 }
 
 .hero .text-block {
-  color: #dee909;
   position: absolute;
   margin-top: 0%;
-  right: 10%;
+  right: 15%;
   text-align: right;
   color: rgb(244, 246, 239);
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 10rem;
+  margin-right: -5rem;
 }
 
 .hero .text-block h1 {
@@ -839,7 +840,7 @@ width: 300px;
   .hero .text-block {
     color: rgb(254, 149, 231);
     margin-bottom: 10rem;
-    margin-right: -5rem;
+    margin-right: -15rem;
     width:1000x;
     text-align: center;
   }  
