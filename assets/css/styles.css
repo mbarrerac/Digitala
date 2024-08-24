@@ -839,14 +839,14 @@ width: 300px;
   .hero .text-block {
     color: hsl(77, 16%, 31%);
     margin-bottom: 10rem;
-    margin-right: 10%;
+    margin-right: 1%;
     width:1000x;
     text-align: center;
   }  
 
  
   .hero .button {
-    margin-top: 200px;  
+    margin-top: 150x;  
     right: 10%;
 
   }
