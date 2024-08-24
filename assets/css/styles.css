@@ -820,7 +820,7 @@ width: 300px;
 
   /* Estilos para pantallas con resoluciones entre 1800px y 2880px */
   .circleHero {
-    margin-top: 2%;
+    margin-top: -1%;
     border-radius: 50%;
     width: 600px;
     height: 600px;
@@ -830,7 +830,7 @@ width: 300px;
 
   .vectors {
 
-    margin-left: 25rem;
+    margin-left: 30rem;
     max-width: 50%;
     margin-top: 1rem;
  
@@ -839,14 +839,14 @@ width: 300px;
   .hero .text-block {
     color: hsl(77, 16%, 31%);
     margin-bottom: 10rem;
-    margin-right: 1%;
+    margin-right: -3%;
     width:1000x;
     text-align: center;
   }  
 
  
   .hero .button {
-    margin-top: 150x;  
+    margin-top: 100x;  
     right: 10%;
 
   }
