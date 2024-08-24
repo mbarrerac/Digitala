@@ -817,7 +817,7 @@ width: 300px;
 
 /* realizando pruebas */
 
-@media only screen and (min-device-height: 1800px) and (max-device-height: 2880px) and (orientation: landscape) {
+@media only screen and (min-height: 1800px) and (max-height: 2880px) and (orientation: landscape) {
   /* Estilos para pantallas con resoluciones entre 1800px y 2880px */
   .circleHero {
     margin-top: 2%;
@@ -855,7 +855,7 @@ width: 300px;
 
 /* funcionando*********************************************************************/
 
-@media  only screen and (min-device-width: 1024px) and (max-device-width: 1279px) and (orientation: portrait) {
+@media  only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: portrait) {
   /* Estilos para tablets grandes */
      /* Estilos para pantallas grandes */
      .navbar-brand img {
@@ -905,7 +905,7 @@ width: 300px;
 }
 
 
-@media  only screen and (min-device-height: 1024px) and (max-device-height: 1279px) and (orientation: landscape) {
+@media  only screen and (min-height: 1024px) and (max-height: 1279px) and (orientation: landscape) {
   /* Estilos para tablets grandes */
      /* Estilos para pantallas grandes */
      .navbar-brand img {
@@ -953,7 +953,7 @@ width: 300px;
     
 }
 
-@media  only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait){
+@media  only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
   /* Estilos para tablets estándar iPad (7ª, 8ª, 9ª generación) en modo vertical: Resolución de 810 x 1080 px.*/
     /* Estilos para escritorios y laptops */
   .circleHero {
@@ -1048,7 +1048,7 @@ width: 300px;
   width: 20rem;
 }
 }
-@media  only screen and (min-device-height: 768px) and (max-device-height: 1023px) and (orientation: landscape){
+@media  only screen and (min-height: 768px) and (max-height: 1023px) and (orientation: landscape){
   /* Estilos para tablets estándar iPad (7ª, 8ª, 9ª generación) en modo vertical: Resolución de 810 x 1080 px.*/
     /* Estilos para escritorios y laptops */
     .circleHero {
@@ -1120,7 +1120,7 @@ width: 300px;
 }
 
 
-@media  only screen and (min-device-width: 576px) and (max-device-width: 767px)  {
+@media  only screen and (min-width: 576px) and (max-width: 767px)  {
   /* Estilos para dispositivos en modo vertical y horizontal dentro de este rango de ancho 
   Samsung Galaxy Fold (cerrado): 653x841 píxeles.*/
   .circleHero {
@@ -1194,7 +1194,7 @@ width: 300px;
 /*iPhone 8: 667x375 píxeles.
 iPhone X, iPhone 11 Pro, iPhone 12 Mini, iPhone 13 Mini: 812x375 píxeles.
 Samsung Galaxy S20: 800x360 píxeles.*/
-@media  only screen and (max-device-height: 575px)  and (orientation: portrait) {
+@media  only screen and (max-width: 575px)  and (orientation: portrait) {
   .navbar-brand img {
     width: 50%; /* Tamaño del logo */
     height: 50%;
@@ -1282,7 +1282,7 @@ Samsung Galaxy S20: 800x360 píxeles.*/
 /*iPhone 8: 667x375 píxeles.
 iPhone X, iPhone 11 Pro, iPhone 12 Mini, iPhone 13 Mini: 812x375 píxeles.
 Samsung Galaxy S20: 800x360 píxeles.*/
-@media  only screen and (max-device-height: 575px)  and (orientation: landscape) {
+@media  only screen and(max-height: 575px)  and (orientation: landscape) {
   .navbar-brand img {
     height: 40px; /* Ajusta el tamaño del logo */
     width: auto;
