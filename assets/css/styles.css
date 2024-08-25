@@ -168,19 +168,19 @@ body {
     font-size: 40px; 
 }
 .hero .button {
-padding: 15px 30px;
-background-color: rgb(244, 246, 239);
-color: rgb(123, 45, 116);
-font-size: 16px;
-font-family: 'Poppins', sans-serif;
-border: none;
-border-radius: 40px;
-cursor: pointer;
+  padding: 15px 30px;
+  background-color: rgb(244, 246, 239);
+  color: rgb(123, 45, 116);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
 }
 
 .hero .button:hover {
-background-color: rgb(75, 105, 84);
-color: rgb(244, 246, 239);
+  background-color: rgb(75, 105, 84);
+  color: rgb(244, 246, 239);
 }
 /* te agobia*/
 .section-centered {
@@ -821,7 +821,7 @@ width: 300px;
         height: 60vw;
         margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
         margin-left: 6vw;
-        margin-top: 20vw;
+        margin-top: 30vw;
       }
 
       .slogan {
@@ -836,12 +836,15 @@ width: 300px;
       }
       .text-block {
         top: 5px; /* Ajusta la distancia desde la parte superior para pantallas más pequeñas */
-        right: 15vw; /* Ajusta la distancia desde la parte derecha para pantallas más pequeñas */
+        right: 7vw; /* Ajusta la distancia desde la parte derecha para pantallas más pequeñas */
         width: 350px; /* Ajusta el ancho del bloque de texto para pantallas más pequeñas */
         color: rgb(104, 9, 237);
       }
       .text-block h1{
         font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
  
+      }
+      .hero .button {
+        right: 20vw; 
       }
     }
