@@ -824,8 +824,10 @@ width: 300px;
         right: 0; /* Mantén el vector alineado a la derecha */
       }
       .text-block {
+        margin: 0;
+        padding: 0;
         top: 5px; /* Ajusta la distancia desde la parte superior para pantallas más pequeñas */
-        right: 7vw; /* Ajusta la distancia desde la parte derecha para pantallas más pequeñas */
+        right: 15vw; /* Ajusta la distancia desde la parte derecha para pantallas más pequeñas */
         width: 350px; /* Ajusta el ancho del bloque de texto para pantallas más pequeñas */
         color: rgb(104, 9, 237);
       }
