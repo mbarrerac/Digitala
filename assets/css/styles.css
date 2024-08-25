@@ -800,6 +800,7 @@ width: 300px;
       }
 
       .vectors {
+        display: none;
         width: 40vw;
         max-width: 250px; /* Ajusta el tamaño máximo si es necesario */
         right: 0; /* Mantén el vector alineado a la derecha */
