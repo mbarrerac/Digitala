@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Digítala</title>
+  <!-- Enlaza Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Enlaza Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Enlaza Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+  <!-- Enlaza css -->
+  <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+  <style>
+    .hero {
+      position: relative; /* Establece un contexto de posicionamiento para los elementos hijos */
+      display: flex;
+      align-items: center;
+    }
+
+    .circleHero {
+      width: 30vw; /* El círculo ocupará el 30% del ancho del viewport */
+      height: 30vw; /* Mantén el círculo con las mismas proporciones */
+      border-radius: 50%; /* Asegura que sea un círculo perfecto */
+      display: flex;
+      flex-direction: column; /* Organiza los elementos verticalmente */
+      align-items: center;
+      justify-content: center;
+      background-color: white; /* O el color que desees */
+      padding: 10px;
+      margin-right: 5vw; /* Espacio entre el círculo y el vector */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative; /* Posiciona el círculo de manera relativa */
+    }
+
+    .circleHero img {
+      width: 70%; /* Ajusta el tamaño del logo dentro del círculo */
+      margin-bottom: 10px; /* Espacio debajo de la imagen */
+    }
+
+    .slogan {
+      font-family: 'Poppins', sans-serif;  
+      font-size: 1.5vw; /* Ajusta el tamaño del texto basado en el viewport width */
+      color: rgb(121, 161, 130);
+      font-weight: 700; 
+      text-align: center;
+    }
+
+    .vectors {
+      width: 30vw; /* El vector ocupará el 30% del ancho del viewport */
+      max-width: 500px; /* Establece un tamaño máximo si es necesario */
+      height: auto; /* Mantén la proporción del vector */
+      position: absolute; /* Posiciona el vector de manera absoluta */
+      right: 5wv; /* Coloca el vector al costado derecho del círculo */
+      top: 50%; /* Centra verticalmente el vector */
+      transform: translateX(40%) translateY(-30%); /* Ajusta la posición vertical del vector */
+    }
+
+    .text-block {
+      color: rgb(244, 246, 239);
+      font-family: 'Poppins', sans-serif;  
+      position: absolute; /* Posiciona el contenido de texto de manera absoluta */
+      top: 120px; /* Ajusta la distancia desde la parte superior */
+      right: 20px; /* Ajusta la distancia desde la parte derecha */
+      width: 600px; /* Ajusta el ancho del bloque de texto */
+      max-width: 90%; /* Limita el ancho máximo del bloque de texto */
+      text-align: right; /* Alinea el texto a la derecha */
+    }
+    .text-block h1{
+        font-size: 40px; 
+    }
+    .hero .button {
+    padding: 15px 30px;
+    background-color: rgb(244, 246, 239);
+    color: rgb(123, 45, 116);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    }
+
+    .hero .button:hover {
+    background-color: rgb(75, 105, 84);
+    color: rgb(244, 246, 239);
+    }
+    /* Media queries para tamaños específicos */
+    @media (max-width: 768px) {
+      .circleHero {
+        width: 50vw;
+        height: 50vw;
+        margin-right: 3vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+      }
+
+      .slogan {
+        font-size: 3vw;
+      }
+
+      .vectors {
+        width: 40vw;
+        max-width: 250px; /* Ajusta el tamaño máximo si es necesario */
+        right: 0; /* Mantén el vector alineado a la derecha */
+      }
+      .text-block {
+         color: #ed7b09;
+         width: 300px; /* Ajusta el ancho del bloque de texto */
+
+      }
+      .text-block h1{
+        font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
+ 
+      }
+    }
+
+    @media (max-width: 576px) {
+      .circleHero {
+        width: 60vw;
+        height: 60vw;
+        margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+        margin-left: 6vw;
+        margin-top: 20vw;
+      }
+
+      .slogan {
+        font-size: 2vw;
+      }
+
+      .vectors {
+        display: none;
+        width: 50vw;
+        max-width: 200px; /* Ajusta el tamaño máximo si es necesario */
+        right: 0; /* Mantén el vector alineado a la derecha */
+      }
+      .text-block {
+        top: 5px; /* Ajusta la distancia desde la parte superior para pantallas más pequeñas */
+        right: 15vw; /* Ajusta la distancia desde la parte derecha para pantallas más pequeñas */
+        width: 350px; /* Ajusta el ancho del bloque de texto para pantallas más pequeñas */
+        color: rgb(104, 9, 237);
+      }
+      .text-block h1{
+        font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
+ 
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- heroSection -->
+  <section class="heroSection">
+    <div class="hero row" style="background: url('./assets/img/archipielagoChiloe.jpg') no-repeat center center/cover;">
+      
+      <!-- Center Column: Logo and Slogan -->
+      <div class="col-lg-4 col-md-4 col-sm-12 mt-5 ms-5 flex-column align-items-center justify-content-center text-center position-relative">
+        <img src="./assets/img/patronVector.svg" alt="Patron" class="vectors img-fluid">
+        <div class="circleHero mb-4">
+          <img src="./assets/img/LogoDigitala.png" alt="Logo" class="img-fluid">
+          <p class="slogan">Transformando ideas en realidad<br>desde el corazón del sur.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-8 col-md-8 col-sm-12 d-flex flex-column align-items-center justify-content-center text-center text-block">
+        <h1>Desarrollo de software | 
+            Cloud Ingeniería de datos</h1>
+        <button class="button btn btn-primary">Contacto</button>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
