@@ -726,7 +726,12 @@ width: 300px;
 .footer .social-icons-row{
     text-align: right
 }
-
+   /* Media queries para tamaños específicos */
+   @media (max-width: 1023px) {
+    .vectors {
+      display: none;
+    }
+   }
 
     /* Media queries para tamaños específicos */
     @media (max-width: 768px) {
