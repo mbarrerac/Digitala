@@ -808,8 +808,8 @@ width: 300px;
       .circleHero {
         width: 60vw;
         height: 60vw;
-        margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
-        margin-left: 6vw;
+        /*margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+        margin-left: 3%;
         margin-top: 30vw;
       }
 
@@ -824,12 +824,12 @@ width: 300px;
         right: 0; /* Mantén el vector alineado a la derecha */
       }
       .text-block {
-        margin: 0;
-        padding: 0;
-        top: 5px; /* Ajusta la distancia desde la parte superior para pantallas más pequeñas */
-        right: 15vw; /* Ajusta la distancia desde la parte derecha para pantallas más pequeñas */
-        width: 350px; /* Ajusta el ancho del bloque de texto para pantallas más pequeñas */
+        top: 5px;
+        right: 0;
+        left: 0;
+        width: 100%; /* Asegura que el ancho sea del 100% */
         color: rgb(104, 9, 237);
+        text-align: center; /* Centra el contenido */
       }
       .text-block h1{
         font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
