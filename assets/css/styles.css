@@ -747,12 +747,9 @@ width: 300px;
 
       .vectors {
         display: none;
-        width: 40vw;
-        max-width: 250px; /* Ajusta el tamaño máximo si es necesario */
-        right: 0; /* Mantén el vector alineado a la derecha */
       }
       .text-block {
-         color: #ed7b09;
+        color: rgb(244, 246, 239);
          width: 300px; /* Ajusta el ancho del bloque de texto */
 
       }
@@ -824,9 +821,6 @@ width: 300px;
 
       .vectors {
         display: none;
-        width: 50vw;
-        max-width: 200px; /* Ajusta el tamaño máximo si es necesario */
-        right: 0; /* Mantén el vector alineado a la derecha */
       }
       .text-block {
         margin-top: 10px;
@@ -834,7 +828,7 @@ width: 300px;
         right: 0;
         left: 0;
         width: 100%; /* Asegura que el ancho sea del 100% */
-        color: rgb(104, 9, 237);
+        color: rgb(244, 246, 239);
         text-align: center; /* Centra el contenido */
       }
       .text-block h1{
