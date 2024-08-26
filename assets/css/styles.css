@@ -757,8 +757,8 @@ width: 300px;
       }
       /*footer*/
       .footer .circleHero {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         margin-right: 0;
         margin-bottom: 20px;
       }
@@ -840,4 +840,5 @@ width: 300px;
         margin-top:10px;
         right: 20vw; 
       }
+
     }
