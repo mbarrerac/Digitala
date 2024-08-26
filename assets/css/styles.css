@@ -727,7 +727,7 @@ width: 300px;
     text-align: right
 }
    /* Media queries para tamaños específicos */
-   @media (max-width: 1023px) {
+   @media (max-width: 1024px) {
     .vectors {
       display: none;
     }
