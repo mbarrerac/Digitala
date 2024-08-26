@@ -146,7 +146,7 @@ body {
 
 .vectors {
   width: 30vw; /* El vector ocupará el 30% del ancho del viewport */
-  max-width: 500px; /* Establece un tamaño máximo si es necesario */
+  max-width: auto; /* Establece un tamaño máximo si es necesario */
   height: auto; /* Mantén la proporción del vector */
   position: absolute; /* Posiciona el vector de manera absoluta */
   right: 5wv; /* Coloca el vector al costado derecho del círculo */
