@@ -78,7 +78,7 @@ body {
   font-family: 'Poppins', sans-serif; /* Fuente Poppins */
 }
 
-.contact-button {
+.contact-button_nav {
   background-color: rgb(123, 45, 116); /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   border: none; /* Sin borde */
@@ -86,7 +86,7 @@ body {
   padding: 10px 20px; /* Padding interior */
 }
 
-.contact-button:hover {
+.contact-button_nav:hover {
   background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
 }
 
@@ -111,87 +111,63 @@ body {
 
 /* Hero Section */
 .hero {
-  position: relative;
-  height: 100vh;
-  background: url('/assets/img/archipielagoChiloe2.jpg') no-repeat center center/cover;
+  position: relative; /* Establece un contexto de posicionamiento para los elementos hijos */
   display: flex;
   align-items: center;
-  padding-left: 5%; 
-  
 }
 
 .circleHero {
-  position: relative;
-  background-color: #E0EAE2;
-  border-radius: 50%;
-  width: 600px;
-  height: 600px;
+  width: 30vw; /* El círculo ocupará el 30% del ancho del viewport */
+  height: 30vw; /* Mantén el círculo con las mismas proporciones */
+  border-radius: 50%; /* Asegura que sea un círculo perfecto */
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Organiza los elementos verticalmente */
   align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-right: 5%; 
-  margin-top: 2%;
-  z-index: 2; 
+  justify-content: center;
+  background-color: white; /* O el color que desees */
+  padding: 10px;
+  margin-right: 5vw; /* Espacio entre el círculo y el vector */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Posiciona el círculo de manera relativa */
 }
 
 .circleHero img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 100px;
+  width: 70%; /* Ajusta el tamaño del logo dentro del círculo */
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
 }
 
-.circleHero p {
+.slogan {
+  font-family: 'Poppins', sans-serif;  
+  font-size: 1.5vw; /* Ajusta el tamaño del texto basado en el viewport width */
   color: rgb(121, 161, 130);
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
- }
-.hero .slogan {
-  color: rgb(121, 161, 130);
-  font-size: 24px;
   font-weight: 700; 
-  margin-top: 5px;
-  margin-bottom: 10rem;
-
+  text-align: center;
 }
-
 
 .vectors {
-  position: absolute;
-  margin-left: 28%;
-  max-width: 40%;
-  height: auto;
-  z-index: 1; 
+  width: 30vw; /* El vector ocupará el 30% del ancho del viewport */
+  max-width: 500px; /* Establece un tamaño máximo si es necesario */
+  height: auto; /* Mantén la proporción del vector */
+  position: absolute; /* Posiciona el vector de manera absoluta */
+  right: 5wv; /* Coloca el vector al costado derecho del círculo */
+  top: 50%; /* Centra verticalmente el vector */
+  transform: translateX(40%) translateY(-30%); /* Ajusta la posición vertical del vector */
 }
 
-.hero .text-block {
-  position: absolute;
-  margin-top: 0%;
-  right: 10%;
-  text-align: right;
+.text-block {
   color: rgb(244, 246, 239);
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 10rem;
-  margin-right: -5rem;
+  font-family: 'Poppins', sans-serif;  
+  position: absolute; /* Posiciona el contenido de texto de manera absoluta */
+  top: 120px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la parte derecha */
+  width: 600px; /* Ajusta el ancho del bloque de texto */
+  max-width: 90%; /* Limita el ancho máximo del bloque de texto */
+  text-align: right; /* Alinea el texto a la derecha */
 }
-
-.hero .text-block h1 {
-  font-size: 40px; 
-  margin-bottom: 20px;
-  font-weight: bold;
-  width: 50rem
+.text-block h1{
+    font-size: 40px; 
 }
-
-.hero .text-block p {
-  font-size: 30px; 
-}
-
 .hero .button {
-  position: absolute;
-  margin-top: 200px;  
-  right: 10%;
   padding: 15px 30px;
   background-color: rgb(244, 246, 239);
   color: rgb(123, 45, 116);
@@ -206,21 +182,13 @@ body {
   background-color: rgb(75, 105, 84);
   color: rgb(244, 246, 239);
 }
-.cut-bottom {
-  position: absolute;
-  bottom: -2.5%; 
-  width: 100%;
-  height: 80px; 
-  background-color: #fff; 
-}
-
+/* te agobia*/
 .section-centered {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .textSubTitles {
   color: rgb(75, 105, 84);
   font-size: 36px;
@@ -260,12 +228,7 @@ body {
   font-size: 14px; /* Tamaño del texto */
 }
 
-
-
-
-
 /* Que ofrecemos */
-
 .card {
   margin: 0 !important;
   background-color: rgb(123, 45, 116);
@@ -309,16 +272,11 @@ body {
   color: rgb(0, 0, 0) !important;
 }
 
-
-
-
-
 /* Metodología de Trabajo */
 .metodologia {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 50px; */
   background-color: rgb(244, 246, 239);
   color: rgb(75, 105, 84);
 }
@@ -366,18 +324,15 @@ body {
   justify-content: space-around;
   width: 100%;
   margin-top: 40px;
-  /* border: 5px solid green; */
 }
 
-
 /*algunos proyectos*/
-
 .project-section {
   text-align: center;
   padding: 50px 0;
 }
 .project-title {
-   margin-bottom: 60px;
+  margin-bottom: 60px;
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   font-weight: bold; 
@@ -420,8 +375,6 @@ body {
   max-width: 200px;
 }
 
-
-
 /* Nuestras certificaciones*/
 .textTitles{
   color: rgb(75, 105, 84);
@@ -439,15 +392,10 @@ body {
   padding: 20px;
 }
 
-
 /*carrusel testimonios*/
 #testimonios .carousel-item {
   padding: 20px 0;
 }
-
-/* #testimonios .carousel-caption {
-  padding: 30px;
-} */
 
 .carousel-caption {
 display: flex;
@@ -456,7 +404,6 @@ justify-content: space-between;
 height: 100%;
 text-align: center;
 }
-
 
 .text-width{
 width: 300px;
@@ -480,7 +427,6 @@ width: 300px;
   
 }
 
-
 #testimonios .carousel-control-prev-icon,
 #testimonios .carousel-control-next-icon {
 
@@ -498,11 +444,9 @@ width: 300px;
 }
 
 #testimonios .img-fluid{
-  /*damos ancho y alto a la imagen*/
   width: 150px;
   height: 150px;
 }
-
 
 .custom-color {
   color: rgb(123, 45, 116);
@@ -540,8 +484,8 @@ width: 300px;
 }
 
 #nosotros p {
-  text-align: center; /* Alineación del párrafo al centro */
-  margin: 20px 0; /* Espacio inferior para separar del botón */
+  text-align: center; 
+  margin: 20px 0; 
   white-space: pre-line; /* Para mantener los saltos de línea */
 }
 
@@ -559,8 +503,9 @@ width: 300px;
   border: none; 
   border-radius: 20px; 
   padding: 10px 20px; 
-  margin-left: 200%;
+  font-size: 1rem;
 }
+
 #nosotros .contact-button:hover {
   background-color: rgb(171, 188, 7);
   color: black
@@ -570,7 +515,6 @@ width: 300px;
 #equipo .carousel-item {
   padding: 20px 0;
 }
-
 
 #equipo .carousel-item h5{
   padding-top: 10px;
@@ -588,22 +532,18 @@ width: 300px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   flex-grow: 1;
-  
 }
-
 
 #equipo .carousel-control-prev-icon,
 #equipo .carousel-control-next-icon {
-
  background-color:rgb(0, 0, 0);
 }
 
 #equipo .carousel-control-prev{
-
   margin-left: -8%;
 }
-#equipo .carousel-control-next{
 
+#equipo .carousel-control-next{
   margin-right: -8%;
 }
 
@@ -611,7 +551,6 @@ width: 300px;
   width: 150px;
   height: 150px;
 }
-
 
 .custom-color-equipo {
   color: white;
@@ -722,699 +661,184 @@ width: 300px;
 }
 
 /* Footer */
-.bg-footer {
+.footer {
   background-color: rgb(123, 45, 116);
+  margin-top: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 1vw;
 }
 
-.circle-logo {
-  width: 300px;
-  height: 300px;
-  background-color: #fff;
+.footer .circleHero {
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin-right: 5vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.circle-image {
-  border-radius: 50%;
-  width: 100%;
+.footer .circleHero img {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.footer img {
+  max-width: 100%;
   height: auto;
 }
 
-.social-icons-container {
-  margin-top: 50px;
-}
-
-.social-icons-container img {
-  max-width: 40px;
-}
-.textFooter{
-  padding-left: 200px;
-}
-
-.text-white {
+.footer p {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #fff; 
-  text-align: left;
-
-} 
-.bg-footer {
-  background-color: rgb(123, 45, 116);
+  color: #fff;
+  margin: 0;
 }
 
-.circle-logo {
-  width: 300px;
-  height: 300px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+.footer .social-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 10px;
 }
 
-.circle-image {
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-}
-
-.social-icons-container {
-  margin-top: 50px;
-}
-
-.social-icons-container img {
-  max-width: 40px;
-}
-.textFooter{
-  padding-left: 200px;
-}
-
-.text-a-footer {
+.footer h5 {
+  text-align: right;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #fff; 
-  text-align: left;
-
-} 
-
-.text-a-footer:hover {
-  color:rgb(171, 188, 7);
+  color: #fff;
+  margin: 0;
 }
 
-.text-p-footer {
+.footer .text-a-footer {
   font-family: 'Poppins', sans-serif;
-  
-  font-size: 14px;
-  color: #fff; 
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
   text-align: left;
-
-} 
-
-/* realizando pruebas */
-@media only screen and (min-width: 1440px) and (max-width: 2880px) and (orientation: landscape) {
-
-  /* Estilos para pantallas con resoluciones entre 1800px y 2880px */
-  .circleHero {
-    margin-top: -1%;
-    border-radius: 50%;
-    width: 600px;
-    height: 600px;
-    margin-right: 5%; 
-  
-  }
-
-  .vectors {
-
-    margin-left: 30rem;
-    max-width: 50%;
-    margin-top: 1rem;
- 
-  }
-
-  .hero .text-block {
-    color: rgb(254, 149, 231);
-    margin-bottom: 10rem;
-    margin-right: -10rem;
-    width:1000x;
-    text-align: center;
-  }  
-
- 
-  .hero .button {
-    margin-top: 100x;  
-    right: 10%;
-
-  }
-
+}
+.footer .social-icons-row{
+    text-align: right
 }
 
-/* funcionando*********************************************************************/
 
-@media  only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: portrait) {
-  /* Estilos para tablets grandes */
-     /* Estilos para pantallas grandes */
-     .navbar-brand img {
-      width: 100%; /* Tamaño del logo */
-    }
-  
-    .circleHero {
-      margin-top: 40rem;
-      border-radius: 50%;
-      width: 500px;
-      height: 500px;
-      margin-bottom: 30rem;
+    /* Media queries para tamaños específicos */
+    @media (max-width: 768px) {
+      .circleHero {
+        width: 50vw;
+        height: 50vw;
+        margin-right: 3vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+      }
+
+      .slogan {
+        font-size: 3vw;
+      }
+
+      .vectors {
+        display: none;
+        width: 40vw;
+        max-width: 250px; /* Ajusta el tamaño máximo si es necesario */
+        right: 0; /* Mantén el vector alineado a la derecha */
+      }
+      .text-block {
+         color: #ed7b09;
+         width: 300px; /* Ajusta el ancho del bloque de texto */
+
+      }
+      .text-block h1{
+        font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
+ 
+      }
+      /*footer*/
+      .footer .circleHero {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .footer .col-lg-8 {
+        order: 2;
+      }
+
+      .footer .col-lg-4,
+      .footer .col-lg-2 {
+        order: 1;
+        text-align: center;
+      }
+
+      .footer .col-lg-2 {
+        margin-top: 20px;
+      }
+
+      .footer .text-a-footer {
+        font-size: 14px;
+      }
+
+      .footer p {
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .footer h5 {
+        text-align: center;
+      }
+
+      .footer .social-icons {
+        text-align: center;
+        margin: 0;
+      }
+
+      .footer .social-icon {
+        margin: 0 5px; /* Ajusta el margen entre íconos si es necesario */
+      }
+      .footer .list-unstyled{
+        text-align: center;
+      }
     
     }
-    .vectors {
-  
-      margin-left: 25rem;
-      max-width: 50%;
-      margin-top: 1rem;
-   
-    }
 
-    .hero .text-block {
-      color: #e50909;
-      margin-bottom: 80%;
-      margin-left: 30rem;
-      width:1000x;
-      text-align: center;
-    }  
-    .hero .button {
-      margin-bottom: 80%;
-      margin-right: 10%;
-    }
-  
-     /*footer*/
-  .textFooter{
-    padding-left: 200px;
-   }
-  .card{
-    margin-left: 75px;
-  }
-  /*Nosotros*/
-  #nosotros .contact-button {
-    margin-left: 60%;
-  } 
-    
-}
+    @media (max-width: 576px) {
+      .circleHero {
+        width: 60vw;
+        height: 60vw;
+        /*margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+        margin-left: 3%;
+        margin-top: 30vw;
+      }
 
+      .slogan {
+        font-size: 2vw;
+      }
 
-@media  only screen and (min-height: 1024px) and (max-height: 1279px) and (orientation: landscape) {
-  /* Estilos para tablets grandes */
-     /* Estilos para pantallas grandes */
-     .navbar-brand img {
-      width: 100%; /* Tamaño del logo */
-    }
-  
-    .circleHero {
-      margin-top: 40rem;
-      border-radius: 50%;
-      width: 500px;
-      height: 500px;
-      margin-bottom: 30rem;
-    
-    }
-    .vectors {
-  
-      margin-left: 25rem;
-      max-width: 50%;
-      margin-top: 1rem;
-   
-    }
-
-    .hero .text-block {
-      color: #b2f606;
-      margin-bottom: 40%;
-      margin-left: 30rem;
-      margin-right: -10rem;
-      width:1000x;
-      text-align: center;
-    }  
-    .hero .button {
-      margin-bottom: 30%;
-      margin-right: 2%;
-    }
-  /*nosotros*/
-  /* #nosotros{
-    padding: 0rem !important;
-  } */
-    
-  /*footer*/
-  .textFooter{
-    padding-left: 200px;
-   }
-   .card{
-      margin-left: 75px;
-   }
-  
-    
-}
-
-@media  only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
-  /* Estilos para tablets estándar iPad (7ª, 8ª, 9ª generación) en modo vertical: Resolución de 810 x 1080 px.*/
-    /* Estilos para escritorios y laptops */
-  .circleHero {
-    margin-top: 10rem;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin-left: 9rem;
-   }
-  .vectors {
-    display: none;
-  }
-  .hero .text-block {
-    color: #14160f;
-    margin-bottom: 40rem;
-    margin-right: 1rem;
-    text-align: center;
-   }
-  .hero .text-block h1 {
-    font-size: 40px; 
-    width: 40rem;
-  }
-  .hero .button {
-    margin-bottom: 40rem;
-    margin-right: 17rem;
-  }
-  .hero .slogan {
-    font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
-    position: absolute;
-    margin-top: 22rem;
-    text-align: center;
-  }
-  .circleHero img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15rem;
-  }
-  /*Nosotros*/
-  #nosotros .contact-button {
-    margin-left: 100%;
-  }
-  /*footer*/
-  .social-icons-container{
-    margin-right: -50rem;
-  }
-  .social-icons-container img {
-    max-width: 30px;
-    margin-left: 0rem;
-  }
-  p {
-    font-size: 14px;
-  }
-  .textFooter{
-    padding-left: 8rem;
-    margin-top: -17rem;
-    margin-left: 15rem;
-  }
-  #pFooter{
-    margin-right: -50rem;
-  }
-  /*Testimonio*/ 
-  #testimonios .carousel-item h5{
-    font-size: 10px;
-  }
-  #testimonios .carousel-item p{
-    font-size: 10px;
-  }
+      .vectors {
+        display: none;
+        width: 50vw;
+        max-width: 200px; /* Ajusta el tamaño máximo si es necesario */
+        right: 0; /* Mantén el vector alineado a la derecha */
+      }
+      .text-block {
+        margin-top: 10px;
+        top: 5px;
+        right: 0;
+        left: 0;
+        width: 100%; /* Asegura que el ancho sea del 100% */
+        color: rgb(104, 9, 237);
+        text-align: center; /* Centra el contenido */
+      }
+      .text-block h1{
+        font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
  
-  #carousel-caption {
-    justify-content: center;
-    height: auto;
-  }
-  #text-width1 {
-    text-align: center !important;
-    font-size: 10px;
-    width: 15rem;
-    white-space: nowrap;      /* Evita el salto de línea */
-    overflow: hidden;         /* Oculta el texto que se desborda */
-    text-overflow: ellipsis;  /* Añade puntos suspensivos si el texto es muy largo */
-    display: block;           /* Asegura que el elemento sea tratado como un bloque */
-}
- /*Nuestro equipo*/ 
- #equipo .carousel-caption{
-   justify-content:flex-start ;
-}
-#equipo .carousel-item h5{
-  font-size: 10px;
-  width: 20rem;
-}
-#equipo .carousel-item p{
-  font-size: 10px;
-  width: 20rem;
-}
-}
-@media  only screen and (min-height: 768px) and (max-height: 1023px) and (orientation: landscape){
-  /* Estilos para tablets estándar iPad (7ª, 8ª, 9ª generación) en modo vertical: Resolución de 810 x 1080 px.*/
-    /* Estilos para escritorios y laptops */
-    .circleHero {
-      margin-top: 5rem;
-      border-radius: 50%;
-      width: 400px;
-      height: 400px;
-      margin-left: -2rem;
-     
+      }
+      .hero .button {
+        margin-top:10px;
+        right: 20vw; 
+      }
+
     }
-    .vectors {
-      display: none;
-    }
-    .hero .text-block {
-      color: #480af4;
-      margin-bottom: 4rem;
-      margin-right: -6rem;
-      text-align: center;
-    }
-    .hero .text-block h1 {
-      font-size: 40px; 
-      width: 40rem;
-    }
-    .hero .button {
-      margin-bottom: 4rem;
-      margin-right: -2rem;
-    }
-  
-    .hero .slogan {
-      font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
-      position: absolute;
-      margin-top: 22rem;
-      text-align: center;
-    }
-      
-  .circleHero img {
-     max-width: 100%;
-     height: auto;
-     margin-bottom: 15rem;
-   }
-
-   #nosotros h2 {
-    margin-right: 30rem;
-    margin-top: -6rem;
-
-   }
-   #nosotros .contact-button {
-     margin-left: 100%;
-   }
- 
-   /*footer*/
-   .social-icons-container{
-     margin-right: -100rem;
-    }
-   .social-icons-container img {
-     max-width: 30px;
-     margin-left: 0rem;
-    }
-    p {
-     font-size: 14px;
-   }
-   .textFooter{
-     padding-left: 0rem;
-     margin-top: 6rem;
-     margin-left: 15rem
-   }
-   #pFooter{
-     margin-right: -93rem;
-   }
-   .circle-logo{
-     margin-top: 4rem;
-   }
-   
-}
-
-
-@media  only screen and (min-width: 576px) and (max-width: 767px)  {
-  /* Estilos para dispositivos en modo vertical y horizontal dentro de este rango de ancho 
-  Samsung Galaxy Fold (cerrado): 653x841 píxeles.*/
-  .circleHero {
-    margin-top: 10rem;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin-left: 5rem;
-   
-  }
-  .vectors {
-    display: none;
-  }
-  .hero .text-block {
-    color: #923b05;
-    margin-bottom: 40rem;
-    margin-right: -3.5rem;
-    text-align: center;
-  }
-  .hero .text-block h1 {
-    font-size: 40px; 
-    width: 40rem;
-  }
-  .hero .button {
-    margin-bottom: 40rem;
-    margin-right: 12rem;
-  }
-  .hero .slogan {
-    font-size: 20px; /* Ajusta el tamaño del slogan para celulares */
-    position: absolute;
-    margin-top: 22rem;
-    text-align: center;
-  }
-  .circleHero img {
-
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15rem;
-  }
-  .icon-row {
-    flex-direction: column; /* Cambia la dirección a columna */
-    align-items: center; /* Centra los iconos en la columna */
-    gap: 40px; /* Ajusta el espacio entre los iconos */
-  }
-
-  .icon-container {
-    padding-bottom: 40px; 
-  }
-
-  .icon-text {
-    font-size: 12px; 
-  }
- /*testimonio*/
-  #carousel-caption {
-    justify-content: flex-start;
-    height: auto;
-   }
- /*Nuestro equipo*/ 
-
-  #equipo .carousel-caption{
-    justify-content:flex-start ;
-  }
-  #nosotros .contact-button {
-    margin-left: 100%;
-  }
-  .textFooter{
-    padding-left: 100px;
-   }
-}
-
-/*iPhone 8: 667x375 píxeles.
-iPhone X, iPhone 11 Pro, iPhone 12 Mini, iPhone 13 Mini: 812x375 píxeles.
-Samsung Galaxy S20: 800x360 píxeles.*/
-@media  only screen and (max-width: 575px)  and (orientation: portrait) {
-  .navbar-brand img {
-    width: 50%; /* Tamaño del logo */
-    height: 50%;
-  }
-  /*Hero section*/
-  .circleHero {
-    margin-top: 0rem;
-    margin-left: 4rem;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
-  .vectors {
-    display: none;
-  }
-  .hero .text-block {
-    color: #62bbf3;
-    margin-top: 0px;
-    margin-bottom: 30rem;
-    margin-left: 20px;
-    margin-right: -2rem;
-    text-align: center;
-  }
-  .hero .text-block h1 {
-    font-size: 20px; 
-    width: 20rem;
-  }
-  .hero .button {
-    margin-top: 0rem;
-    margin-bottom: 22rem;
-    margin-right: 6rem;
-   }
-  .hero .slogan {
-    font-size: 10px;
-    position: absolute;
-    margin-top: 15rem;
-    text-align: center;
-  }
-  .circleHero img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10rem;
-  }
-  /*footer*/
-  .social-icons-container img {
-    max-width: 30px;
-    margin-left: 0rem;
-  }
-  p {
-    font-size: 14px;
-  }
-  .textFooter{
-    padding-left: 0rem;
-    margin-top: 1rem;
-    margin-left: 1.5rem
-  }
-  #pFooter{
-    margin-left: 0rem;
-  }
-
-  .card{
-    margin-left: 50px;
-  }
- /*Testimonio*/ 
- #carousel-caption {
-    justify-content: flex-start;
-    height: auto;
-  }
-  /*Nuestro equipo*/ 
-  #equipo .carousel-caption{
-    justify-content:flex-start ;
-  }
-  /*Nosotros*/
-  #nosotros h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #nosotros .contact-button {
-    margin-left: 100%;
-  }
-  /* modal*/
-  .faq-button{
-    width: 330px;
-   }
- }
-/*iPhone 8: 667x375 píxeles.
-iPhone X, iPhone 11 Pro, iPhone 12 Mini, iPhone 13 Mini: 812x375 píxeles.
-Samsung Galaxy S20: 800x360 píxeles.*/
-@media  only screen and (max-height: 575px)  and (orientation: landscape) {
-  .navbar-brand img {
-    height: 40px; /* Ajusta el tamaño del logo */
-    width: auto;
-  }
-  /*Hero section*/
-  .circleHero {
-    margin-top: -2rem;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin-left: 3rem;
-  }
-  .vectors {
-    display: none;
-  }
-  .hero .text-block {
-    color: #dd14a4;
-    margin-top: 0rem;
-    margin-bottom: 3rem;
-    margin-right:-2rem;
-    text-align: center;
-  }
-  .hero .text-block h1{
-    width: 24rem;
-    font-size: 20px; 
-  }
-  .hero .button {
-    margin-bottom: 5rem;
-    margin-right: 3.5rem;
-  }
-  .hero .slogan {
-    font-size: 10px;
-    position: absolute;
-    margin-top: 15rem;
-    text-align: center;
-  }
-  .circleHero img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10rem;
-  }
-  /*footer*/
-  .social-icons-container img {
-    max-width: 30px;
-    margin-left: 0rem;
- 
-  }
-  .social-redes{
-    margin-left: 38rem;
-  }
-  .social-icon{
-    margin: 0rem;
-  }
-  p {
-    font-size: 14px;
-  }
-  .textFooter{
-    margin-top: -16rem;
-    margin-left: 4rem;
-    padding-left: 220px;
-    width: 42rem;
-  }
-  #pFooter{
-   width: 15rem;
-   margin-left: -2.5rem;
-  }
-
-  .circle_logo{
-    margin-top: 2rem;
-  }
-  .mover_circle_logo{
-    margin-left: -3rem;
-  }
-/*card*/
-  .card{
-    margin-left: 50px;
-  }
-  /*Testimonio*/ 
-  #testimonios{
-    padding: 0rem !important;
-  }
-  #carousel-caption {
-    justify-content: flex-start;
-    height: auto;
-  }
-  #text-width1 {
-    text-align: center !important;
-    font-size: 10px;
-    width: 15rem;
-    white-space: nowrap;      /* Evita el salto de línea */
-    overflow: hidden;         /* Oculta el texto que se desborda */
-    text-overflow: ellipsis;  /* Añade puntos suspensivos si el texto es muy largo */
-    display: block;           /* Asegura que el elemento sea tratado como un bloque */
-}
- /*Nuestro equipo*/ 
-  #equipo .carousel-caption{
-    justify-content:flex-start ;
-   }
-
-  #equipo .carousel-item h5{
-    font-size: 10px;
-    width: 20rem;
-  }
-  #equipo .carousel-item p{
-    font-size: 10px;
-    width: 20rem;
-  }
-  /*Nosotros*/
-  #nosotros{
-    padding: 0rem !important;
-  }
-  #nosotros h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20rem;
-  }
-
-  #nosotros .contact-button {
-    margin-left: 100%;
-  }
-  /* modal*/
-  .faq-button{
-    width: 330px;
-   }
- }
