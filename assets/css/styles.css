@@ -124,7 +124,9 @@ body {
   position: relative; /* Establece un contexto de posicionamiento para los elementos hijos */
   display: flex;
   align-items: center;
+padding-top: 6.5rem;
 }
+
 
 .circleHero {
   width: 30vw; /* El círculo ocupará el 30% del ancho del viewport */
