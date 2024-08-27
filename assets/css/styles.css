@@ -4,6 +4,16 @@
   border: 2px solid black;
 }  */
 
+/* BORDES para prueba*/
+/* .container
+{
+  border: 2px solid black;
+} 
+
+h3 {
+  visibility: hidden;
+} */
+
 /* Body */
 body {
   font-family: 'Nunito', sans-serif;
@@ -672,19 +682,19 @@ width: 300px;
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
   padding: 10px;
-  margin-right: 5vw;
+  margin-right: 0vw; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 .footer .circleHero img {
-  width: 70%;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -762,7 +772,7 @@ width: 300px;
         width: 200px;
         height: 200px;
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
       }
 
       .footer .col-lg-8 {
@@ -839,5 +849,7 @@ width: 300px;
         margin-top:10px;
         right: 20vw; 
       }
+
+      
 
     }
