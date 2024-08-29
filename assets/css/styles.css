@@ -1,161 +1,87 @@
-/* BORDES */
-/* .container
-{
-  border: 2px solid black;
-}  */
-
-/* BORDES para prueba*/
-/* .container
-{
-  border: 2px solid black;
-} 
-
-h3 {
-  visibility: hidden;
-} */
-
 /* Body */
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
 }
-
-.faq-button {
-  display: block;
-  width: 100%;
-  text-align: left;
-  color:#fff;
-  padding: 10px;
-  background-color:rgb(123, 45, 116); 
-  border:none;
-  border-radius: 20px;
-}
-.faq-button:hover {
-  background-color: rgb(171, 188, 7) !important; 
-  color:#fff;
-  border:none;
-  color: #000;
-}
-
-.cerrar-button {
-  background-color: rgb(123, 45, 116); 
-  color: white; 
-  border: none; 
-  border-radius: 20px; 
-  padding: 10px 20px; 
-}
-
-.cerrar-button:hover {
-  background-color:rgb(171, 188, 7); 
-  border: none; 
-}
-
-.banner{
-  background-color: rgb(121, 161, 130);
-  color: rgb(255, 255, 255);
-  font-weight: bold; /* Texto en negrita */
-  font-family: 'Poppins', sans-serif;
-  padding: 60px;
-  margin-top:-50px;
-}
-
-#banner h2 {
-  display: inline-block; 
-  margin: 0 auto; 
-}
-
 /* Navar */
 .navbar {
-  background-color: rgb(244, 246, 239); /* Color de fondo del navbar */
+  background-color: rgb(244, 246, 239); 
 }
 .navbar-nav {
-  margin-right: 10rem; /* Desplaza el menú hacia la izquierda */
- 
+  margin-right: 10rem; 
 }
 .navbar-brand img {
   width: 50%; 
   height: 50%;
 }
-
 .navbar-nav .nav-link {
   margin-left: 10%; /* Espacio entre el logo y los enlaces */
   margin-left: 20px; /* Espacio entre los elementos del menú */
 }
-
 .navbar-nav .nav-item .nav-link {
-  color: rgb(75, 105, 84); /* Color de las letras */
-  font-weight: bold; /* Texto en negrita */
-  font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+  color: rgb(75, 105, 84); 
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
-
 .contact-button_nav {
-  background-color: rgb(123, 45, 116); /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
-  border: none; /* Sin borde */
-  border-radius: 20px; /* Radio de borde */
-  padding: 10px 20px; /* Padding interior */
+  background-color: rgb(123, 45, 116); 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px;
 }
-
 .contact-button_nav:hover {
-  background-color: rgb(75, 105, 84); /* Cambio de color al pasar el cursor */
+  background-color: rgb(75, 105, 84); 
 }
-
 .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(123, 45, 116); /* Cambio de color al pasar el cursor */
+  color: rgb(123, 45, 116); 
 }
-
 .navbar-nav .nav-item.active .nav-link {
-  color: rgb(123, 45, 116); /* Color de subrayado activo */
+  color: rgb(123, 45, 116); 
 }
 .navbar-nav .nav-item:nth-child(1) .nav-link {
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
   overflow: hidden; /* Oculta cualquier texto que sobrepase el espacio disponible */
   text-overflow: ellipsis; /* Añade puntos suspensivos al final si el texto es demasiado largo */
 }
-
 .navbar-nav .nav-item {
   white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
-  display: flex; /* Usa flexbox para manejar el espacio entre los elementos */
-  align-items: center; /* Alinea verticalmente los elementos */
+  display: flex; 
+  align-items: center; 
 }
 
 /* Hero Section */
 .hero {
-  position: relative; /* Establece un contexto de posicionamiento para los elementos hijos */
+  position: relative; 
   display: flex;
   align-items: center;
-padding-top: 6.5rem;
+  padding-top: 6.5rem;
 }
-
-
 .circleHero {
-  width: 30vw; /* El círculo ocupará el 30% del ancho del viewport */
-  height: 30vw; /* Mantén el círculo con las mismas proporciones */
-  border-radius: 50%; /* Asegura que sea un círculo perfecto */
+  width: 30vw; 
+  height: 30vw;
+  border-radius: 50%; 
   display: flex;
-  flex-direction: column; /* Organiza los elementos verticalmente */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
-  background-color: white; /* O el color que desees */
+  background-color: white; 
   padding: 10px;
-  margin-right: 5vw; /* Espacio entre el círculo y el vector */
+  margin-right: 5vw; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative; /* Posiciona el círculo de manera relativa */
+  position: relative; 
 }
-
 .circleHero img {
-  width: 100%; /* Ajusta el tamaño del logo dentro del círculo */
-  margin-bottom: 10px; /* Espacio debajo de la imagen */
+  width: 100%; 
+  margin-bottom: 10px; 
 }
-
 .slogan {
   font-family: 'Poppins', sans-serif;  
-  font-size: 1.5vw; /* Ajusta el tamaño del texto basado en el viewport width */
+  font-size: 1.5vw; 
   color: rgb(121, 161, 130);
   font-weight: 700; 
   text-align: center;
 }
-
 .vectors {
   width: 30vw; /* El vector ocupará el 30% del ancho del viewport */
   max-width: auto; /* Establece un tamaño máximo si es necesario */
@@ -165,16 +91,15 @@ padding-top: 6.5rem;
   top: 50%; /* Centra verticalmente el vector */
   transform: translateX(40%) translateY(-30%); /* Ajusta la posición vertical del vector */
 }
-
 .text-block {
   color: rgb(244, 246, 239);
   font-family: 'Poppins', sans-serif;  
-  position: absolute; /* Posiciona el contenido de texto de manera absoluta */
-  top: 30%; /* Ajusta la distancia desde la parte superior */
-  right: 20px; /* Ajusta la distancia desde la parte derecha */
-  width: 600px; /* Ajusta el ancho del bloque de texto */
-  max-width: 90%; /* Limita el ancho máximo del bloque de texto */
-  text-align: right; /* Alinea el texto a la derecha */
+  position: absolute; 
+  top: 30%;
+  right: 20px;
+  width: 600px; 
+  max-width: 90%; 
+  text-align: right; 
 }
 .text-block h1{
     font-size: 40px; 
@@ -189,11 +114,11 @@ padding-top: 6.5rem;
   border-radius: 40px;
   cursor: pointer;
 }
-
 .hero .button:hover {
   background-color: rgb(75, 105, 84);
   color: rgb(244, 246, 239);
 }
+
 /* te agobia*/
 .section-centered {
   display: flex;
@@ -225,21 +150,18 @@ padding-top: 6.5rem;
   text-align: center;
   padding-bottom: 100px;
 }
-
 .icon {
   width: 80px; 
   height: 80px; 
   
 }
-
 .icon-text {
   padding-top: 50px;
-  max-width: 200px; /* Ajusta el ancho del texto */
+  max-width: 200px; 
   margin: 0 auto;
-  color: rgb(75, 105, 84); /* Color del texto */
-  font-size: 14px; /* Tamaño del texto */
+  color: rgb(75, 105, 84); 
+  font-size: 14px; 
 }
-
 /* Que ofrecemos */
 .card {
   margin: 0 !important;
@@ -252,19 +174,17 @@ padding-top: 6.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  width: 250px !important; /* Ancho específico */
-  height: 320px !important; /* Altura específica */
+  width: 250px !important; 
+  height: 320px !important; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra contenido verticalmente */
-  align-items: center; /* Centra contenido horizontalmente */
-  text-align: center; /* Alinea texto al centro */
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
 }
-
 .card-body {
-  margin-top: 60px !important; /* Empuja el contenido hacia abajo */
+  margin-top: 60px !important; 
 }
-
 #que-ofrecemos h2.text-center {
   font-family: 'Poppins', sans-serif !important;
   font-weight: bold !important;
@@ -272,14 +192,12 @@ padding-top: 6.5rem;
   color: rgb(75, 105, 84) !important;
   margin-bottom: 60px !important;
 }
-
 .card-text {
-  font-size: 14px !important; /* Tamaño del texto */
-  margin-top: auto !important; /* Elimina el margen superior predeterminado */
+  font-size: 14px !important; 
+  margin-top: auto !important; 
 }
-
 .card:hover {
-  background-color: rgb(171, 188, 7) !important; /* Color al hacer hover (verde) */
+  background-color: rgb(171, 188, 7) !important; 
   transform: translateY(-5px) !important;
   color: rgb(0, 0, 0) !important;
 }
@@ -292,34 +210,28 @@ padding-top: 6.5rem;
   background-color: rgb(244, 246, 239);
   color: rgb(75, 105, 84);
 }
-
 .metodologia h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold; 
   text-align: center;
   font-size: 36px;
   color: rgb(75, 105, 84);
-
 }
-
 .metodologia-imagen {
-  text-align: center; /* Centra horizontalmente */
+  text-align: center; 
 }
-
 .metodologia-imagen img {
-  display: inline-block; /* Asegura que la imagen se comporte como bloque inline */
-  vertical-align: middle; /* Centra verticalmente */
+  display: inline-block; 
+  vertical-align: middle; 
   width: 80%;
   height: auto;
   margin: 40px 0;
 }
-
 .metodologia p {
   font-size: 16px;
   font-family: 'Nunito', sans-serif;
   text-align: justify;
 }
-
 .text-Metodoligia-ol {
   font-size: 16px;
   font-family: 'Nunito', sans-serif;
@@ -380,7 +292,6 @@ padding-top: 6.5rem;
   padding: 5px 10px;
   border-radius: 50%;
 }
-
 .project-description {
   font-family: 'Nunito', sans-serif;
   color: rgb(75, 105, 84);
@@ -395,20 +306,32 @@ padding-top: 6.5rem;
   font-size: 36px;
   padding-bottom: 100px;
 } 
-
 .textTitlesSmall {
   color: rgb(75, 105, 84);
   font-size: 20px; 
   font-family: 'Poppins', sans-serif;
   font-weight: bold; 
   padding: 20px;
+}  
+
+/*banner*/
+.banner{
+  background-color: rgb(121, 161, 130);
+  color: rgb(255, 255, 255);
+  font-weight: bold; /* Texto en negrita */
+  font-family: 'Poppins', sans-serif;
+  padding: 60px;
+  margin-top:-50px;
+}
+#banner h2 {
+  display: inline-block; 
+  margin: 0 auto; 
 }
 
 /*carrusel testimonios*/
 #testimonios .carousel-item {
   padding: 20px 0;
 }
-
 .carousel-caption {
 display: flex;
 flex-direction: column;
@@ -416,7 +339,6 @@ justify-content: space-between;
 height: 100%;
 text-align: center;
 }
-
 .text-width{
 width: 300px;
 }
@@ -429,44 +351,34 @@ width: 300px;
   margin-top: auto;
   margin-bottom: 15px;
 }
-
 #testimonios .carousel-item p {
   color: rgb(75, 105, 84);
   padding-top: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   flex-grow: 1;
-  
 }
-
 #testimonios .carousel-control-prev-icon,
 #testimonios .carousel-control-next-icon {
-
  background-color:rgb(0, 0, 0);
  color:#fff
 }
-
 #testimonios .carousel-control-prev{
-
   margin-left: -8%;
 }
 #testimonios .carousel-control-next{
-
   margin-right: -8%;
 }
-
 #testimonios .img-fluid{
   width: 150px;
   height: 150px;
 }
-
 .custom-color {
   color: rgb(123, 45, 116);
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
-
 .custom-color:hover {
   color: rgb(171, 188, 7);
 }
@@ -474,41 +386,48 @@ width: 300px;
   margin-bottom: 30px;
 }
 
+/*Testimonio Modal*/
+.cerrar-button {
+  background-color: rgb(123, 45, 116); 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px; 
+}
+.cerrar-button:hover {
+  background-color:rgb(171, 188, 7); 
+  border: none; 
+}
 
 /* Nosotros */
 #nosotros .img-container {
   padding: 0px;
   margin: 0px;
 }
-
 #nosotros img {
-  max-width: 100%; /* Ancho máximo del 100% del contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
+  max-width: 100%; 
+  height: auto; 
 }
-
 #nosotros h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   font-weight: bold; 
   color: rgb(75, 105, 84); 
-  text-align: center; /* Alineación del título al centro */
+  text-align: center; 
   margin-bottom: 20px;
 }
-
 #nosotros p {
   text-align: center; 
   margin: 20px 0; 
-  white-space: pre-line; /* Para mantener los saltos de línea */
+  white-space: pre-line; 
 }
-
 #nosotros .col-md-6 {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrar verticalmente */
-  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; 
+  align-items: center; 
   padding: 0;
 }
-
 #nosotros .contact-button {
   background-color:rgb(123, 45, 116); 
   color: white; 
@@ -517,7 +436,6 @@ width: 300px;
   padding: 10px 20px; 
   font-size: 1rem;
 }
-
 #nosotros .contact-button:hover {
   background-color: rgb(171, 188, 7);
   color: black
@@ -527,17 +445,15 @@ width: 300px;
 #equipo .carousel-item {
   padding: 20px 0;
 }
-
 #equipo .carousel-item h5{
   padding-top: 10px;
   color: rgb(75, 105, 84);
   font-family: 'Poppins', sans-serif;
-  font-weight: 600; /* Semibold */
+  font-weight: 600; 
   font-size: 14px;
   margin-top: auto;
   margin-bottom: 15px;
 }
-
 #equipo .carousel-item p {
   color: rgb(75, 105, 84);
   padding-top: 10px;
@@ -545,25 +461,20 @@ width: 300px;
   font-size: 14px;
   flex-grow: 1;
 }
-
 #equipo .carousel-control-prev-icon,
 #equipo .carousel-control-next-icon {
  background-color:rgb(0, 0, 0);
 }
-
 #equipo .carousel-control-prev{
   margin-left: -8%;
 }
-
 #equipo .carousel-control-next{
   margin-right: -8%;
 }
-
 #equipo .img-fluid{
   width: 150px;
   height: 150px;
 }
-
 .custom-color-equipo {
   color: white;
   background-color: rgb(123, 45, 116);
@@ -572,14 +483,13 @@ width: 300px;
   border-color: rgb(123, 45, 116); 
   border-radius: 50px;
 }
-
 .custom-color-equipo:hover {
   background-color: rgb(171, 188, 7);
   color: black;
   border-color:  rgb(171, 188, 7);
 }
 
-/*Formulario*/
+/*Formulario contacto*/
 .form-container {
   background-color: rgb(121, 161, 130);
   border-radius: 60px;
@@ -588,14 +498,12 @@ width: 300px;
   height: 100%;
   color: white;
 }
-
 .form-h2{
   color: rgb(75, 105, 84);
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   padding-bottom: 60px;
 }
-
 .form-container input,
 .form-container textarea {
   border-radius: 20px;
@@ -603,12 +511,10 @@ width: 300px;
   width: 100%;
   border: none;
 }
-
 .form-container label {
   font-weight: bold;
   font-size: 20px;
 }
-
 .form-container button {
   background-color: rgb(123, 45, 116);
   color: white;
@@ -620,18 +526,15 @@ width: 300px;
   margin: 20px;
   padding: 10px 20px;
 }
-
 .form-container button:hover {
   background-color: white;
   color:  rgb(123, 45, 116);
 }
-
 .contact-info {
   padding: 0px;
   margin-left: 0px;
   text-align: center;
 }
-
 .contact-info h2 {
   color: rgb(121, 161, 130);
   font-size: 16px;
@@ -643,7 +546,6 @@ width: 300px;
   padding-bottom: 40px;
   padding-left: 20px;
 }
-
 .contact-info img {
   max-width: 100%;
   width: 200px;
@@ -652,7 +554,6 @@ width: 300px;
   margin: 0 auto;
   padding-bottom: 40px;
 }
-
 .contact-info p {
   font-size: 16px;
   color: rgb(121, 161, 130);
@@ -663,7 +564,6 @@ width: 300px;
   height: 30px;
   padding-left: 80px;
 }
-
 .contact-info .icon {
   color: rgb(0,0,0);
   width: 30px;
@@ -679,12 +579,10 @@ width: 300px;
   padding-top: 3vw;
   padding-bottom: 1vw;
 }
-
 .footer .circleHero {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -694,17 +592,14 @@ width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-
 .footer .circleHero img {
   width: 100%;
   margin-bottom: 10px;
 }
-
 .footer img {
   max-width: 100%;
   height: auto;
 }
-
 .footer p {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -712,13 +607,11 @@ width: 300px;
   color: #fff;
   margin: 0;
 }
-
 .footer .social-icon {
   width: 34px;
   height: 34px;
   margin: 0 10px;
 }
-
 .footer h5 {
   text-align: right;
   font-family: 'Poppins', sans-serif;
@@ -727,7 +620,6 @@ width: 300px;
   color: #fff;
   margin: 0;
 }
-
 .footer .text-a-footer {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -736,122 +628,156 @@ width: 300px;
   text-align: left;
 }
 .footer .social-icons-row{
-    text-align: right
+  text-align: right
+}  
+
+/*preguntas frecuentes */
+.faq-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color:#fff;
+  padding: 10px;
+  background-color:rgb(123, 45, 116); 
+  border:none;
+  border-radius: 20px;
 }
-   /* Media queries para tamaños específicos */
-   @media (max-width: 992px) {
+.faq-button:hover {
+  background-color: rgb(171, 188, 7) !important; 
+  color:#fff;
+  border:none;
+  color: #000;
+}
+
+ /* Media queries para tamaños específicos */
+ @media (max-width: 992px) {
+  .vectors {
+    display: none;
+  }
+ }
+
+/* Media queries para tamaños específicos */
+ @media (max-width: 768px) {
+  .circleHero {
+    width: 50vw;
+    height: 50vw;
+    margin-right: 3vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+  }
+  .slogan {
+    font-size: 2vw;
+  }
+  .vectors {
+    display: none;
+  }
+  .text-block {
+    color: rgb(244, 246, 239);
+     width: 300px; /* Ajusta el ancho del bloque de texto */
+  }
+  .text-block h1{
+    font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
+  }
+
+  /*footer*/
+  .footer .circleHero {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+  .footer .col-lg-8 {
+     order: 2;
+  }
+  .footer .col-lg-4,
+  .footer .col-lg-2 {
+    order: 1;
+    text-align: center;
+  }
+  .footer .col-lg-2 {
+    margin-top: 20px;
+  }
+  .footer .text-a-footer {
+    font-size: 14px;
+  }
+  .footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer h5 {
+    text-align: center;
+  }
+  .footer .social-icons {
+    text-align: center;
+    margin: 0;
+  }
+  .footer .social-icon {
+    margin: 0 5px; /* Ajusta el margen entre íconos si es necesario */
+  }
+  .footer .list-unstyled{
+    text-align: center;
+  }
+ 
+}
+
+  @media (max-width: 576px) {
+    .circleHero {
+      width: 60vw;
+      height: 60vw;
+      /*margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+      margin-left: 3%;
+      margin-top: 30vw;
+    }
+
+    .slogan {
+      font-size: 2vw;
+    }
+
     .vectors {
       display: none;
     }
-   }
-
-    /* Media queries para tamaños específicos */
-    @media (max-width: 768px) {
-      .circleHero {
-        width: 50vw;
-        height: 50vw;
-        margin-right: 3vw; /* Ajusta el margen derecho para pantallas más pequeñas */
-      }
-
-      .slogan {
-        font-size: 2vw;
-      }
-
-      .vectors {
-        display: none;
-      }
-      .text-block {
-        color: rgb(244, 246, 239);
-         width: 300px; /* Ajusta el ancho del bloque de texto */
-
-      }
-      .text-block h1{
-        font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
- 
-      }
-      /*footer*/
-      .footer .circleHero {
-        width: 200px;
-        height: 200px;
-        margin-right: 0;
-        margin-bottom: 0px;
-      }
-
-      .footer .col-lg-8 {
-        order: 2;
-      }
-
-      .footer .col-lg-4,
-      .footer .col-lg-2 {
-        order: 1;
-        text-align: center;
-      }
-
-      .footer .col-lg-2 {
-        margin-top: 20px;
-      }
-
-      .footer .text-a-footer {
-        font-size: 14px;
-      }
-
-      .footer p {
-        font-size: 12px;
-        text-align: center;
-      }
-
-      .footer h5 {
-        text-align: center;
-      }
-
-      .footer .social-icons {
-        text-align: center;
-        margin: 0;
-      }
-
-      .footer .social-icon {
-        margin: 0 5px; /* Ajusta el margen entre íconos si es necesario */
-      }
-      .footer .list-unstyled{
-        text-align: center;
-      }
-    
+    .text-block {
+      margin-top: 10px;
+      top: 5px;
+      right: 0;
+      left: 0;
+      width: 100%; 
+      color: rgb(244, 246, 239);
+      text-align: center; 
     }
-
-    @media (max-width: 576px) {
-      .circleHero {
-        width: 60vw;
-        height: 60vw;
-        /*margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
-        margin-left: 3%;
-        margin-top: 30vw;
-      }
-
-      .slogan {
-        font-size: 2vw;
-      }
-
-      .vectors {
-        display: none;
-      }
-      .text-block {
-        margin-top: 10px;
-        top: 5px;
-        right: 0;
-        left: 0;
-        width: 100%; /* Asegura que el ancho sea del 100% */
-        color: rgb(244, 246, 239);
-        text-align: center; /* Centra el contenido */
-      }
-      .text-block h1{
-        font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
- 
-      }
-      .hero .button {
-        margin-top:10px;
-        right: 20vw; 
-      }
-
-      
+    .text-block h1{
+      font-size: 24px !important; 
 
     }
+    .hero .button {
+      margin-top:10px;
+      right: 20vw; 
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
