@@ -67,10 +67,14 @@ body {
   justify-content: center;
   background-color: white; 
   padding: 10px;
-  margin-right: 5vw; 
+  margin-right: -10vw; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative; 
+
 }
+
+
+
 .circleHero img {
   width: 100%; 
   margin-bottom: 10px; 
@@ -81,30 +85,38 @@ body {
   color: rgb(121, 161, 130);
   font-weight: 700; 
   text-align: center;
+  margin-top: 10px; /* Adjust as necessary */
 }
 .vectors {
   width: 30vw; /* El vector ocupará el 30% del ancho del viewport */
   max-width: auto; /* Establece un tamaño máximo si es necesario */
   height: auto; /* Mantén la proporción del vector */
   position: absolute; /* Posiciona el vector de manera absoluta */
-  right: 5wv; /* Coloca el vector al costado derecho del círculo */
+  left: 20vw; /* Coloca el vector al costado derecho del círculo */
   top: 50%; /* Centra verticalmente el vector */
   transform: translateX(40%) translateY(-30%); /* Ajusta la posición vertical del vector */
 }
+.text-block h1 {
+  margin-bottom: 20px; /* Adjust spacing between the heading and the button */
+}
 .text-block {
+  height: 100%; /* Ensures the div takes up the full height of its container */
   color: rgb(244, 246, 239);
-  font-family: 'Poppins', sans-serif;  
-  position: absolute; 
-  top: 30%;
-  right: 20px;
-  width: 600px; 
-  max-width: 90%; 
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10vw;
+  margin-left: 15vw;
+  width: 50%; 
   text-align: right; 
 }
-.text-block h1{
-    font-size: 40px; 
+
+
+
+.text-block .button {
+  margin-top: 20px; /* Adjusts the spacing between the button and other elements */
+  
 }
-.hero .button {
+
+ .hero .button {
   padding: 15px 30px;
   background-color: rgb(244, 246, 239);
   color: rgb(123, 45, 116);
@@ -113,11 +125,11 @@ body {
   border: none;
   border-radius: 40px;
   cursor: pointer;
-}
+} 
 .hero .button:hover {
   background-color: rgb(75, 105, 84);
   color: rgb(244, 246, 239);
-}
+} 
 
 /* te agobia*/
 .section-centered {
@@ -661,7 +673,8 @@ width: 300px;
   .circleHero {
     width: 50vw;
     height: 50vw;
-    margin-right: 3vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+    margin-right: 0vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+    margin-top: 20vw;
   }
   .slogan {
     font-size: 2vw;
@@ -670,11 +683,19 @@ width: 300px;
     display: none;
   }
   .text-block {
-    color: rgb(244, 246, 239);
-     width: 300px; /* Ajusta el ancho del bloque de texto */
+    display: flex;
+    justify-content: center; /* Centra el bloque horizontalmente */
+    text-align: center; /* Centra el texto dentro del bloque */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    width: 45%; /* Ajusta el ancho del bloque de texto para dividir el h1 en dos líneas */
+
   }
-  .text-block h1{
-    font-size: 24px !important; /* Ajusta el tamaño del texto basado en el viewport width */
+  
+  .text-block h1 {
+    font-size: 24px !important; /* Ajusta el tamaño del texto */
+    max-width: 400px; /* Ajusta este valor para controlar la división en dos líneas */
+    line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+    margin-top: -150vw;
   }
 
   /*footer*/
@@ -722,7 +743,7 @@ width: 300px;
     .circleHero {
       width: 60vw;
       height: 60vw;
-      /*margin-right: 2vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+      margin-right: 5vw; 
       margin-left: 3%;
       margin-top: 30vw;
     }
@@ -734,19 +755,24 @@ width: 300px;
     .vectors {
       display: none;
     }
-    .text-block {
-      margin-top: 10px;
-      top: 5px;
-      right: 0;
-      left: 0;
-      width: 100%; 
-      color: rgb(244, 246, 239);
-      text-align: center; 
-    }
-    .text-block h1{
-      font-size: 24px !important; 
 
+    .text-block {
+      display: flex;
+      justify-content: center; /* Centra el bloque horizontalmente */
+      text-align: center; /* Centra el texto dentro del bloque */
+     
+      margin: 0 auto; /* Centra el contenedor horizontalmente */
+      width: 80%; /* Ajusta el ancho del bloque de texto para dividir el h1 en dos líneas */
+  
     }
+    
+    .text-block h1 {
+      font-size: 24px !important; /* Ajusta el tamaño del texto */
+      max-width: 400px; /* Ajusta este valor para controlar la división en dos líneas */
+      line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+      margin-top: -180vw;
+    }
+     
     .hero .button {
       margin-top:10px;
       right: 20vw; 
